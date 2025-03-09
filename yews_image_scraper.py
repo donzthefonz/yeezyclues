@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import List, Optional, Set
+from typing import List, Optional, Set, Literal
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -11,6 +11,7 @@ import time
 import re
 import asyncio
 from playwright.async_api import async_playwright, Page, TimeoutError
+from pathlib import Path
 
 # Configure logging
 logging.basicConfig(
@@ -20,27 +21,42 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class YewsImageScraper:
-    """A scraper class to download images from the YEWS website."""
+    """A scraper class to download images from YEWS websites."""
     
-    def __init__(self, base_url: str, output_dir: str = "yews_images"):
+    def __init__(self, domain: Literal["yews.news", "yews.live"], output_base_dir: str = "yews_images"):
         """
-        Initialize the scraper with base URL and output directory.
+        Initialize the scraper with domain and output directory.
         
         Args:
-            base_url: The base URL of the YEWS website
-            output_dir: Directory where images will be saved
+            domain: The domain to scrape from ("yews.news" or "yews.live")
+            output_base_dir: Base directory where date-specific folders will be created
         """
-        self.base_url = base_url.rstrip('/')
-        self.output_dir = output_dir
+        self.domain = domain
+        self.base_url = f"https://www.{domain}"
+        self.output_base_dir = output_base_dir
+        self.output_dir = self._get_dated_output_dir()
         self.session = requests.Session()
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
         self.visited_urls: Set[str] = set()
+
+    def _get_dated_output_dir(self) -> str:
+        """
+        Create and return a dated output directory path.
         
+        Returns:
+            Path to the dated output directory
+        """
+        current_date = datetime.now().strftime("%Y-%m-%d")
+        domain_name = self.domain.replace(".", "_")
+        dated_dir = os.path.join(self.output_base_dir, domain_name, current_date)
+        return dated_dir
+
     def setup_output_directory(self) -> None:
-        """Create the output directory if it doesn't exist."""
+        """Create the dated output directory if it doesn't exist."""
         os.makedirs(self.output_dir, exist_ok=True)
+        logger.info(f"Created output directory: {self.output_dir}")
 
     async def click_time_button(self, page: Page, time_text: str) -> bool:
         """
@@ -197,13 +213,13 @@ class YewsImageScraper:
                 return
                 
             # Take a screenshot after clicking the time button
-            await page.screenshot(path=f"debug_screenshot_{time_text}.png")
+            # await page.screenshot(path=f"debug_screenshot_{time_text}.png")
             
             # Expand all articles
             await self.expand_all_articles(page)
             
             # Take another screenshot after expanding articles
-            await page.screenshot(path=f"debug_screenshot_{time_text}_expanded.png")
+            # await page.screenshot(path=f"debug_screenshot_{time_text}_expanded.png")
             
             # Get the page content and extract images
             content = await page.content()
@@ -254,10 +270,24 @@ class YewsImageScraper:
             
         logger.info("Image scraping completed!")
 
-async def main() -> None:
-    """Main function to run the scraper."""
-    scraper = YewsImageScraper("https://www.yews.live")
+async def main(domain: str) -> None:
+    """
+    Main function to run the scraper.
+    
+    Args:
+        domain: The domain to scrape from ("yews.news" or "yews.live")
+    """
+    scraper = YewsImageScraper(domain)
     await scraper.run()
 
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Scrape images from YEWS websites')
+    parser.add_argument('--domain', 
+                       choices=['yews.news', 'yews.live'],
+                       default='yews.news',
+                       help='Domain to scrape from (default: yews.news)')
+    
+    args = parser.parse_args()
+    asyncio.run(main(args.domain)) 

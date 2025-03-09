@@ -34,7 +34,26 @@ env/
 
 # Project specific
 yews_images/
-*.log
+yews_news/
+yews_live/
+# Ignore only images in scan_results, keep other files
+scan_results/**/*.jpg
+scan_results/**/*.jpeg
+scan_results/**/*.png
+scan_results/**/*.gif
+scan_results/**/*.webp
+
+# Debug screenshots
+*.png
+
+# General image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
 
 # OS specific
 .DS_Store

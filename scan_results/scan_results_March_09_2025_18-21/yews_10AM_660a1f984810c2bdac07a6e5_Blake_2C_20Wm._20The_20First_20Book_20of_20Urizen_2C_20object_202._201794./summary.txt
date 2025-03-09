@@ -1,0 +1,35 @@
+Scan Results for: yews_10AM_660a1f984810c2bdac07a6e5_Blake_2C_20Wm._20The_20First_20Book_20of_20Urizen_2C_20object_202._201794..jpg
+Scan Time: 2025-03-09T18:21:48.321496
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - LFNW
+    - OXJD
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LH4O
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - FINE
+    - JEWS
+    - MEME
+    - MMM
+    - WIZ
+    - Y3S
+    - Y3WS
+
+No words found.

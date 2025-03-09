@@ -1,0 +1,36 @@
+Scan Results for: yews_10AM_67be987451f2950d8da3fc3a_Blake_2C_20Wm._20David_20Delivered_20Out_20of_20Many_20Waters-_20_22He_20Rode_20Upon_20the_20Cherubim._22_201780..jpg
+Scan Time: 2025-03-09T18:21:49.896049
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - PUMP
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - DEST
+    - KIMK
+    - LORE
+    - MEME
+    - MMM
+    - REAP
+    - WIZ
+    - Y0GA
+    - Y1PS
+    - ZANY
+
+No words found.

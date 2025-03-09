@@ -1,0 +1,42 @@
+Scan Results for: yews_10AM_6621517390587be30366cc05_Blake_2C_20Wm._20Milton_27s_20Paradise_20Regained._201816..jpeg
+Scan Time: 2025-03-09T18:21:48.376816
+
+Contract Words and Patterns Found:
+  - Contract Words Found (4/11):
+    - F8PF
+    - LFNW
+    - LH4O
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - OXJD
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - OLAF
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAR
+    - DEST
+    - FINE
+    - FISH
+    - H34L
+    - JEWM
+    - MEME
+    - MMM
+    - MOON
+    - TINA
+    - WIZ
+    - Y0K3
+    - Y0UR
+    - Y3S
+    - ZANY
+
+No words found.
