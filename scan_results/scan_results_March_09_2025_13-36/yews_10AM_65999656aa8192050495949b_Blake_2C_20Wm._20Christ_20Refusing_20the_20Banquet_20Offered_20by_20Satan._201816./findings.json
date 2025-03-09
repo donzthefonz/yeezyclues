@@ -1,0 +1,55 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F8PF",
+        "LFNW",
+        "OXJD",
+        "V46F",
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "LH4O",
+        "PUMP",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ARG",
+        "BEAM",
+        "BEAR",
+        "DEST",
+        "JEWM",
+        "JEWS",
+        "KIMK",
+        "MILO",
+        "MMM",
+        "PLUT",
+        "REAP",
+        "TATE",
+        "WIZ",
+        "WIZK",
+        "Y0GA",
+        "Y3S",
+        "Y3T1",
+        "Y3WS",
+        "YURT",
+        "Z3DS"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 6,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_65999656aa8192050495949b_Blake_2C_20Wm._20Christ_20Refusing_20the_20Banquet_20Offered_20by_20Satan._201816..jpeg",
+    "scan_timestamp": "2025-03-09T13:36:41.163992"
+}

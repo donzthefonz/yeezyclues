@@ -1,0 +1,32 @@
+Scan Results for: yews_8PM_67cd0fff69dc0f0b921f823f_Blake_2C_20Wm._20There_20Is_20No_20Natural_20Religion_2C_20object_207._201788..jpg
+Scan Time: 2025-03-09T13:36:41.572910
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - F8PF
+    - V46F
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - JEWM
+    - MEME
+    - MMM
+    - WIZ
+    - Y34R
+    - Y3S
+
+No words found.

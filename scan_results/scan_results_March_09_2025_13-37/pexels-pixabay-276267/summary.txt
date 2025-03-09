@@ -1,0 +1,83 @@
+Scan Results for: pexels-pixabay-276267.jpg
+Scan Time: 2025-03-09T13:37:06.701421
+
+Contract Words and Patterns Found:
+  - Contract Words Found (7/11):
+    - 4NBT
+    - ETXR
+    - LFNW
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+
+  - Missing Contract Words:
+    - F3KN
+    - F8PF
+    - LH4O
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - C01N
+    - COIN
+    - DEST
+    - ELON
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - HODL
+    - HOLD
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - NERO
+    - NORT
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WIZ
+    - WIZK
+    - Y0G1
+    - Y0GA
+    - Y0K3
+    - Y0LK
+    - Y0R3
+    - Y0UR
+    - Y0WL
+    - Y1P3
+    - Y34R
+    - Y3S
+    - Y3T1
+    - YURT
+    - Z00M
+    - Z1NC
+    - Z1NG
+    - Z1TS
+    - Z3DS
+    - Z3NS
+    - ZANY
+    - ZAPS
+
+No words found.

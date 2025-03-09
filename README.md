@@ -5,7 +5,7 @@ A collection of tools for web scraping, image analysis, and steganography detect
 ## Tools Included
 
 1. **Yews Image Scraper** (`yews_image_scraper.py`)
-   - Scrapes images from specified web sources
+   - Scrapes images from yews.live
    - Handles dynamic content loading
    - Saves images to organized directories
 
@@ -78,8 +78,40 @@ Images will be saved to the `yews_images` directory by default.
 ### Image to Base64 Scanner
 
 ```bash
-python image_base64_scanner.py <image_file or directory> 
+python image_base64_scanner.py <image_file or directory> [--include-words] [--max-word-length N]
 ```
+
+Options:
+- `--include-words`: Include dictionary word search in addition to pattern matching (slower)
+- `--max-word-length N`: Set maximum word length for word search when using --include-words (default: 6)
+
+Examples:
+```bash
+# Default scan (patterns only, fastest)
+python image_base64_scanner.py path/to/image.jpg
+
+# Include dictionary word search up to 6 letters
+python image_base64_scanner.py path/to/image.jpg --include-words
+
+# Include dictionary word search up to 10 letters
+python image_base64_scanner.py path/to/image.jpg --include-words --max-word-length 10
+
+# Scan all images in a directory (patterns only)
+python image_base64_scanner.py path/to/directory
+```
+
+The tool will:
+- Convert images to base64
+- Search for special patterns (high and low significance)
+- Optionally search for dictionary words (with --include-words flag)
+- Generate detailed reports in the scan_results directory
+- Create a final summary of findings
+
+Special patterns are categorized into:
+- High Significance: Critical identifiers (4NBT, YEEZY, etc.) and steganography markers
+- Low Significance: Related terms and common encoding patterns
+
+By default, the tool runs in pattern-matching only mode for faster processing. Use --include-words if you want to also search for dictionary words.
 
 ### Stego Check
 

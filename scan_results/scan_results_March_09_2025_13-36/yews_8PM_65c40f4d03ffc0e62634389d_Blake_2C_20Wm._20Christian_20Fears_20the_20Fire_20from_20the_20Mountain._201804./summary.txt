@@ -1,0 +1,65 @@
+Scan Results for: yews_8PM_65c40f4d03ffc0e62634389d_Blake_2C_20Wm._20Christian_20Fears_20the_20Fire_20from_20the_20Mountain._201804..jpeg
+Scan Time: 2025-03-09T13:36:40.591360
+
+Contract Words and Patterns Found:
+  - Contract Words Found (7/11):
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - 1780
+    - ACE
+    - AERI
+    - ARG
+    - BEAR
+    - BLAK
+    - ETHA
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - H34L
+    - HODL
+    - JEWM
+    - KIMK
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - NORT
+    - PLUT
+    - REAP
+    - TENA
+    - W1LL
+    - WEST
+    - WIZ
+    - WIZK
+    - Y0BS
+    - Y0GA
+    - Y0R3
+    - Y0UR
+    - Y3S
+    - Y3WS
+    - YURT
+    - Z1NG
+    - Z3ST
+    - ZANY
+
+No words found.

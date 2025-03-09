@@ -1,0 +1,44 @@
+{
+    "contract_words": [
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ARG",
+        "MMM",
+        "MOON",
+        "W1LL",
+        "WIZ",
+        "Y0LK",
+        "Y3S",
+        "Y3T1",
+        "Z34L",
+        "ZANY",
+        "ZAPS"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 1,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_65fdfd10750a5625717e093e_Blake_2C_20Wm._20Christian_20Falls_20at_20the_20Feet_20of_20Evangelist._201824..jpg",
+    "scan_timestamp": "2025-03-09T13:36:41.522373"
+}

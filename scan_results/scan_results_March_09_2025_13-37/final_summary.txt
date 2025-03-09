@@ -1,0 +1,790 @@
+BASE64 SCAN ANALYSIS SUMMARY
+===========================
+
+Analysis completed at: 2025-03-09T13:37:06.832362
+Total images analyzed: 9
+
+PATTERNS BY IMAGE
+================
+
+Image: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg
+  CONTRACT WORDS (1/11):
+    - F3KN
+  HIGH SIGNIFICANCE PATTERNS:
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAM
+    - CRYP
+    - MMM
+    - WIZ
+    - Y3S
+    - ZAPS
+
+Image: pexels-cottonbro-3997390.jpg
+  CONTRACT WORDS (7/11):
+    - 4NBT
+    - ETXR
+    - F3KN
+    - LFNW
+    - OXJD
+    - XFFC
+    - Y9I5
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - KANYE
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - COIN
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - HODL
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - NORT
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - WIZK
+    - Y0BS
+    - Y0GA
+    - Y0K3
+    - Y0LK
+    - Y0UR
+    - Y0WL
+    - Y1P3
+    - Y34R
+    - Y3S
+    - Y3T1
+    - Y3WS
+    - YURT
+    - Z00M
+    - Z1N3
+    - Z1NC
+    - Z1NG
+    - Z3R0
+    - ZANY
+    - ZAPS
+
+Image: pexels-pixabay-159045.jpg
+  CONTRACT WORDS (5/11):
+    - ETXR
+    - LFNW
+    - LH4O
+    - OXJD
+    - Y9I5
+  HIGH SIGNIFICANCE PATTERNS:
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - COIN
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - FINE
+    - GOLD
+    - HOLD
+    - JEWM
+    - LORE
+    - MEME
+    - MMM
+    - MOON
+    - NORT
+    - PLUT
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - WIZK
+    - Y0UR
+    - Y1PS
+    - Y3S
+    - Y3WS
+    - Z0N3
+    - Z3DS
+    - Z3TA
+    - ZAPS
+
+Image: pexels-mdsnmdsnmdsn-1684880.jpg
+  CONTRACT WORDS (6/11):
+    - ETXR
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - XFFC
+  HIGH SIGNIFICANCE PATTERNS:
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BLAK
+    - C01N
+    - COIN
+    - CRYP
+    - DEST
+    - ETHA
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - HODL
+    - HOLD
+    - JEWM
+    - JEWS
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - NORT
+    - TATE
+    - TENA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - Y0G1
+    - Y1PS
+    - Y34R
+    - Y3S
+    - Y3WS
+    - YURT
+    - Z0N3
+    - Z1N3
+    - Z1NC
+    - Z1NG
+    - Z34L
+    - Z3DS
+    - ZAPS
+
+Image: wolf_moon_night_150508_1920x1080.jpg
+  CONTRACT WORDS (2/11):
+    - ETXR
+    - PUMP
+  HIGH SIGNIFICANCE PATTERNS:
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - ARG
+    - BLAK
+    - COIN
+    - CRYP
+    - GOLD
+    - MMM
+    - NERO
+    - PLUT
+    - REAP
+    - W1LL
+    - WIZ
+    - WIZK
+    - Y3S
+    - Y3WS
+    - YURT
+    - Z00S
+    - Z1NC
+    - Z3ST
+
+Image: pexels-chokniti-khongchum-1197604-2280547.jpg
+  CONTRACT WORDS (6/11):
+    - 4NBT
+    - ETXR
+    - LFNW
+    - PUMP
+    - V46F
+    - Y9I5
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - BOUND
+    - COIN
+    - DEST
+    - ELON
+    - ETHA
+    - FINE
+    - FISH
+    - H34L
+    - HODL
+    - HOLD
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - NORT
+    - PLUT
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - WIZK
+    - Y0K3
+    - Y0LK
+    - Y0UR
+    - Y1PS
+    - Y34R
+    - Y3S
+    - Y3WS
+    - YURT
+    - Z00M
+    - Z1NC
+    - Z3DS
+    - ZAPS
+
+Image: pexels-pixabay-276267.jpg
+  CONTRACT WORDS (7/11):
+    - 4NBT
+    - ETXR
+    - LFNW
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - C01N
+    - COIN
+    - DEST
+    - ELON
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - HODL
+    - HOLD
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - NERO
+    - NORT
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WIZ
+    - WIZK
+    - Y0G1
+    - Y0GA
+    - Y0K3
+    - Y0LK
+    - Y0R3
+    - Y0UR
+    - Y0WL
+    - Y1P3
+    - Y34R
+    - Y3S
+    - Y3T1
+    - YURT
+    - Z00M
+    - Z1NC
+    - Z1NG
+    - Z1TS
+    - Z3DS
+    - Z3NS
+    - ZANY
+    - ZAPS
+
+Image: pexels-karolina-grabowska-4021773.jpg
+  CONTRACT WORDS (5/11):
+    - 4NBT
+    - ETXR
+    - F3KN
+    - LH4O
+    - XFFC
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - BLAKE
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - FAITH
+    - FISH
+    - JEWM
+    - KIMK
+    - MEME
+    - MILO
+    - MMM
+    - NERO
+    - NORT
+    - REAP
+    - TATE
+    - TINA
+    - TOWN
+    - WIZ
+    - WIZK
+    - Y0GA
+    - Y0LK
+    - Y1PS
+    - Y3S
+    - Y3WS
+    - YURT
+    - Z3DS
+    - Z3R0
+    - Z3TA
+    - ZANY
+
+Image: pexels-karolina-grabowska-4047150.jpg
+  CONTRACT WORDS (2/11):
+    - F8PF
+    - PUMP
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - OLAF
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ANSEM
+    - ARG
+    - COIN
+    - ELON
+    - ETHA
+    - H34L
+    - HODL
+    - JEWM
+    - JEWS
+    - LORE
+    - MEME
+    - MMM
+    - MOON
+    - NORT
+    - REAP
+    - TOWN
+    - WEST
+    - WIZ
+    - Y0BS
+    - Y0LK
+    - Y3S
+    - ZANY
+    - ZAPS
+
+
+CONSOLIDATED PATTERN SUMMARY
+===========================
+
+CONTRACT WORDS
+=============
+Pattern: ETXR
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: PUMP
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: LFNW
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: XFFC
+Found in 4 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: OXJD
+Found in 4 images: pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: 4NBT
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y9I5
+Found in 3 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-pixabay-159045.jpg
+
+Pattern: LH4O
+Found in 3 images: pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: F3KN
+Found in 3 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg
+
+Pattern: V46F
+Found in 2 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-pixabay-276267.jpg
+
+Pattern: F8PF
+Found in 1 images: pexels-karolina-grabowska-4047150.jpg
+
+
+HIGH SIGNIFICANCE PATTERNS
+=======================
+Pattern: YZY
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: YE
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: OLAF
+Found in 8 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: PASS
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: FLAG
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-276267.jpg
+
+Pattern: KANYE
+Found in 1 images: pexels-cottonbro-3997390.jpg
+
+
+Low Significance Patterns
+=======================
+Pattern: Y3S
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: WIZ
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: MMM
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: ARG
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: ACE
+Found in 9 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: ZAPS
+Found in 7 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: TOWN
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: NORT
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: MEME
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: JEWM
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: COIN
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: BLAK
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: BEAM
+Found in 7 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: AERI
+Found in 7 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: YURT
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: Y3WS
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: WIZK
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: W1LL
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: TATE
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: NERO
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: ETHA
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: ELON
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: DEST
+Found in 6 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: CRYP
+Found in 6 images: digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: Z3DS
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Z1NC
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: Y0LK
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-276267.jpg
+
+Pattern: WEST
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: TINA
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: TENA
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: REAP
+Found in 5 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: PLUT
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: MOON
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: MILO
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: LORE
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: JEWS
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: HODL
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: GOLD
+Found in 5 images: pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg, wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: FISH
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: FINE
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: FADE
+Found in 5 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: BEAR
+Found in 5 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: ANSE
+Found in 5 images: pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: ZANY
+Found in 4 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-karolina-grabowska-4047150.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y34R
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y1PS
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: Y0UR
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: KIMK
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-276267.jpg
+
+Pattern: HOLD
+Found in 4 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Z1NG
+Found in 3 images: pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Z00M
+Found in 3 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y0K3
+Found in 3 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-cottonbro-3997390.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y0GA
+Found in 3 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Z3TA
+Found in 2 images: pexels-karolina-grabowska-4021773.jpg, pexels-pixabay-159045.jpg
+
+Pattern: Z3R0
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4021773.jpg
+
+Pattern: Z1N3
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-mdsnmdsnmdsn-1684880.jpg
+
+Pattern: Z0N3
+Found in 2 images: pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-159045.jpg
+
+Pattern: Y3T1
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y1P3
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y0WL
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y0G1
+Found in 2 images: pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Y0BS
+Found in 2 images: pexels-cottonbro-3997390.jpg, pexels-karolina-grabowska-4047150.jpg
+
+Pattern: M3M3
+Found in 2 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-pixabay-276267.jpg
+
+Pattern: H34L
+Found in 2 images: pexels-chokniti-khongchum-1197604-2280547.jpg, pexels-karolina-grabowska-4047150.jpg
+
+Pattern: C01N
+Found in 2 images: pexels-mdsnmdsnmdsn-1684880.jpg, pexels-pixabay-276267.jpg
+
+Pattern: Z3ST
+Found in 1 images: wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: Z3NS
+Found in 1 images: pexels-pixabay-276267.jpg
+
+Pattern: Z34L
+Found in 1 images: pexels-mdsnmdsnmdsn-1684880.jpg
+
+Pattern: Z1TS
+Found in 1 images: pexels-pixabay-276267.jpg
+
+Pattern: Z00S
+Found in 1 images: wolf_moon_night_150508_1920x1080.jpg
+
+Pattern: Y0R3
+Found in 1 images: pexels-pixabay-276267.jpg
+
+Pattern: FAITH
+Found in 1 images: pexels-karolina-grabowska-4021773.jpg
+
+Pattern: BOUND
+Found in 1 images: pexels-chokniti-khongchum-1197604-2280547.jpg
+
+Pattern: BLAKE
+Found in 1 images: pexels-karolina-grabowska-4021773.jpg
+
+Pattern: ANSEM
+Found in 1 images: pexels-karolina-grabowska-4047150.jpg
+
+
+STATISTICS
+==========
+Images with complete contract matches: 0 out of 9
+Images with partial contract words: 9 out of 9
+Images with high significance patterns: 9 out of 9
+Images with low significance patterns: 9 out of 9
+Total unique contract words found: 11
+Total unique high significance patterns found: 6
+Total unique low significance patterns found: 75
+
+Contract Word Frequency:
+  7 image(s): 1 pattern(s)
+  5 image(s): 2 pattern(s)
+  4 image(s): 3 pattern(s)
+  3 image(s): 3 pattern(s)
+  2 image(s): 1 pattern(s)
+  1 image(s): 1 pattern(s)
+
+High Significance Pattern Frequency:
+  9 image(s): 2 pattern(s)
+  8 image(s): 1 pattern(s)
+  7 image(s): 1 pattern(s)
+  5 image(s): 1 pattern(s)
+  1 image(s): 1 pattern(s)
+
+Low Significance Pattern Frequency:
+  9 image(s): 5 pattern(s)
+  7 image(s): 9 pattern(s)
+  6 image(s): 10 pattern(s)
+  5 image(s): 19 pattern(s)
+  4 image(s): 6 pattern(s)
+  3 image(s): 4 pattern(s)
+  2 image(s): 12 pattern(s)
+  1 image(s): 10 pattern(s)

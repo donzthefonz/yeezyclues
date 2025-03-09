@@ -1,0 +1,32 @@
+{
+    "contract_words": [
+        "F8PF"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "YE"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "WIZ"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 1,
+        "total": 11
+    },
+    "original_image_name": "images (4).jpeg",
+    "scan_timestamp": "2025-03-09T13:40:43.448122"
+}

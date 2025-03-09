@@ -1,0 +1,187 @@
+BASE64 SCAN ANALYSIS SUMMARY
+===========================
+
+Analysis completed at: 2025-03-09T12:29:58.130680
+Total images analyzed: 1
+
+SPECIAL PATTERNS BY IMAGE
+========================
+
+Image: pexels-pixabay-159045.jpg
+  - ACE
+  - AERI
+  - ANSE
+  - ARG
+  - BEAM
+  - BEAR
+  - BLAK
+  - COIN
+  - CRYP
+  - DEST
+  - ELON
+  - ETHA
+  - FADE
+  - FINE
+  - GOLD
+  - HOLD
+  - JEWM
+  - LORE
+  - MMM
+  - MOON
+  - NORT
+  - PASS
+  - PLUT
+  - TATE
+  - TENA
+  - TINA
+  - TOWN
+  - W1LL
+  - WEST
+  - WIZ
+  - WIZK
+  - Y0UR
+  - Y1PS
+  - Y3S
+  - Y3WS
+  - YE
+  - YZY
+  - Z0N3
+  - Z3DS
+  - Z3TA
+  - ZAPS
+
+
+CONSOLIDATED PATTERN SUMMARY
+===========================
+
+Pattern: ZAPS
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Z3TA
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Z3DS
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Z0N3
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: YZY
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: YE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Y3WS
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Y3S
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Y1PS
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: Y0UR
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: WIZK
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: WIZ
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: WEST
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: W1LL
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: TOWN
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: TINA
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: TENA
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: TATE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: PLUT
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: PASS
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: NORT
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: MOON
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: MMM
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: LORE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: JEWM
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: HOLD
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: GOLD
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: FINE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: FADE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: ETHA
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: ELON
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: DEST
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: CRYP
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: COIN
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: BLAK
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: BEAR
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: BEAM
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: ARG
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: ANSE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: AERI
+Found in 1 images: pexels-pixabay-159045.jpg
+
+Pattern: ACE
+Found in 1 images: pexels-pixabay-159045.jpg
+
+
+STATISTICS
+==========
+Images with special patterns: 1 out of 1
+Total unique patterns found: 41
+
+Pattern frequency:
+  1 image(s): 41 pattern(s)

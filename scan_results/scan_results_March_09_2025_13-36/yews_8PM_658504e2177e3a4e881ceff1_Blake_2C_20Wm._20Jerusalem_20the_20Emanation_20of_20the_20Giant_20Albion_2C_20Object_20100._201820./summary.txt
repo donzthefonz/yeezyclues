@@ -1,0 +1,35 @@
+Scan Results for: yews_8PM_658504e2177e3a4e881ceff1_Blake_2C_20Wm._20Jerusalem_20the_20Emanation_20of_20the_20Giant_20Albion_2C_20Object_20100._201820..jpg
+Scan Time: 2025-03-09T13:36:39.520245
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - ETXR
+
+  - Missing Contract Words:
+    - 4NBT
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAR
+    - H34L
+    - MMM
+    - PLUT
+    - TATE
+    - WIZ
+    - Y3S
+    - Z3R0
+    - ZANY
+
+No words found.

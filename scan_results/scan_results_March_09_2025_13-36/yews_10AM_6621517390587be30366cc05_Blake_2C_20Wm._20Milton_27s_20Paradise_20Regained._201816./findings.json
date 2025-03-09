@@ -1,0 +1,49 @@
+{
+    "contract_words": [
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "DEST",
+        "FINE",
+        "FISH",
+        "H34L",
+        "JEWM",
+        "MEME",
+        "MMM",
+        "MOON",
+        "TINA",
+        "WIZ",
+        "Y0K3",
+        "Y0UR",
+        "Y3S",
+        "ZANY"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 4,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_6621517390587be30366cc05_Blake_2C_20Wm._20Milton_27s_20Paradise_20Regained._201816..jpeg",
+    "scan_timestamp": "2025-03-09T13:36:41.199552"
+}
