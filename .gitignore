@@ -24,6 +24,7 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
 
 # IDE
 .idea/
@@ -33,7 +34,6 @@ env/
 
 # Project specific
 yews_images/
-scan_results/
 *.log
 
 # OS specific
