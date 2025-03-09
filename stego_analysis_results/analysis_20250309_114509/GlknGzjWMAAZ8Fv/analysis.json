@@ -1,0 +1,14 @@
+{
+    "file_name": "GlknGzjWMAAZ8Fv.jpeg",
+    "analysis_time": "2025-03-09T11:45:25.376226",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": []
+    },
+    "has_findings": false
+}

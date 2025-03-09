@@ -1,0 +1,14 @@
+{
+    "file_name": "plane.Glkz8I6WgAALrrZ.png",
+    "analysis_time": "2025-03-09T11:45:28.966367",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": []
+    },
+    "has_findings": false
+}

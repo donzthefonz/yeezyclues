@@ -1,0 +1,14 @@
+{
+    "file_name": "tree.yews-og-logo-its-a-yew-tree-v0-3wgh59voq36c1.webp",
+    "analysis_time": "2025-03-09T11:45:28.736623",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": []
+    },
+    "has_findings": false
+}

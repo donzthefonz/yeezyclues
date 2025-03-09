@@ -78,13 +78,13 @@ Images will be saved to the `yews_images` directory by default.
 ### Image to Base64 Scanner
 
 ```bash
-python image_base64_scanner.py <image_file>
+python image_base64_scanner.py <image_file or directory> 
 ```
 
 ### Stego Check
 
 ```bash
-python stego_check.py <image_file>
+python stego_check.py <image_file or directory>
 ```
 
 The tool will perform multiple analyses:

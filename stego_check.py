@@ -1,13 +1,16 @@
 import sys
 import os
 import subprocess
-from typing import List, Optional, Tuple, Dict, Any
+from typing import List, Optional, Tuple, Dict, Any, Union, Set
 from pathlib import Path
 import exifread
 from PIL import Image
 import shutil
 import base64
 import binascii
+import json
+from datetime import datetime
+import io
 
 ###############################################################################
 # Known pattern sets
@@ -37,6 +40,195 @@ BINARY_VARIANTS = [
     "00110100001101110110001001110100", # "4nbt"
     "01110100001100100110111000110100", # "tbn4"
 ]
+
+###############################################################################
+# Result handling and organization
+###############################################################################
+
+class StegResults:
+    """
+    Class to store and manage steganography analysis results.
+    """
+    def __init__(self, file_path: Path):
+        self.file_path = file_path
+        self.findings: Dict[str, List[str]] = {
+            "metadata": [],
+            "raw_bytes": [],
+            "binary_patterns": [],
+            "lsb": [],
+            "channels": [],
+            "binwalk": [],
+            "icc_profile": []
+        }
+        self.has_findings = False
+
+    def add_finding(self, category: str, finding: str) -> None:
+        """Add a finding to the specified category."""
+        self.findings[category].append(finding)
+        self.has_findings = True
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert results to a dictionary format."""
+        return {
+            "file_name": self.file_path.name,
+            "analysis_time": datetime.now().isoformat(),
+            "findings": self.findings,
+            "has_findings": self.has_findings
+        }
+
+class ResultWriter:
+    """
+    Handles writing analysis results to files and console.
+    """
+    def __init__(self, output_dir: Path):
+        self.output_dir = output_dir
+        self.summary_findings: List[Dict[str, Any]] = []
+        # Track consolidated findings across all files
+        self.consolidated_findings: Dict[str, Dict[str, Set[Tuple[str, str]]]] = {
+            "metadata": {},
+            "raw_bytes": {},
+            "binary_patterns": {},
+            "lsb": {},
+            "channels": {},
+            "binwalk": {},
+            "icc_profile": {}
+        }
+
+    def write_file_results(self, results: StegResults) -> Path:
+        """Write individual file results and return the result directory path."""
+        # Create directory for this file's results
+        result_dir = self.output_dir / results.file_path.stem
+        result_dir.mkdir(parents=True, exist_ok=True)
+
+        # Write detailed results
+        with open(result_dir / "analysis.json", "w") as f:
+            json.dump(results.to_dict(), f, indent=4)
+
+        # Write human-readable summary
+        with open(result_dir / "summary.txt", "w") as f:
+            f.write(f"Analysis Results for: {results.file_path.name}\n")
+            f.write(f"Analysis Time: {datetime.now().isoformat()}\n\n")
+            
+            for category, findings in results.findings.items():
+                if findings:
+                    f.write(f"{category.upper()} Findings:\n")
+                    for finding in findings:
+                        f.write(f"  - {finding}\n")
+                    f.write("\n")
+
+        # Store for final summary
+        if results.has_findings:
+            self.summary_findings.append(results.to_dict())
+            # Add to consolidated findings
+            for category, findings in results.findings.items():
+                for finding in findings:
+                    # Skip error messages and empty findings
+                    if "Error during analysis:" in finding or not finding.strip():
+                        continue
+                    # Initialize dict for this finding if not exists
+                    if finding not in self.consolidated_findings[category]:
+                        self.consolidated_findings[category][finding] = set()
+                    # Add tuple of (filename, finding)
+                    self.consolidated_findings[category][finding].add((results.file_path.name, finding))
+
+        return result_dir
+
+    def write_final_summary(self) -> None:
+        """Write a final summary of all analyses."""
+        print("\nWriting final summary...")  # Debug line
+        
+        with open(self.output_dir / "final_summary.txt", "w") as f:
+            f.write("STEGO ANALYSIS FINAL SUMMARY\n")
+            f.write("===========================\n\n")
+            f.write(f"Analysis completed at: {datetime.now().isoformat()}\n")
+            f.write(f"Total files analyzed: {len(self.summary_findings)}\n\n")
+
+            # Write per-file summary
+            f.write("PER-FILE FINDINGS\n")
+            f.write("================\n\n")
+            
+            if not self.summary_findings:
+                f.write("No findings in any files.\n\n")
+            else:
+                for result in self.summary_findings:
+                    f.write(f"File: {result['file_name']}\n")
+                    has_findings = False
+                    for category, findings in result['findings'].items():
+                        if findings:
+                            has_findings = True
+                            f.write(f"  {category.upper()}:\n")
+                            for finding in findings[:5]:  # Show first 5 findings
+                                f.write(f"    - {finding}\n")
+                            if len(findings) > 5:
+                                f.write(f"    ... and {len(findings) - 5} more findings\n")
+                    if not has_findings:
+                        f.write("  No findings\n")
+                    f.write("\n")
+
+            # Write consolidated findings
+            f.write("\nCONSOLIDATED FINDINGS ACROSS ALL FILES\n")
+            f.write("===================================\n\n")
+            
+            total_interesting_findings = 0
+            has_consolidated_findings = False
+            
+            for category, findings_dict in self.consolidated_findings.items():
+                if findings_dict:
+                    interesting_findings = {
+                        finding: files for finding, files in findings_dict.items()
+                        if any(
+                            pattern.lower() in finding.lower() 
+                            for pattern in TARGET_STRINGS + BASE64_VARIANTS + BINARY_VARIANTS
+                        ) or "suspicious" in finding.lower()
+                    }
+                    if interesting_findings:
+                        has_consolidated_findings = True
+                        total_interesting_findings += len(interesting_findings)
+                        f.write(f"{category.upper()} Interesting Patterns:\n")
+                        for finding, files in interesting_findings.items():
+                            file_list = sorted(set(file for file, _ in files))
+                            f.write(f"  - {finding}\n")
+                            f.write(f"    Found in {len(file_list)} files: {', '.join(file_list)}\n")
+                        f.write("\n")
+            
+            if not has_consolidated_findings:
+                f.write("No interesting patterns found across files.\n\n")
+            else:
+                f.write(f"\nTotal interesting patterns found: {total_interesting_findings}\n\n")
+
+            # Write statistics
+            f.write("\nSTATISTICS\n")
+            f.write("==========\n")
+            files_with_findings = sum(1 for result in self.summary_findings if result['has_findings'])
+            f.write(f"Files with findings: {files_with_findings} out of {len(self.summary_findings)}\n")
+            
+            has_category_findings = False
+            for category in self.consolidated_findings:
+                total_patterns = sum(len(files) for files in self.consolidated_findings[category].values())
+                if total_patterns:
+                    has_category_findings = True
+                    f.write(f"{category.upper()}: {total_patterns} total findings\n")
+            
+            if not has_category_findings:
+                f.write("No findings in any category\n")
+            
+            print(f"Final summary written to: {self.output_dir / 'final_summary.txt'}")  # Debug line
+
+class OutputCapture:
+    """Context manager to capture print output."""
+    def __init__(self):
+        self.captured_output: List[str] = []
+        self._original_stdout = sys.stdout
+        self._string_io = io.StringIO()
+
+    def __enter__(self):
+        sys.stdout = self._string_io
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout = self._original_stdout
+        self.captured_output = self._string_io.getvalue().splitlines()
+        self._string_io.close()
 
 ###############################################################################
 # Utility: Detect suspicious-encoded strings
@@ -379,26 +571,99 @@ def check_icc_profile(file_path: Path) -> None:
         print(f"    Error reading ICC profile: {e}")
 
 ###############################################################################
+# File handling and analysis
+###############################################################################
+
+def is_image_file(file_path: Path) -> bool:
+    """Check if a file is an image based on its extension."""
+    image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'}
+    return file_path.suffix.lower() in image_extensions
+
+def get_image_files(path: Path) -> List[Path]:
+    """Get all image files from a directory recursively."""
+    if path.is_file():
+        return [path] if is_image_file(path) else []
+    
+    image_files = []
+    for item in path.rglob("*"):
+        if item.is_file() and is_image_file(item):
+            image_files.append(item)
+    return image_files
+
+def setup_output_directory(base_path: Optional[Path] = None) -> Path:
+    """Create and return the output directory path."""
+    if base_path is None:
+        base_path = Path("stego_analysis_results")
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = base_path / f"analysis_{timestamp}"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return output_dir
+
+def analyze_file(file_path: Path) -> StegResults:
+    """Analyze a single file and return results."""
+    results = StegResults(file_path)
+    
+    # Capture output from each analysis function
+    analysis_functions = [
+        (check_metadata, "metadata"),
+        (check_raw_bytes, "raw_bytes"),
+        (check_binary_patterns, "binary_patterns"),
+        (check_multibit_lsb, "lsb"),
+        (check_channels, "channels"),
+        (check_binwalk, "binwalk"),
+        (check_icc_profile, "icc_profile")
+    ]
+    
+    for func, category in analysis_functions:
+        with OutputCapture() as output:
+            try:
+                func(file_path)
+                for line in output.captured_output:
+                    if line.strip() and not line.startswith("[*]"):
+                        results.add_finding(category, line.strip())
+            except Exception as e:
+                results.add_finding(category, f"Error during analysis: {str(e)}")
+    
+    return results
+
+###############################################################################
 # Main
 ###############################################################################
 
 def main() -> None:
     if len(sys.argv) < 2:
-        print("Usage: python stego_check.py <image_file>")
+        print("Usage: python stego_check.py <image_file_or_directory>")
         sys.exit(1)
     
-    file_path = Path(sys.argv[1])
-    if not file_path.is_file():
-        print(f"Error: File not found: {file_path}")
+    target_path = Path(sys.argv[1])
+    if not target_path.exists():
+        print(f"Error: Path does not exist: {target_path}")
         sys.exit(1)
     
-    check_metadata(file_path)
-    check_raw_bytes(file_path)
-    check_binary_patterns(file_path)
-    check_multibit_lsb(file_path)
-    check_channels(file_path)
-    check_binwalk(file_path)
-    check_icc_profile(file_path)
+    # Setup output directory
+    output_dir = setup_output_directory()
+    result_writer = ResultWriter(output_dir)
+    
+    # Get files to analyze
+    files_to_analyze = get_image_files(target_path)
+    if not files_to_analyze:
+        print(f"No image files found in: {target_path}")
+        sys.exit(1)
+    
+    print(f"Found {len(files_to_analyze)} image file(s) to analyze")
+    print(f"Results will be saved to: {output_dir}\n")
+    
+    # Analyze each file
+    for i, file_path in enumerate(files_to_analyze, 1):
+        print(f"[{i}/{len(files_to_analyze)}] Analyzing: {file_path.name}")
+        results = analyze_file(file_path)
+        result_dir = result_writer.write_file_results(results)
+        print(f"Results saved to: {result_dir}\n")
+    
+    # Write final summary
+    result_writer.write_final_summary()
+    print(f"\nAnalysis complete! Final summary saved to: {output_dir / 'final_summary.txt'}")
 
 if __name__ == "__main__":
     main()

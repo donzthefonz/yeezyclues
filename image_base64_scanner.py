@@ -3,7 +3,7 @@ import os
 import json
 from pathlib import Path
 import base64
-from typing import List, Set, Iterator, Dict
+from typing import List, Set, Iterator, Dict, Any
 from PIL import Image
 import io
 import enchant  # for word validation
@@ -220,6 +220,83 @@ def save_scan_results(
         else:
             f.write("\nNo words found.\n")
 
+def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) -> None:
+    """
+    Write a consolidated final summary of all image analyses.
+    
+    Args:
+        output_dir: Directory to save the summary
+        all_findings: List of findings dictionaries for all processed images
+    """
+    print("\nGenerating final summary...")
+    
+    with open(output_dir / "final_summary.txt", "w") as f:
+        f.write("BASE64 SCAN ANALYSIS SUMMARY\n")
+        f.write("===========================\n\n")
+        f.write(f"Analysis completed at: {datetime.now().isoformat()}\n")
+        f.write(f"Total images analyzed: {len(all_findings)}\n\n")
+        
+        # Track patterns across all files
+        pattern_occurrences: Dict[str, Set[str]] = {}
+        images_with_patterns = 0
+        
+        # First pass: collect all pattern occurrences
+        for finding in all_findings:
+            if finding['special_patterns']:
+                images_with_patterns += 1
+                for pattern in finding['special_patterns']:
+                    if pattern not in pattern_occurrences:
+                        pattern_occurrences[pattern] = set()
+                    pattern_occurrences[pattern].add(finding['original_image_name'])
+        
+        # Write per-file summary focusing on special patterns
+        f.write("SPECIAL PATTERNS BY IMAGE\n")
+        f.write("========================\n\n")
+        
+        for finding in all_findings:
+            f.write(f"Image: {finding['original_image_name']}\n")
+            if finding['special_patterns']:
+                for pattern in sorted(finding['special_patterns']):
+                    f.write(f"  - {pattern}\n")
+            else:
+                f.write("  No special patterns found\n")
+            f.write("\n")
+        
+        # Write consolidated pattern summary
+        f.write("\nCONSOLIDATED PATTERN SUMMARY\n")
+        f.write("===========================\n\n")
+        
+        if pattern_occurrences:
+            # Sort patterns by frequency
+            sorted_patterns = sorted(
+                pattern_occurrences.items(),
+                key=lambda x: (len(x[1]), x[0]),
+                reverse=True
+            )
+            
+            for pattern, images in sorted_patterns:
+                f.write(f"Pattern: {pattern}\n")
+                f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
+        else:
+            f.write("No special patterns found in any images.\n\n")
+        
+        # Write statistics
+        f.write("\nSTATISTICS\n")
+        f.write("==========\n")
+        f.write(f"Images with special patterns: {images_with_patterns} out of {len(all_findings)}\n")
+        f.write(f"Total unique patterns found: {len(pattern_occurrences)}\n")
+        if pattern_occurrences:
+            f.write("\nPattern frequency:\n")
+            pattern_counts = {}
+            for pattern, images in pattern_occurrences.items():
+                count = len(images)
+                if count not in pattern_counts:
+                    pattern_counts[count] = 0
+                pattern_counts[count] += 1
+            
+            for count in sorted(pattern_counts.keys(), reverse=True):
+                f.write(f"  {count} image(s): {pattern_counts[count]} pattern(s)\n")
+
 def main() -> None:
     """
     Main function to process images and find word sequences.
@@ -243,6 +320,7 @@ def main() -> None:
     # Process each image
     total_start = time.time()
     image_count = 0
+    all_findings = []
     
     for image_path in get_image_files(target_path):
         image_count += 1
@@ -262,6 +340,13 @@ def main() -> None:
             save_start = time.time()
             save_scan_results(output_dir, image_path, base64_string, findings)
             log_time(save_start, "Results saving completed")
+            
+            # Store findings for final summary
+            findings_dict = {
+                'special_patterns': findings['special_patterns'],
+                'original_image_name': image_path.name
+            }
+            all_findings.append(findings_dict)
             
             # Print findings to console
             if findings['words'] or findings['special_patterns']:
@@ -285,8 +370,12 @@ def main() -> None:
         except Exception as e:
             print(f"Error processing {image_path}: {e}")
 
+    # Write final summary
+    write_final_summary(output_dir, all_findings)
+
     log_time(total_start, f"\nTotal processing time for {image_count} images")
     print(f"All results have been saved to: {output_dir}")
+    print(f"Final summary available at: {output_dir / 'final_summary.txt'}")
 
 if __name__ == "__main__":
     main() 
