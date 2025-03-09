@@ -225,7 +225,7 @@ class YewsImageScraper:
         
         async with async_playwright() as p:
             # Launch the browser in non-headless mode with mobile emulation
-            browser = await p.chromium.launch(headless=False)
+            browser = await p.chromium.launch(headless=True)
             
             # Create a mobile viewport context
             context = await browser.new_context(
