@@ -95,6 +95,7 @@ The tool will perform multiple analyses:
 - Color channel analysis
 - Hidden file detection (requires binwalk)
 - ICC profile analysis
+- Hidden zip detection
 
 Results will be displayed in the terminal, with any suspicious findings clearly marked.
 
