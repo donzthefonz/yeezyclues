@@ -35,7 +35,7 @@ A collection of tools for web scraping, image analysis, and steganography detect
 1. Clone the repository:
    ```bash
    git clone https://github.com/donzthefonz/yeezyclues
-   cd stego_tools
+   cd yeezyclues
    ```
 
 2. Create and activate a virtual environment (recommended):
