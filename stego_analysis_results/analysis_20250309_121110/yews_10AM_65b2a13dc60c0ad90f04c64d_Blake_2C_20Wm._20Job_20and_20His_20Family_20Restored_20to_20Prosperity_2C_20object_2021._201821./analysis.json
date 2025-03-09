@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_65b2a13dc60c0ad90f04c64d_Blake_2C_20Wm._20Job_20and_20His_20Family_20Restored_20to_20Prosperity_2C_20object_2021._201821..jpg",
+    "analysis_time": "2025-03-09T12:11:29.102993",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

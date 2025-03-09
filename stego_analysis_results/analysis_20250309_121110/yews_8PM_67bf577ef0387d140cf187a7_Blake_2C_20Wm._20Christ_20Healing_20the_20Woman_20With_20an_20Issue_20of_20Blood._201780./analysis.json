@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_67bf577ef0387d140cf187a7_Blake_2C_20Wm._20Christ_20Healing_20the_20Woman_20With_20an_20Issue_20of_20Blood._201780..png",
+    "analysis_time": "2025-03-09T12:12:15.823931",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

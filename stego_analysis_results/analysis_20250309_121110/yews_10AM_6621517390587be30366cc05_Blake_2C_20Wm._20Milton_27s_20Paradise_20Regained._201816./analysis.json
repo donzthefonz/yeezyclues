@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_6621517390587be30366cc05_Blake_2C_20Wm._20Milton_27s_20Paradise_20Regained._201816..jpeg",
+    "analysis_time": "2025-03-09T12:11:39.833139",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

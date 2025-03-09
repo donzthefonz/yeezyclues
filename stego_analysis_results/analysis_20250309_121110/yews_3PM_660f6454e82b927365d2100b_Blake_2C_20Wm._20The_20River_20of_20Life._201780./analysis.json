@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_660f6454e82b927365d2100b_Blake_2C_20Wm._20The_20River_20of_20Life._201780..jpg",
+    "analysis_time": "2025-03-09T12:13:28.471228",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

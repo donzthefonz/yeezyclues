@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_6611c354fafab9b10bcd94a0_Blake_2C_20Wm._20Night_20VI_2C_20object_20248._201795..jpg",
+    "analysis_time": "2025-03-09T12:14:06.974717",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

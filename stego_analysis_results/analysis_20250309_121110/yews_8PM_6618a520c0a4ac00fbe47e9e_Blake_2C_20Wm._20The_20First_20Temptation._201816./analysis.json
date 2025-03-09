@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_6618a520c0a4ac00fbe47e9e_Blake_2C_20Wm._20The_20First_20Temptation._201816..jpg",
+    "analysis_time": "2025-03-09T12:13:00.311385",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

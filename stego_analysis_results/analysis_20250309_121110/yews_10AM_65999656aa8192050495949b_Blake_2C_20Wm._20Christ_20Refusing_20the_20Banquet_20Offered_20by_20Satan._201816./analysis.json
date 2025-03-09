@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_65999656aa8192050495949b_Blake_2C_20Wm._20Christ_20Refusing_20the_20Banquet_20Offered_20by_20Satan._201816..jpeg",
+    "analysis_time": "2025-03-09T12:12:03.854997",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_661c0d0bb4848d8cbb362a2c_Blake_2C_20Wm._20The_20Progress_20of_20Poesy-_20Page_206._201797..jpeg",
+    "analysis_time": "2025-03-09T12:12:07.340120",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

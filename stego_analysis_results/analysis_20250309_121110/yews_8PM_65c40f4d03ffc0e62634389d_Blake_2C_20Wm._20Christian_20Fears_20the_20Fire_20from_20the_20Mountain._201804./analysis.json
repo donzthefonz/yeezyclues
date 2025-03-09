@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_65c40f4d03ffc0e62634389d_Blake_2C_20Wm._20Christian_20Fears_20the_20Fire_20from_20the_20Mountain._201804..jpeg",
+    "analysis_time": "2025-03-09T12:13:19.807182",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

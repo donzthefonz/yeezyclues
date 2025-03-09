@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_662878ec03b602b93c986625_Blake_2C_20Wm._20Ode_20on_20the_20Spring._20object_206._201797.jpeg",
+    "analysis_time": "2025-03-09T12:13:54.639633",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

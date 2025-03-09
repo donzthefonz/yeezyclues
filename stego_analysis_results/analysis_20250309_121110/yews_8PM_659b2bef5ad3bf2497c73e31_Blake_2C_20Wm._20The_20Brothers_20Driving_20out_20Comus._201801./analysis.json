@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_659b2bef5ad3bf2497c73e31_Blake_2C_20Wm._20The_20Brothers_20Driving_20out_20Comus._201801..jpg",
+    "analysis_time": "2025-03-09T12:11:17.567570",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

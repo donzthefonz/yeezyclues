@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_658ced141e1e1d5bf3cb6ccb_Blake_2C_20Wm._20The_20Goddess_20of_20Fortune._201824..jpeg",
+    "analysis_time": "2025-03-09T12:13:11.686635",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

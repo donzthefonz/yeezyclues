@@ -41,6 +41,14 @@ BINARY_VARIANTS = [
     "01110100001100100110111000110100", # "tbn4"
 ]
 
+# ZIP file signatures and markers
+ZIP_SIGNATURES = {
+    'local_file_header': b'PK\x03\x04',  # Start of file
+    'central_directory': b'PK\x01\x02',  # Central directory
+    'end_of_central_dir': b'PK\x05\x06',  # End of central directory
+    'spanned_marker': b'PK\x07\x08',     # Spanned marker
+}
+
 ###############################################################################
 # Result handling and organization
 ###############################################################################
@@ -58,7 +66,8 @@ class StegResults:
             "lsb": [],
             "channels": [],
             "binwalk": [],
-            "icc_profile": []
+            "icc_profile": [],
+            "zip_signatures": []  # New category for ZIP-related findings
         }
         self.has_findings = False
 
@@ -91,7 +100,8 @@ class ResultWriter:
             "lsb": {},
             "channels": {},
             "binwalk": {},
-            "icc_profile": {}
+            "icc_profile": {},
+            "zip_signatures": {}
         }
 
     def write_file_results(self, results: StegResults) -> Path:
@@ -571,6 +581,104 @@ def check_icc_profile(file_path: Path) -> None:
         print(f"    Error reading ICC profile: {e}")
 
 ###############################################################################
+# ZIP Detection
+###############################################################################
+
+def check_zip_signatures(file_path: Path) -> None:
+    """
+    Check for ZIP file signatures and potential ZIP content in the image.
+    This includes checking for:
+    - Standard ZIP signatures
+    - Partial ZIP structures
+    - Hidden ZIP data in different parts of the file
+    """
+    print("[*] Checking for ZIP signatures and content...")
+    
+    try:
+        with open(file_path, 'rb') as f:
+            data = f.read()
+            
+        # Track positions of all findings
+        findings = []
+        
+        # 1. Check for standard ZIP signatures
+        for sig_name, signature in ZIP_SIGNATURES.items():
+            positions = []
+            pos = -1
+            while True:
+                pos = data.find(signature, pos + 1)
+                if pos == -1:
+                    break
+                positions.append(pos)
+            
+            if positions:
+                for pos in positions:
+                    findings.append(f"Found {sig_name} signature at offset {pos}")
+                    
+                    # For local file headers, try to extract filename length and extra field length
+                    if sig_name == 'local_file_header' and pos + 30 <= len(data):
+                        try:
+                            name_length = int.from_bytes(data[pos+26:pos+28], 'little')
+                            extra_length = int.from_bytes(data[pos+28:pos+30], 'little')
+                            
+                            # Try to extract filename if it exists
+                            if pos + 30 + name_length <= len(data):
+                                filename = data[pos+30:pos+30+name_length].decode('utf-8', errors='ignore')
+                                findings.append(f"  Possible filename at offset {pos+30}: {filename}")
+                        except Exception:
+                            pass
+        
+        # 2. Look for ZIP-like structures (even if signatures are corrupted)
+        # Search for common ZIP metadata markers
+        common_extensions = [b'.txt', b'.doc', b'.pdf', b'.jpg', b'.png', b'.zip']
+        for ext in common_extensions:
+            pos = -1
+            while True:
+                pos = data.find(ext, pos + 1)
+                if pos == -1:
+                    break
+                # Check if surrounded by printable ASCII (typical for ZIP metadata)
+                start = max(0, pos - 20)
+                end = min(len(data), pos + len(ext) + 20)
+                context = data[start:end].decode('latin-1', errors='ignore')
+                if any(c.isprintable() for c in context):
+                    findings.append(f"Possible ZIP metadata near offset {pos}: ...{context}...")
+        
+        # 3. Check for compressed data patterns
+        # Look for long sequences of non-printable characters (typical of compressed data)
+        non_printable_sequences = []
+        sequence_start = None
+        min_sequence_length = 50  # Minimum length to consider
+        
+        for i in range(len(data)):
+            byte = data[i]
+            is_printable = 32 <= byte <= 126 or byte in (9, 10, 13)  # ASCII printable or whitespace
+            
+            if not is_printable and sequence_start is None:
+                sequence_start = i
+            elif is_printable and sequence_start is not None:
+                sequence_length = i - sequence_start
+                if sequence_length >= min_sequence_length:
+                    non_printable_sequences.append((sequence_start, sequence_length))
+                sequence_start = None
+        
+        # Report findings
+        if findings:
+            print("    ZIP-related findings:")
+            for finding in findings:
+                print(f"    {finding}")
+            
+            if non_printable_sequences:
+                print("\n    Potential compressed data regions:")
+                for start, length in non_printable_sequences:
+                    print(f"    Offset {start}: {length} bytes of possible compressed data")
+        else:
+            print("    No ZIP signatures or related patterns found.")
+            
+    except Exception as e:
+        print(f"    Error during ZIP signature analysis: {e}")
+
+###############################################################################
 # File handling and analysis
 ###############################################################################
 
@@ -612,7 +720,8 @@ def analyze_file(file_path: Path) -> StegResults:
         (check_multibit_lsb, "lsb"),
         (check_channels, "channels"),
         (check_binwalk, "binwalk"),
-        (check_icc_profile, "icc_profile")
+        (check_icc_profile, "icc_profile"),
+        (check_zip_signatures, "zip_signatures")
     ]
     
     for func, category in analysis_functions:

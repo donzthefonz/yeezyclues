@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_67c4e31cff02e7f9e79fe878_Blake_2C_20Wm._20Joseph_20Making_20Himself_20Known_20to_20His_20Brethren._201775..jpg",
+    "analysis_time": "2025-03-09T12:11:35.383077",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

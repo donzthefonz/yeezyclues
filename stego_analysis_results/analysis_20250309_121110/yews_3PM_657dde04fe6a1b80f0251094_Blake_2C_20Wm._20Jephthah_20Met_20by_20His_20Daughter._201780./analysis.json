@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_3PM_657dde04fe6a1b80f0251094_Blake_2C_20Wm._20Jephthah_20Met_20by_20His_20Daughter._201780..jpg",
+    "analysis_time": "2025-03-09T12:13:55.803822",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

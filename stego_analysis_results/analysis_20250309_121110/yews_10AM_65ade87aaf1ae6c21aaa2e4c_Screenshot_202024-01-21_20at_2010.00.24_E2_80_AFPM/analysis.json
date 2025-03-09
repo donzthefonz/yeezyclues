@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_65ade87aaf1ae6c21aaa2e4c_Screenshot_202024-01-21_20at_2010.00.24_E2_80_AFPM.png",
+    "analysis_time": "2025-03-09T12:12:27.024834",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

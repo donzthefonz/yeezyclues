@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_8PM_658504e2177e3a4e881ceff1_Blake_2C_20Wm._20Jerusalem_20the_20Emanation_20of_20the_20Giant_20Albion_2C_20Object_20100._201820..jpg",
+    "analysis_time": "2025-03-09T12:11:37.662496",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

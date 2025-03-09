@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_660a1f984810c2bdac07a6e5_Blake_2C_20Wm._20The_20First_20Book_20of_20Urizen_2C_20object_202._201794..jpg",
+    "analysis_time": "2025-03-09T12:11:36.206182",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

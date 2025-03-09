@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_661573792804284d676b2d2a_Milton_20a_20Poem_2C_20object_2038._201811..jpg",
+    "analysis_time": "2025-03-09T12:14:00.593079",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "yews_10AM_65fdfd10750a5625717e093e_Blake_2C_20Wm._20Christian_20Falls_20at_20the_20Feet_20of_20Evangelist._201824..jpg",
+    "analysis_time": "2025-03-09T12:11:30.364181",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}
