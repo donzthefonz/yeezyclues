@@ -34,7 +34,6 @@ env/
 
 # Project specific
 yews_images/
-scan_results/
 *.log
 
 # OS specific

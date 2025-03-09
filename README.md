@@ -34,7 +34,7 @@ A collection of tools for web scraping, image analysis, and steganography detect
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/donzthefonz/yeezyclues
    cd stego_tools
    ```
 
@@ -70,7 +70,7 @@ A collection of tools for web scraping, image analysis, and steganography detect
 ### Yews Image Scraper
 
 ```bash
-python yews_image_scraper.py [URL]
+python yews_image_scraper.py
 ```
 
 Images will be saved to the `yews_images` directory by default.
