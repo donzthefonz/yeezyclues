@@ -1,0 +1,42 @@
+Scan Results for: yews_3PM_661da25c8db380c609ffc2b1_Blake_2C_20Wm._20Europe_20a_20Prophecy._201804..jpg
+Scan Time: 2025-03-09T19:13:23.865845
+
+Contract Words and Patterns Found:
+  - Contract Words Found (3/11):
+    - F3KN
+    - F8PF
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - OLAF
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ANSE
+    - ARG
+    - DEST
+    - FADE
+    - FINE
+    - MMM
+    - TATE
+    - TINA
+    - WIZ
+    - Y0BS
+    - Y0LK
+    - Y0R3
+    - Y0UR
+    - Y3S
+    - Z1TS
+    - ZANY
+
+No words found.

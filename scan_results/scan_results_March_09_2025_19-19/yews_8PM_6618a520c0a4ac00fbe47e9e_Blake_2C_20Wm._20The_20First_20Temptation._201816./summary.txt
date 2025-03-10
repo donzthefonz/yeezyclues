@@ -1,0 +1,78 @@
+Scan Results for: yews_8PM_6618a520c0a4ac00fbe47e9e_Blake_2C_20Wm._20The_20First_20Temptation._201816..jpg
+Scan Time: 2025-03-09T19:19:57.541754
+
+Contract Words and Patterns Found:
+  - Contract Words Found (7/11):
+    - ETXR
+    - F3KN
+    - LFNW
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - F8PF
+    - LH4O
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - KANYE
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - CRYP
+    - DEST
+    - ELON
+    - FADE
+    - GOLD
+    - HODL
+    - HOLD
+    - JEWM
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - WIZK
+    - Y0BS
+    - Y0G1
+    - Y0L0
+    - Y0LK
+    - Y0UR
+    - Y1PS
+    - Y3S
+    - YURT
+    - Z00S
+    - Z1TS
+    - Z3DS
+    - Z3NS
+    - Z3R0
+    - Z3ST
+    - Z3TA
+    - ZANY
+    - ZAPS
+
+No words found.

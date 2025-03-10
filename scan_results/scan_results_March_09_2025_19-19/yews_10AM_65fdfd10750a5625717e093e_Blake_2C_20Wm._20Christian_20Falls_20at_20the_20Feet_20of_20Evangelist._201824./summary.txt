@@ -1,0 +1,37 @@
+Scan Results for: yews_10AM_65fdfd10750a5625717e093e_Blake_2C_20Wm._20Christian_20Falls_20at_20the_20Feet_20of_20Evangelist._201824..jpg
+Scan Time: 2025-03-09T19:19:56.645195
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - MMM
+    - MOON
+    - W1LL
+    - WIZ
+    - Y0LK
+    - Y3S
+    - Y3T1
+    - Z34L
+    - ZANY
+    - ZAPS
+
+No words found.

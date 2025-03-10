@@ -1,0 +1,43 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F8PF",
+        "OXJD",
+        "PUMP",
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "LFNW",
+        "LH4O",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ARG",
+        "H34L",
+        "M3M3",
+        "MMM",
+        "REAP",
+        "TATE",
+        "TOWN",
+        "WEST",
+        "WIZ",
+        "Y1PS",
+        "Y3S"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 5,
+        "total": 11
+    },
+    "original_image_name": "yews_8PM_661c0d0bb4848d8cbb362a2c_Blake_2C_20Wm._20The_20Progress_20of_20Poesy-_20Page_206._201797..jpeg",
+    "scan_timestamp": "2025-03-09T19:13:22.712255"
+}

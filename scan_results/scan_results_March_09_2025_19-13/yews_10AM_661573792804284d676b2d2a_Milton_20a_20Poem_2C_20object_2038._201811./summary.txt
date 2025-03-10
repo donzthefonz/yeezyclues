@@ -1,0 +1,39 @@
+Scan Results for: yews_10AM_661573792804284d676b2d2a_Milton_20a_20Poem_2C_20object_2038._201811..jpg
+Scan Time: 2025-03-09T19:13:23.890486
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - ETXR
+
+  - Missing Contract Words:
+    - 4NBT
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ANSE
+    - ARG
+    - ETHA
+    - FADE
+    - JEWM
+    - MILO
+    - MMM
+    - TOWN
+    - WIZ
+    - Y0BS
+    - Y3S
+    - YURT
+    - Z3NS
+
+No words found.

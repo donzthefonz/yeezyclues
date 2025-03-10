@@ -1,0 +1,33 @@
+Scan Results for: yews_3PM_3-9-25-3PM-6.jpg
+Scan Time: 2025-03-10T11:00:11.894662
+
+Contract Words and Patterns Found:
+  - High Significance Patterns:
+    - OLAF
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAR
+    - CRYP
+    - DEST
+    - ETHA
+    - GOLD
+    - H34L
+    - JEWM
+    - JEWS
+    - MMM
+    - NORT
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TOWN
+    - WIZ
+    - Y0LK
+    - Y0UR
+    - Y3S
+    - Z3NS
+
+No words found.

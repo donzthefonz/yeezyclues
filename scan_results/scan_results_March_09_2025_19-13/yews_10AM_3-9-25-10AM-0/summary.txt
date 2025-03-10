@@ -1,0 +1,88 @@
+Scan Results for: yews_10AM_3-9-25-10AM-0.jpg
+Scan Time: 2025-03-09T19:13:21.672119
+
+!!! COMPLETE CONTRACT FOUND !!! (11/11 words)
+
+Contract Words and Patterns Found:
+  - Contract Words Found (11/11):
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - C01N
+    - COIN
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - H34L
+    - HOLD
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - PABLO
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - Y0BS
+    - Y0G1
+    - Y0K3
+    - Y0L0
+    - Y0LK
+    - Y0WL
+    - Y1PS
+    - Y3S
+    - Y3T1
+    - Y3WS
+    - YURT
+    - Z00S
+    - Z1NG
+    - Z1TS
+    - Z34L
+    - Z3DS
+    - Z3NS
+    - Z3R0
+    - Z3ST
+    - Z3TA
+    - ZANY
+    - ZAPS
+
+No words found.

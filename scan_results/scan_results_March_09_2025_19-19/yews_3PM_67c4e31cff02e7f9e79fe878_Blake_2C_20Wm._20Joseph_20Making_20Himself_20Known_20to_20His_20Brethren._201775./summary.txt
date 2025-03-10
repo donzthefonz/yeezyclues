@@ -1,0 +1,61 @@
+Scan Results for: yews_3PM_67c4e31cff02e7f9e79fe878_Blake_2C_20Wm._20Joseph_20Making_20Himself_20Known_20to_20His_20Brethren._201775..jpg
+Scan Time: 2025-03-09T19:19:56.709549
+
+Contract Words and Patterns Found:
+  - Contract Words Found (3/11):
+    - F3KN
+    - OXJD
+    - PUMP
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F8PF
+    - LFNW
+    - LH4O
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - OLAF
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - COIN
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - GOLD
+    - H34L
+    - HODL
+    - JEWS
+    - KIMK
+    - LORE
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - NORT
+    - PLUT
+    - REAP
+    - TENA
+    - TOWN
+    - WEST
+    - WIZ
+    - Y0BS
+    - Y0UR
+    - Y3S
+    - YURT
+    - Z34L
+
+No words found.

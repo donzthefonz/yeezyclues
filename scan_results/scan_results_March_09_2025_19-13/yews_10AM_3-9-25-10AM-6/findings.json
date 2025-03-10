@@ -1,0 +1,67 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "V46F"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "PUMP",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "BLAK",
+        "COIN",
+        "DEST",
+        "ETHA",
+        "FINE",
+        "H34L",
+        "HODL",
+        "KIMK",
+        "MEME",
+        "MMM",
+        "NORT",
+        "PLUT",
+        "REAP",
+        "TATE",
+        "TENA",
+        "TINA",
+        "TOWN",
+        "WIZ",
+        "WIZK",
+        "Y0G1",
+        "Y0K3",
+        "Y0LK",
+        "Y0UR",
+        "Y3S",
+        "Y3WS",
+        "Z1NG",
+        "Z1TS",
+        "Z34L",
+        "Z3DS",
+        "Z3ST",
+        "ZANY"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 7,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_3-9-25-10AM-6.jpg",
+    "scan_timestamp": "2025-03-09T19:13:21.854134"
+}

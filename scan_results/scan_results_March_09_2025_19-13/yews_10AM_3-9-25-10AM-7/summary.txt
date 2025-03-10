@@ -1,0 +1,45 @@
+Scan Results for: yews_10AM_3-9-25-10AM-7.jpg
+Scan Time: 2025-03-09T19:13:21.888958
+
+Contract Words and Patterns Found:
+  - Contract Words Found (3/11):
+    - 4NBT
+    - F8PF
+    - OXJD
+
+  - Missing Contract Words:
+    - ETXR
+    - F3KN
+    - LFNW
+    - LH4O
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - C01N
+    - COIN
+    - CRYP
+    - FINE
+    - FISH
+    - GOLD
+    - KIMK
+    - MMM
+    - MOON
+    - TATE
+    - WIZ
+    - Y0G1
+    - Y1P3
+    - Y3S
+    - Z3R0
+    - ZANY
+
+No words found.

@@ -1,0 +1,43 @@
+{
+    "contract_words": [
+        "ETXR"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "JEWM",
+        "MMM",
+        "REAP",
+        "WEST",
+        "WIZ",
+        "Y3S",
+        "Y3WS",
+        "YURT"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 1,
+        "total": 11
+    },
+    "original_image_name": "yews_3PM_3-9-25-3PM-5.jpg",
+    "scan_timestamp": "2025-03-10T11:00:12.142111"
+}

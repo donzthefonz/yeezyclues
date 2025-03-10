@@ -1,0 +1,42 @@
+{
+    "contract_words": [
+        "LFNW",
+        "OXJD"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LH4O",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ARG",
+        "FINE",
+        "JEWS",
+        "MEME",
+        "MMM",
+        "WIZ",
+        "Y3S",
+        "Y3WS"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 2,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_660a1f984810c2bdac07a6e5_Blake_2C_20Wm._20The_20First_20Book_20of_20Urizen_2C_20object_202._201794..jpg",
+    "scan_timestamp": "2025-03-09T19:13:22.352705"
+}

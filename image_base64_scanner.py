@@ -321,6 +321,11 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
     """
     print("\nGenerating final summary...")
     
+    # Original contract words order
+    contract_words_order = [
+        '4NBT', 'F8PF', 'LH4O', 'LFNW', 'F3KN', 'V46F', 'Y9I5', 'OXJD', 'XFFC', 'ETXR', 'PUMP'
+    ]
+    
     with open(output_dir / "final_summary.txt", "w") as f:
         f.write("BASE64 SCAN ANALYSIS SUMMARY\n")
         f.write("===========================\n\n")
@@ -383,8 +388,10 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write(f"  !!! COMPLETE CONTRACT FOUND !!! ({ratio['found']}/{ratio['total']} words)\n")
             if finding['contract_words']:
                 f.write(f"  CONTRACT WORDS ({ratio['found']}/{ratio['total']}):\n")
-                for word in sorted(finding['contract_words']):
-                    f.write(f"    - {word}\n")
+                # Write contract words in original order
+                for word in contract_words_order:
+                    if word in finding['contract_words']:
+                        f.write(f"    - {word}\n")
             if finding['high_significance_patterns']:
                 f.write("  HIGH SIGNIFICANCE PATTERNS:\n")
                 for pattern in sorted(finding['high_significance_patterns']):
@@ -404,16 +411,12 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
         if contract_words_occurrences:
             f.write("CONTRACT WORDS\n")
             f.write("=============\n")
-            # Sort contract words by frequency
-            sorted_patterns = sorted(
-                contract_words_occurrences.items(),
-                key=lambda x: (len(x[1]), x[0]),
-                reverse=True
-            )
-            
-            for pattern, images in sorted_patterns:
-                f.write(f"Pattern: {pattern}\n")
-                f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
+            # Write contract words in original order
+            for pattern in contract_words_order:
+                if pattern in contract_words_occurrences:
+                    images = contract_words_occurrences[pattern]
+                    f.write(f"Pattern: {pattern}\n")
+                    f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
         
         if high_significance_occurrences:
             f.write("\nHIGH SIGNIFICANCE PATTERNS\n")

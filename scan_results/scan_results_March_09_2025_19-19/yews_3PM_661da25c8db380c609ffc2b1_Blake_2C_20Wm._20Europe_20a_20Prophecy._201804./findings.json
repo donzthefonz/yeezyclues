@@ -1,0 +1,49 @@
+{
+    "contract_words": [
+        "F3KN",
+        "F8PF",
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "ANSE",
+        "ARG",
+        "DEST",
+        "FADE",
+        "FINE",
+        "MMM",
+        "TATE",
+        "TINA",
+        "WIZ",
+        "Y0BS",
+        "Y0LK",
+        "Y0R3",
+        "Y0UR",
+        "Y3S",
+        "Z1TS",
+        "ZANY"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 3,
+        "total": 11
+    },
+    "original_image_name": "yews_3PM_661da25c8db380c609ffc2b1_Blake_2C_20Wm._20Europe_20a_20Prophecy._201804..jpg",
+    "scan_timestamp": "2025-03-09T19:19:58.157878"
+}

@@ -1,0 +1,43 @@
+Scan Results for: yews_8PM_65ab43f3f10282517a699374_Blake_2C_20Wm._20Night_20VI_2C_20page_2026_2C_20object_20247._201795..jpeg
+Scan Time: 2025-03-09T19:19:57.717358
+
+Contract Words and Patterns Found:
+  - Contract Words Found (3/11):
+    - F8PF
+    - OXJD
+    - PUMP
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - LFNW
+    - LH4O
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAM
+    - C01N
+    - ELON
+    - GOLD
+    - MMM
+    - NORT
+    - PLUT
+    - REAP
+    - TENA
+    - TINA
+    - WIZ
+    - Y0LK
+    - Y3S
+    - Z1NC
+    - Z3DS
+
+No words found.

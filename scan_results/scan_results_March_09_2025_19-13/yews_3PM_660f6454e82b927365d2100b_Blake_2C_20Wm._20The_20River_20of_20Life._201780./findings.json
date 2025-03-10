@@ -1,0 +1,63 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F8PF",
+        "OXJD",
+        "PUMP",
+        "XFFC"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "LFNW",
+        "LH4O",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ANSE",
+        "ARG",
+        "BEAM",
+        "BLAK",
+        "CRYP",
+        "ELON",
+        "FINE",
+        "HODL",
+        "JEWM",
+        "JEWS",
+        "LORE",
+        "MEME",
+        "MMM",
+        "NERO",
+        "NORT",
+        "REAP",
+        "TATE",
+        "WEST",
+        "WIZ",
+        "WIZK",
+        "Y0BS",
+        "Y0UR",
+        "Y3S",
+        "Y3T1",
+        "Z1NC",
+        "Z1TS",
+        "ZANY",
+        "ZAPS"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 5,
+        "total": 11
+    },
+    "original_image_name": "yews_3PM_660f6454e82b927365d2100b_Blake_2C_20Wm._20The_20River_20of_20Life._201780..jpg",
+    "scan_timestamp": "2025-03-09T19:13:23.556320"
+}

@@ -131,6 +131,43 @@ The tool will perform multiple analyses:
 
 Results will be displayed in the terminal, with any suspicious findings clearly marked.
 
+## End-to-End Workflow
+
+Here's how to use the tools together for a complete analysis:
+
+1. First, scrape images from yews.live:
+   ```bash
+   # Scrape images from yews.news (default)
+   python yews_image_scraper.py
+    
+    or
+
+   # Scrape images from yews.live
+   python yews_image_scraper.py --domain yews.live
+   ```
+   This will download images to the `yews_images` directory.
+
+2. Run the base64 scanner on all downloaded images:
+   ```bash
+   python image_base64_scanner.py yews_images
+
+   or
+    # List all found words within the images (slow)
+   python image_base64_scanner.py yews_images --include-words
+   ```
+   This will analyze all images in the yews_images directory for potential encoded content.
+
+3. Check the results:
+   - Navigate to the `scan_results` directory
+   - Review the generated reports for each image
+   - Look for any "High Significance" matches in the summary
+   - Pay special attention to files that show multiple pattern matches
+
+If you find suspicious images, you can perform deeper analysis:
+```bash
+python stego_check.py yews_images/suspicious_image.jpg
+```
+
 ## Output Directories
 
 - `yews_images/`: Contains scraped images
