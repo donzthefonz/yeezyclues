@@ -1,0 +1,36 @@
+Scan Results for: random_900_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:36.116875
+
+Contract Words and Patterns Found:
+  - Contract Words Found (3/11):
+    - ETXR
+    - PUMP
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - HOLD
+    - KIMK
+    - MMM
+    - WIZ
+    - Y0K3
+    - Y3S
+    - Z3NS
+    - ZANY
+
+No words found.

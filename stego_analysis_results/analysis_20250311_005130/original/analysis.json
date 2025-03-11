@@ -1,0 +1,15 @@
+{
+    "file_name": "original.jpg",
+    "analysis_time": "2025-03-11T00:51:42.329337",
+    "findings": {
+        "metadata": [],
+        "raw_bytes": [],
+        "binary_patterns": [],
+        "lsb": [],
+        "channels": [],
+        "binwalk": [],
+        "icc_profile": [],
+        "zip_signatures": []
+    },
+    "has_findings": false
+}

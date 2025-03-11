@@ -1,0 +1,44 @@
+Scan Results for: random_627_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:33.085938
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - LFNW
+    - Y9I5
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+  - High Significance Patterns:
+    - FLAG
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - CRYP
+    - DEST
+    - ELON
+    - FADE
+    - FINE
+    - FISH
+    - MMM
+    - NERO
+    - TATE
+    - TENA
+    - WIZ
+    - Y0GA
+    - Y1PS
+    - Y3S
+    - Y3WS
+    - Z3DS
+
+No words found.

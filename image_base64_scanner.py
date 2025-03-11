@@ -120,7 +120,7 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
     }
     
     # Lower significance patterns - contextual or thematic terms
-    low_significance_patterns = {
+    other_significance_patterns = {
         # Kanye/Yeezy related
         'WEST', 'PABLO', 'YEEZUS', 'DONDA', 'ULTRALIGHT', 'BEAM', 'FAMOUS', 
         'WOLVES', 'FADE', 'GHOST', 'TOWN', 'VIOLENT', 'CRIMES', 'SAINT',
@@ -146,7 +146,7 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
         'contract_words': set(),
         'missing_contract_words': set(),
         'high_significance_patterns': set(),
-        'low_significance_patterns': set(),
+        'other_significance_patterns': set(),
         'words': set(),
         'has_complete_contract': False,  # Track if all contract words are found
         'contract_words_ratio': {'found': 0, 'total': total_contract_words}  # Track ratio of found words
@@ -182,10 +182,10 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
         if pattern.upper() in text:
             results['high_significance_patterns'].add(pattern.upper())
     
-    print("Checking low significance patterns...")
-    for pattern in low_significance_patterns:
+    print("Checking other significance patterns...")
+    for pattern in other_significance_patterns:
         if pattern.upper() in text:
-            results['low_significance_patterns'].add(pattern.upper())
+            results['other_significance_patterns'].add(pattern.upper())
     log_time(pattern_start, "Special pattern check completed")
     
     # Only perform word search if dictionary is provided
@@ -224,7 +224,7 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
     log_time(start_time, "Total pattern finding time")
     print(f"Found {len(results['contract_words'])} contract words, " +
           f"{len(results['high_significance_patterns'])} high significance patterns, " +
-          f"{len(results['low_significance_patterns'])} low significance patterns" +
+          f"{len(results['other_significance_patterns'])} other significance patterns" +
           (f" and {len(results['words'])} words" if dictionary is not None else ""))
     
     return results
@@ -263,7 +263,7 @@ def save_scan_results(
         'contract_words': list(sorted(findings['contract_words'])),
         'missing_contract_words': list(sorted(findings['missing_contract_words'])),
         'high_significance_patterns': list(sorted(findings['high_significance_patterns'])),
-        'low_significance_patterns': list(sorted(findings['low_significance_patterns'])),
+        'other_significance_patterns': list(sorted(findings['other_significance_patterns'])),
         'words': sorted_words,
         'has_complete_contract': findings['has_complete_contract'],
         'contract_words_ratio': findings['contract_words_ratio'],
@@ -283,7 +283,7 @@ def save_scan_results(
         if findings['has_complete_contract']:
             f.write(f"!!! COMPLETE CONTRACT FOUND !!! ({ratio['found']}/{ratio['total']} words)\n\n")
         
-        if findings['contract_words'] or findings['high_significance_patterns'] or findings['low_significance_patterns']:
+        if findings['contract_words'] or findings['high_significance_patterns'] or findings['other_significance_patterns']:
             f.write("Contract Words and Patterns Found:\n")
             if findings['contract_words']:
                 f.write(f"  - Contract Words Found ({ratio['found']}/{ratio['total']}):\n")
@@ -297,9 +297,9 @@ def save_scan_results(
                 f.write("  - High Significance Patterns:\n")
                 for pattern in sorted(findings['high_significance_patterns']):
                     f.write(f"    - {pattern}\n")
-            if findings['low_significance_patterns']:
-                f.write("  - Low Significance Patterns:\n")
-                for pattern in sorted(findings['low_significance_patterns']):
+            if findings['other_significance_patterns']:
+                f.write("  - other significance Patterns:\n")
+                for pattern in sorted(findings['other_significance_patterns']):
                     f.write(f"    - {pattern}\n")
         else:
             f.write("No contract words or patterns found.\n")
@@ -359,9 +359,9 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                         high_significance_occurrences[pattern] = set()
                     high_significance_occurrences[pattern].add(finding['original_image_name'])
             
-            if finding['low_significance_patterns']:
+            if finding['other_significance_patterns']:
                 images_with_low_significance += 1
-                for pattern in finding['low_significance_patterns']:
+                for pattern in finding['other_significance_patterns']:
                     if pattern not in low_significance_occurrences:
                         low_significance_occurrences[pattern] = set()
                     low_significance_occurrences[pattern].add(finding['original_image_name'])
@@ -396,11 +396,11 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write("  HIGH SIGNIFICANCE PATTERNS:\n")
                 for pattern in sorted(finding['high_significance_patterns']):
                     f.write(f"    - {pattern}\n")
-            if finding['low_significance_patterns']:
-                f.write("  Low Significance Patterns:\n")
-                for pattern in sorted(finding['low_significance_patterns']):
+            if finding['other_significance_patterns']:
+                f.write("  other significance Patterns:\n")
+                for pattern in sorted(finding['other_significance_patterns']):
                     f.write(f"    - {pattern}\n")
-            if not (finding['contract_words'] or finding['high_significance_patterns'] or finding['low_significance_patterns']):
+            if not (finding['contract_words'] or finding['high_significance_patterns'] or finding['other_significance_patterns']):
                 f.write("  No patterns found\n")
             f.write("\n")
         
@@ -433,9 +433,9 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
         
         if low_significance_occurrences:
-            f.write("\nLow Significance Patterns\n")
+            f.write("\Other Significant Patterns\n")
             f.write("=======================\n")
-            # Sort low significance patterns by frequency
+            # Sort other significance patterns by frequency
             sorted_patterns = sorted(
                 low_significance_occurrences.items(),
                 key=lambda x: (len(x[1]), x[0]),
@@ -455,10 +455,10 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
         f.write(f"Images with complete contract matches: {images_with_complete_contract} out of {len(all_findings)}\n")
         f.write(f"Images with partial contract words: {images_with_contract_words - images_with_complete_contract} out of {len(all_findings)}\n")
         f.write(f"Images with high significance patterns: {images_with_high_significance} out of {len(all_findings)}\n")
-        f.write(f"Images with low significance patterns: {images_with_low_significance} out of {len(all_findings)}\n")
+        f.write(f"Images with other significance patterns: {images_with_low_significance} out of {len(all_findings)}\n")
         f.write(f"Total unique contract words found: {len(contract_words_occurrences)}\n")
         f.write(f"Total unique high significance patterns found: {len(high_significance_occurrences)}\n")
-        f.write(f"Total unique low significance patterns found: {len(low_significance_occurrences)}\n")
+        f.write(f"Total unique other significance patterns found: {len(low_significance_occurrences)}\n")
         
         if contract_words_occurrences:
             f.write("\nContract Word Frequency:\n")
@@ -485,7 +485,7 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write(f"  {count} image(s): {pattern_counts[count]} pattern(s)\n")
         
         if low_significance_occurrences:
-            f.write("\nLow Significance Pattern Frequency:\n")
+            f.write("\Other Significance Pattern Frequency:\n")
             pattern_counts = {}
             for pattern, images in low_significance_occurrences.items():
                 count = len(images)
@@ -552,7 +552,7 @@ def main() -> None:
             findings_dict = {
                 'contract_words': findings['contract_words'],
                 'high_significance_patterns': findings['high_significance_patterns'],
-                'low_significance_patterns': findings['low_significance_patterns'],
+                'other_significance_patterns': findings['other_significance_patterns'],
                 'original_image_name': image_path.name,
                 'has_complete_contract': findings['has_complete_contract'],
                 'contract_words_ratio': findings['contract_words_ratio']  # Add the ratio information
@@ -560,7 +560,7 @@ def main() -> None:
             all_findings.append(findings_dict)
             
             # Print findings to console
-            if findings['words'] or findings['contract_words'] or findings['high_significance_patterns'] or findings['low_significance_patterns']:
+            if findings['words'] or findings['contract_words'] or findings['high_significance_patterns'] or findings['other_significance_patterns']:
                 print("\nFound patterns:")
                 if findings['contract_words']:
                     ratio = findings['contract_words_ratio']
@@ -573,13 +573,13 @@ def main() -> None:
                         print("\n  - Missing Contract Words:")
                         for word in sorted(findings['missing_contract_words']):
                             print(f"    - {word}")
-                if findings['high_significance_patterns'] or findings['low_significance_patterns']:
-                    print("  High and Low Significance Patterns:")
+                if findings['high_significance_patterns'] or findings['other_significance_patterns']:
+                    print("  High and Other Significance Patterns:")
                     if findings['high_significance_patterns']:
                         for pattern in sorted(findings['high_significance_patterns']):
                             print(f"    - {pattern}")
-                    if findings['low_significance_patterns']:
-                        for pattern in sorted(findings['low_significance_patterns']):
+                    if findings['other_significance_patterns']:
+                        for pattern in sorted(findings['other_significance_patterns']):
                             print(f"    - {pattern}")
                 if findings['words']:
                     print("  Words (showing first 10):")

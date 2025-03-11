@@ -1,0 +1,55 @@
+{
+    "contract_words": [
+        "ETXR",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP"
+    ],
+    "high_significance_patterns": [
+        "YE",
+        "YZY"
+    ],
+    "low_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ANSE",
+        "ARG",
+        "BEAR",
+        "BLAK",
+        "C01N",
+        "COIN",
+        "CRYP",
+        "FINE",
+        "GOLD",
+        "HODL",
+        "JEWM",
+        "MMM",
+        "NERO",
+        "PLUT",
+        "REAP",
+        "W1LL",
+        "WIZ",
+        "Y3S",
+        "Y3WS",
+        "Z00M",
+        "Z1TS",
+        "Z3TA"
+    ],
+    "words": [],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 4,
+        "total": 11
+    },
+    "original_image_name": "random_552_1920x1080.jpg",
+    "scan_timestamp": "2025-03-10T16:53:36.553345"
+}

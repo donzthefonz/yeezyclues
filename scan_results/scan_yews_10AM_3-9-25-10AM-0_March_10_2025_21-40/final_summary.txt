@@ -1,0 +1,359 @@
+BASE64 SCAN ANALYSIS SUMMARY
+===========================
+
+Analysis completed at: 2025-03-10T21:40:54.770069
+Total images analyzed: 1
+
+
+!!! COMPLETE CONTRACT MATCHES !!!
+=============================
+Found 1 images with complete contract matches:
+  - yews_10AM_3-9-25-10AM-0.jpg (11/11 words)
+
+PATTERNS BY IMAGE
+================
+
+Image: yews_10AM_3-9-25-10AM-0.jpg
+  !!! COMPLETE CONTRACT FOUND !!! (11/11 words)
+  CONTRACT WORDS (11/11):
+    - 4NBT
+    - F8PF
+    - LH4O
+    - LFNW
+    - F3KN
+    - V46F
+    - Y9I5
+    - OXJD
+    - XFFC
+    - ETXR
+    - PUMP
+  HIGH SIGNIFICANCE PATTERNS:
+    - FLAG
+    - OLAF
+    - PASS
+    - YE
+    - YZY
+  Low Significance Patterns:
+    - ACE
+    - AERI
+    - ANSE
+    - ARG
+    - BEAM
+    - BEAR
+    - BLAK
+    - C01N
+    - COIN
+    - CRYP
+    - DEST
+    - ELON
+    - ETHA
+    - FADE
+    - FINE
+    - FISH
+    - GOLD
+    - H34L
+    - HOLD
+    - JEWM
+    - JEWS
+    - KIMK
+    - LORE
+    - M3M3
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - PABLO
+    - PLUT
+    - REAP
+    - TATE
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WEST
+    - WIZ
+    - Y0BS
+    - Y0G1
+    - Y0K3
+    - Y0L0
+    - Y0LK
+    - Y0WL
+    - Y1PS
+    - Y3S
+    - Y3T1
+    - Y3WS
+    - YURT
+    - Z00S
+    - Z1NG
+    - Z1TS
+    - Z34L
+    - Z3DS
+    - Z3NS
+    - Z3R0
+    - Z3ST
+    - Z3TA
+    - ZANY
+    - ZAPS
+
+
+CONSOLIDATED PATTERN SUMMARY
+===========================
+
+CONTRACT WORDS
+=============
+Pattern: 4NBT
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: F8PF
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: LH4O
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: LFNW
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: F3KN
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: V46F
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y9I5
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: OXJD
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: XFFC
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ETXR
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: PUMP
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+
+HIGH SIGNIFICANCE PATTERNS
+=======================
+Pattern: YZY
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: YE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: PASS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: OLAF
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: FLAG
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+\Other Significant Patterns
+=======================
+Pattern: ZAPS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ZANY
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z3TA
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z3ST
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z3R0
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z3NS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z3DS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z34L
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z1TS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z1NG
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Z00S
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: YURT
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y3WS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y3T1
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y3S
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y1PS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0WL
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0LK
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0L0
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0K3
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0G1
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: Y0BS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: WIZ
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: WEST
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: W1LL
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: TOWN
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: TINA
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: TENA
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: TATE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: REAP
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: PLUT
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: PABLO
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: NERO
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: MOON
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: MMM
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: MILO
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: MEME
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: M3M3
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: LORE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: KIMK
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: JEWS
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: JEWM
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: HOLD
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: H34L
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: GOLD
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: FISH
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: FINE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: FADE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ETHA
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ELON
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: DEST
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: CRYP
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: COIN
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: C01N
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: BLAK
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: BEAR
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: BEAM
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ARG
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ANSE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: AERI
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+Pattern: ACE
+Found in 1 images: yews_10AM_3-9-25-10AM-0.jpg
+
+
+STATISTICS
+==========
+Images with complete contract matches: 1 out of 1
+Images with partial contract words: 0 out of 1
+Images with high significance patterns: 1 out of 1
+Images with low significance patterns: 1 out of 1
+Total unique contract words found: 11
+Total unique high significance patterns found: 5
+Total unique low significance patterns found: 61
+
+Contract Word Frequency:
+  1 image(s): 11 pattern(s)
+
+High Significance Pattern Frequency:
+  1 image(s): 5 pattern(s)
+
+Low Significance Pattern Frequency:
+  1 image(s): 61 pattern(s)

@@ -1,0 +1,42 @@
+Scan Results for: random_443_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:47.222659
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - LFNW
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - OLAF
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - BEAM
+    - COIN
+    - FADE
+    - FINE
+    - KIMK
+    - MEME
+    - MMM
+    - TATE
+    - TENA
+    - TOWN
+    - WIZ
+    - Y0BS
+    - Y3S
+    - Z1N3
+
+No words found.

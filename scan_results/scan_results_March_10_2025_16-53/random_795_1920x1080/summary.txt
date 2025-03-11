@@ -1,0 +1,39 @@
+Scan Results for: random_795_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:46.087859
+
+Contract Words and Patterns Found:
+  - Contract Words Found (1/11):
+    - F3KN
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - 1780
+    - ACE
+    - ARG
+    - BLAK
+    - GOLD
+    - MEME
+    - MMM
+    - REAP
+    - W1LL
+    - WIZ
+    - WIZK
+    - Y0BS
+    - Y0UR
+    - Y3S
+    - ZANY
+
+No words found.

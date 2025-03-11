@@ -1,0 +1,50 @@
+Scan Results for: random_344_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:47.265248
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - PUMP
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - OXJD
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - FLAG
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - BEAR
+    - BLAK
+    - DEST
+    - ELON
+    - FADE
+    - FISH
+    - GOLD
+    - LORE
+    - MEME
+    - MILO
+    - MMM
+    - MOON
+    - NERO
+    - PLUT
+    - REAP
+    - TATE
+    - TOWN
+    - WIZ
+    - Y0G1
+    - Y3S
+    - ZANY
+
+No words found.

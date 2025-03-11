@@ -1,0 +1,48 @@
+Scan Results for: random_54_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:38.003341
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - LFNW
+    - PUMP
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LH4O
+    - OXJD
+    - V46F
+    - XFFC
+    - Y9I5
+  - High Significance Patterns:
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - COIN
+    - FADE
+    - FAITH
+    - FISH
+    - H34L
+    - JEWS
+    - KIMK
+    - LORE
+    - MEME
+    - MMM
+    - NERO
+    - PLUT
+    - REAP
+    - TATE
+    - TOWN
+    - W1LL
+    - WIZ
+    - Y3S
+    - Y3WS
+    - YURT
+
+No words found.

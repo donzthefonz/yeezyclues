@@ -1,0 +1,43 @@
+Scan Results for: random_569_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:40.855191
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - LFNW
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LH4O
+    - OXJD
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - PASS
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - ARG
+    - BEAR
+    - ELON
+    - KIMK
+    - MMM
+    - TENA
+    - TINA
+    - TOWN
+    - W1LL
+    - WIZ
+    - Y0BS
+    - Y0K3
+    - Y0WL
+    - Y3S
+    - Z3NS
+    - Z3TA
+    - ZANY
+
+No words found.

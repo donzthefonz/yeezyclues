@@ -1,0 +1,38 @@
+Scan Results for: random_669_1920x1080.jpg
+Scan Time: 2025-03-10T16:53:35.741831
+
+Contract Words and Patterns Found:
+  - Contract Words Found (2/11):
+    - OXJD
+    - XFFC
+
+  - Missing Contract Words:
+    - 4NBT
+    - ETXR
+    - F3KN
+    - F8PF
+    - LFNW
+    - LH4O
+    - PUMP
+    - V46F
+    - Y9I5
+  - High Significance Patterns:
+    - YE
+    - YZY
+  - Low Significance Patterns:
+    - ACE
+    - AERI
+    - ARG
+    - ETHA
+    - GOLD
+    - KIMK
+    - LORE
+    - MMM
+    - MOON
+    - NERO
+    - TINA
+    - W1LL
+    - WIZ
+    - Y3S
+
+No words found.
