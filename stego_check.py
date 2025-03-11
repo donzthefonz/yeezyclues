@@ -11,6 +11,107 @@ import binascii
 import json
 from datetime import datetime
 import io
+import math
+import re
+import time
+import logging
+from contextlib import contextmanager
+from collections import Counter
+import traceback
+
+###############################################################################
+# Logging setup
+###############################################################################
+
+class ProgressFormatter(logging.Formatter):
+    """Custom formatter that includes timing and progress information."""
+    
+    def __init__(self):
+        super().__init__('%(asctime)s - %(levelname)s - %(message)s')
+        self.start_time = time.time()
+        
+    def format(self, record):
+        # Add elapsed time to the record
+        elapsed = time.time() - self.start_time
+        record.elapsed = f"{elapsed:.2f}s"
+        
+        # Add indentation based on the stack depth (for hierarchical display)
+        stack_depth = len(logging.getLogger().handlers)
+        record.indent = "  " * (stack_depth - 1) if stack_depth > 1 else ""
+        
+        # Format with timing for INFO level and above
+        if record.levelno >= logging.INFO:
+            record.msg = f"[{record.elapsed}] {record.indent}{record.msg}"
+        else:
+            record.msg = f"{record.indent}{record.msg}"
+        
+        return super().format(record)
+
+def setup_logging(output_dir: Optional[Path] = None) -> None:
+    """
+    Set up logging configuration.
+    
+    Args:
+        output_dir: Directory to save log files. If None, uses current directory.
+    """
+    # Create formatter
+    formatter = ProgressFormatter()
+    
+    # Console handler (INFO and above)
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(formatter)
+    
+    # File handler (DEBUG and above)
+    if output_dir is None:
+        output_dir = Path("stego_check_results")
+        output_dir.mkdir(exist_ok=True)
+    
+    log_file = output_dir / "analysis.log"
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(formatter)
+    
+    # Setup root logger
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.DEBUG)
+    root_logger.addHandler(console_handler)
+    root_logger.addHandler(file_handler)
+    
+    logging.info(f"Analysis started at {datetime.now().isoformat()}")
+    logging.info(f"Log file: {log_file}")
+
+@contextmanager
+def log_operation(operation: str, level: int = logging.INFO) -> None:
+    """
+    Context manager for logging operations with timing.
+    
+    Args:
+        operation: Description of the operation
+        level: Logging level to use
+    """
+    start_time = time.time()
+    logging.log(level, f"Starting {operation}...")
+    try:
+        yield
+        elapsed = time.time() - start_time
+        logging.log(level, f"Completed {operation} in {elapsed:.2f}s")
+    except Exception as e:
+        elapsed = time.time() - start_time
+        logging.error(f"Error in {operation} after {elapsed:.2f}s: {e}")
+        raise
+
+def log_progress(current: int, total: int, operation: str) -> None:
+    """
+    Log progress of an operation.
+    
+    Args:
+        current: Current item number
+        total: Total number of items
+        operation: Description of the operation
+    """
+    percentage = (current / total) * 100
+    logging.info(f"Progress: {current}/{total} {operation} ({percentage:.1f}%)")
 
 ###############################################################################
 # Known pattern sets
@@ -67,22 +168,49 @@ class StegResults:
             "channels": [],
             "binwalk": [],
             "icc_profile": [],
-            "zip_signatures": []  # New category for ZIP-related findings
+            "zip_signatures": [],
+            "appended_data": [],
+            "histogram": [],
+            "jpeg_comments": [],
+            "large_metadata": []
         }
         self.has_findings = False
-
+        self.analysis_time = datetime.now()
+        
     def add_finding(self, category: str, finding: str) -> None:
-        """Add a finding to the specified category."""
+        """
+        Add a finding to the specified category.
+        
+        Args:
+            category: The category to add the finding to
+            finding: The finding to add
+        """
+        if category not in self.findings:
+            self.findings[category] = []
         self.findings[category].append(finding)
         self.has_findings = True
 
     def to_dict(self) -> Dict[str, Any]:
-        """Convert results to a dictionary format."""
+        """
+        Convert results to a dictionary format.
+        
+        Returns:
+            Dict containing the analysis results
+        """
         return {
             "file_name": self.file_path.name,
-            "analysis_time": datetime.now().isoformat(),
+            "file_path": str(self.file_path),
+            "file_size": self.file_path.stat().st_size,
+            "analysis_time": self.analysis_time.isoformat(),
             "findings": self.findings,
-            "has_findings": self.has_findings
+            "has_findings": self.has_findings,
+            "summary": {
+                "total_findings": sum(len(findings) for findings in self.findings.values()),
+                "findings_by_category": {
+                    category: len(findings) 
+                    for category, findings in self.findings.items()
+                }
+            }
         }
 
 class ResultWriter:
@@ -101,11 +229,23 @@ class ResultWriter:
             "channels": {},
             "binwalk": {},
             "icc_profile": {},
-            "zip_signatures": {}
+            "zip_signatures": {},
+            "appended_data": {},
+            "histogram": {},
+            "jpeg_comments": {},
+            "large_metadata": {}
         }
 
     def write_file_results(self, results: StegResults) -> Path:
-        """Write individual file results and return the result directory path."""
+        """
+        Write individual file results and return the result directory path.
+        
+        Args:
+            results: The StegResults object containing the analysis results
+            
+        Returns:
+            Path to the directory containing the results
+        """
         # Create directory for this file's results
         result_dir = self.output_dir / results.file_path.stem
         result_dir.mkdir(parents=True, exist_ok=True)
@@ -117,14 +257,25 @@ class ResultWriter:
         # Write human-readable summary
         with open(result_dir / "summary.txt", "w") as f:
             f.write(f"Analysis Results for: {results.file_path.name}\n")
-            f.write(f"Analysis Time: {datetime.now().isoformat()}\n\n")
+            f.write(f"Analysis Time: {results.analysis_time.isoformat()}\n")
+            f.write(f"File Size: {results.file_path.stat().st_size:,} bytes\n\n")
             
+            # Write findings by category
             for category, findings in results.findings.items():
                 if findings:
                     f.write(f"{category.upper()} Findings:\n")
                     for finding in findings:
                         f.write(f"  - {finding}\n")
                     f.write("\n")
+            
+            # Write summary statistics
+            f.write("\nSUMMARY STATISTICS\n")
+            f.write("=================\n")
+            total_findings = sum(len(findings) for findings in results.findings.values())
+            f.write(f"Total findings: {total_findings}\n")
+            for category, findings in results.findings.items():
+                if findings:
+                    f.write(f"{category}: {len(findings)} finding(s)\n")
 
         # Store for final summary
         if results.has_findings:
@@ -145,7 +296,7 @@ class ResultWriter:
 
     def write_final_summary(self) -> None:
         """Write a final summary of all analyses."""
-        print("\nWriting final summary...")  # Debug line
+        print("\nWriting final summary...")
         
         with open(self.output_dir / "final_summary.txt", "w") as f:
             f.write("STEGO ANALYSIS FINAL SUMMARY\n")
@@ -162,6 +313,7 @@ class ResultWriter:
             else:
                 for result in self.summary_findings:
                     f.write(f"File: {result['file_name']}\n")
+                    f.write(f"Size: {result['file_size']:,} bytes\n")
                     has_findings = False
                     for category, findings in result['findings'].items():
                         if findings:
@@ -189,7 +341,7 @@ class ResultWriter:
                         if any(
                             pattern.lower() in finding.lower() 
                             for pattern in TARGET_STRINGS + BASE64_VARIANTS + BINARY_VARIANTS
-                        ) or "suspicious" in finding.lower()
+                        ) or "suspicious" in finding.lower() or "[!]" in finding
                     }
                     if interesting_findings:
                         has_consolidated_findings = True
@@ -222,7 +374,7 @@ class ResultWriter:
             if not has_category_findings:
                 f.write("No findings in any category\n")
             
-            print(f"Final summary written to: {self.output_dir / 'final_summary.txt'}")  # Debug line
+            print(f"Final summary written to: {self.output_dir / 'final_summary.txt'}")
 
 class OutputCapture:
     """Context manager to capture print output."""
@@ -244,28 +396,123 @@ class OutputCapture:
 # Utility: Detect suspicious-encoded strings
 ###############################################################################
 
+def check_file_signatures(data: bytes) -> None:
+    """
+    Check binary data for common file signatures.
+    
+    Args:
+        data: Binary data to check
+    """
+    signatures = {
+        'ZIP': b'PK\x03\x04',
+        'GZIP': b'\x1f\x8b\x08',
+        'PNG': b'\x89PNG',
+        'JPEG': b'\xff\xd8\xff',
+        'PDF': b'%PDF',
+        'RAR': b'Rar!\x1a\x07',
+        '7Z': b'7z\xbc\xaf\x27\x1c',
+        'BZIP2': b'BZh',
+        'ZLIB': b'\x78\x9c',
+        'ZLIB_BEST': b'\x78\xda'
+    }
+    
+    for sig_type, sig in signatures.items():
+        # Check at start
+        if data.startswith(sig):
+            logging.warning(f"Found {sig_type} signature at start of data")
+        
+        # Check for signature anywhere in data
+        offset = data.find(sig)
+        if offset > 0:
+            logging.warning(f"Found {sig_type} signature at offset {offset}")
+
 def find_suspicious_strings(text: str) -> List[str]:
     """
-    Identify substrings in 'text' that look like they might be
-    base64-encoded or hex-encoded strings. We do this very naively:
-      - base64: mostly [A-Za-z0-9+/], possibly with '='
-      - hex: mostly [0-9A-Fa-f]
-    Return a list of suspicious substrings found.
+    Find suspicious strings that might indicate hidden data.
+    
+    Args:
+        text: Text to analyze
+        
+    Returns:
+        List of suspicious strings found
     """
     suspicious = []
-    # Rough scanning approach:
-    words = text.split()
-    for w in words:
-        # Heuristic check: 
-        # if it's > 8 chars, mostly base64 chars or mostly hex => suspect
-        if len(w) > 8:
-            # check base64
-            if all(c in "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=" for c in w):
-                suspicious.append(f"Possible base64: {w}")
-            # check hex
-            elif all(c in "0123456789abcdefABCDEF" for c in w):
-                suspicious.append(f"Possible hex: {w}")
+    
+    # Common steganography tool strings
+    stego_tools = [
+        'steghide', 'outguess', 'jsteg', 'jphide', 'jpseek',
+        'stegdetect', 'stegbreak', 'stegano', 'openstego',
+        'stegosuite', 'stegextract', 'stegsnow', 'f5'
+    ]
+    
+    # Check for tool names
+    for tool in stego_tools:
+        if tool.lower() in text.lower():
+            suspicious.append(f"Steganography tool reference: {tool}")
+    
+    # Check for base64-like patterns
+    if looks_like_base64(text):
+        suspicious.append("Base64-like encoded data")
+    
+    # Check for hex dumps
+    hex_pattern = re.compile(r'([0-9a-fA-F]{2}[\s:]){8,}')
+    if hex_pattern.search(text):
+        suspicious.append("Hex dump pattern")
+    
+    # Check for password hints
+    password_hints = ['password', 'passwd', 'pass:', 'key:', 'secret']
+    for hint in password_hints:
+        if hint.lower() in text.lower():
+            suspicious.append(f"Password hint: {hint}")
+    
     return suspicious
+
+def calculate_entropy(data: Union[bytes, str]) -> float:
+    """
+    Calculate Shannon entropy of data.
+    
+    Args:
+        data: Data to analyze (bytes or string)
+        
+    Returns:
+        Entropy value between 0 and 8
+    """
+    if isinstance(data, str):
+        data = data.encode('utf-8', errors='ignore')
+    
+    # Count byte frequencies
+    freq = Counter(data)
+    length = len(data)
+    
+    # Calculate entropy
+    entropy = 0.0
+    for count in freq.values():
+        probability = count / length
+        entropy -= probability * math.log2(probability)
+    
+    return entropy
+
+def looks_like_base64(text: str) -> bool:
+    """
+    Check if a string looks like base64 encoded data.
+    
+    Args:
+        text: String to check
+        
+    Returns:
+        True if string appears to be base64 encoded
+    """
+    # Must be at least 20 chars
+    if len(text) < 20:
+        return False
+    
+    # Must be multiple of 4 (with padding)
+    if len(text.rstrip('=')) % 4 != 0:
+        return False
+    
+    # Must only contain valid base64 chars
+    base64_chars = set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=')
+    return all(c in base64_chars for c in text)
 
 ###############################################################################
 # 1) Metadata scanning
@@ -275,25 +522,49 @@ def check_metadata(file_path: Path) -> None:
     """
     Check image metadata for occurrences of "4NBT" or variants,
     plus suspicious encoded strings.
+    
+    Args:
+        file_path: Path to the image file
     """
-    print("[*] Checking metadata...")
-    with open(file_path, 'rb') as f:
-        tags: Dict[str, Any] = exifread.process_file(f)
-
-    for tag in tags:
-        val = str(tags[tag])
-        lower_val = val.lower()
-        # Known patterns
-        for tstr in TARGET_STRINGS:
-            if tstr.lower() in lower_val:
-                print(f"    Found '{tstr}' in metadata tag [{tag}] = {val}")
-        for b64str in BASE64_VARIANTS:
-            if b64str.lower() in lower_val:
-                print(f"    Found base64-like '{b64str}' in metadata tag [{tag}] = {val}")
-        # Also search suspicious strings
-        suspects = find_suspicious_strings(lower_val)
-        for s in suspects:
-            print(f"    Suspicious string in metadata tag [{tag}]: {s}")
+    logging.info("Checking metadata...")
+    
+    with log_operation("Reading EXIF data", level=logging.DEBUG):
+        with open(file_path, 'rb') as f:
+            tags: Dict[str, Any] = exifread.process_file(f)
+        
+        if not tags:
+            logging.info("No EXIF metadata found")
+            return
+        
+        logging.debug(f"Found {len(tags)} EXIF tags")
+    
+    with log_operation("Analyzing metadata content", level=logging.DEBUG):
+        findings = 0
+        for tag in tags:
+            val = str(tags[tag])
+            lower_val = val.lower()
+            
+            # Known patterns
+            for tstr in TARGET_STRINGS:
+                if tstr.lower() in lower_val:
+                    findings += 1
+                    logging.warning(f"Found '{tstr}' in metadata tag [{tag}] = {val}")
+                    
+            for b64str in BASE64_VARIANTS:
+                if b64str.lower() in lower_val:
+                    findings += 1
+                    logging.warning(f"Found base64-like '{b64str}' in metadata tag [{tag}] = {val}")
+            
+            # Search suspicious strings
+            suspects = find_suspicious_strings(lower_val)
+            for s in suspects:
+                findings += 1
+                logging.warning(f"Suspicious string in metadata tag [{tag}]: {s}")
+        
+        if findings:
+            logging.info(f"Found {findings} suspicious patterns in metadata")
+        else:
+            logging.info("No suspicious patterns found in metadata")
 
 ###############################################################################
 # 2) Raw byte scanning
@@ -302,33 +573,56 @@ def check_metadata(file_path: Path) -> None:
 def check_raw_bytes(file_path: Path) -> None:
     """
     Search for 4NBT and also look for suspicious ASCII or hex in the raw byte content.
+    
+    Args:
+        file_path: Path to the image file
     """
-    print("[*] Checking raw bytes...")
-    with open(file_path, 'rb') as f:
-        data = f.read()
-    # ASCII
-    ascii_data = data.decode('latin-1', errors='ignore')
-    lower_ascii = ascii_data.lower()
-    # Hex
-    hex_string = data.hex()
-
-    # (A) Known patterns
-    for tstr in TARGET_STRINGS:
-        if tstr.lower() in lower_ascii:
-            print(f"    Found '{tstr}' in raw ASCII data!")
-    if "344e4254" in hex_string:
-        print("    Found hex pattern '34 4E 42 54' (4NBT)!")
-    if "54424e34" in hex_string:
-        print("    Found reversed hex pattern '54 42 4E 34' (TBN4)!")
-
-    for b64str in BASE64_VARIANTS:
-        if b64str.lower() in lower_ascii:
-            print(f"    Found base64-like '{b64str}' in raw ASCII data!")
-
-    # (B) Suspicious-encoded substrings
-    suspects = find_suspicious_strings(ascii_data)
-    for s in suspects:
-        print(f"    Suspicious substring in raw data: {s}")
+    logging.info("Checking raw bytes...")
+    
+    with log_operation("Reading file content", level=logging.DEBUG):
+        with open(file_path, 'rb') as f:
+            data = f.read()
+        logging.debug(f"Read {len(data):,} bytes")
+    
+    findings = 0
+    with log_operation("Analyzing ASCII content", level=logging.DEBUG):
+        # ASCII analysis
+        ascii_data = data.decode('latin-1', errors='ignore')
+        lower_ascii = ascii_data.lower()
+        
+        # Known patterns
+        for tstr in TARGET_STRINGS:
+            if tstr.lower() in lower_ascii:
+                findings += 1
+                logging.warning(f"Found '{tstr}' in raw ASCII data!")
+    
+    with log_operation("Analyzing hex content", level=logging.DEBUG):
+        # Hex analysis
+        hex_string = data.hex()
+        if "344e4254" in hex_string:
+            findings += 1
+            logging.warning("Found hex pattern '34 4E 42 54' (4NBT)!")
+        if "54424e34" in hex_string:
+            findings += 1
+            logging.warning("Found reversed hex pattern '54 42 4E 34' (TBN4)!")
+    
+    with log_operation("Checking base64 variants", level=logging.DEBUG):
+        for b64str in BASE64_VARIANTS:
+            if b64str.lower() in lower_ascii:
+                findings += 1
+                logging.warning(f"Found base64-like '{b64str}' in raw ASCII data!")
+    
+    with log_operation("Analyzing suspicious patterns", level=logging.DEBUG):
+        # Suspicious-encoded substrings
+        suspects = find_suspicious_strings(ascii_data)
+        for s in suspects:
+            findings += 1
+            logging.warning(f"Suspicious substring in raw data: {s}")
+    
+    if findings:
+        logging.info(f"Found {findings} suspicious patterns in raw bytes")
+    else:
+        logging.info("No suspicious patterns found in raw bytes")
 
 ###############################################################################
 # 3) Advanced binary pattern checks
@@ -679,6 +973,316 @@ def check_zip_signatures(file_path: Path) -> None:
         print(f"    Error during ZIP signature analysis: {e}")
 
 ###############################################################################
+# 8) Appended Data Check
+###############################################################################
+
+def check_appended_data(file_path: Path) -> None:
+    """
+    Check for data appended after image file format markers.
+    Handles multiple EOI markers in JPEGs and corrupted markers.
+    
+    Args:
+        file_path: Path to the image file
+    """
+    logging.info("Checking for appended data...")
+    
+    with log_operation("Reading file", level=logging.DEBUG):
+        with open(file_path, 'rb') as f:
+            data = f.read()
+        logging.debug(f"Read {len(data):,} bytes")
+    
+    findings = 0
+    with log_operation("Analyzing file format", level=logging.DEBUG):
+        # Check file type
+        if data.startswith(b'\x89PNG'):
+            # PNG - look for IEND
+            iend_pos = data.rfind(b'IEND')
+            if iend_pos != -1:
+                appended = data[iend_pos+8:]
+                if appended:
+                    findings += 1
+                    logging.warning(f"Found {len(appended)} bytes after PNG IEND chunk")
+                    analyze_appended_data(appended)
+        
+        elif data.startswith(b'\xFF\xD8'):
+            # JPEG - find all EOI markers
+            positions = []
+            i = 0
+            while i < len(data) - 1:
+                if data[i] == 0xFF and data[i+1] == 0xD9:
+                    positions.append(i)
+                i += 1
+            
+            if not positions:
+                logging.warning("No EOI markers found in JPEG")
+                return
+            
+            logging.debug(f"Found {len(positions)} EOI markers")
+            
+            # Check between markers
+            for i in range(len(positions)-1):
+                between = data[positions[i]+2:positions[i+1]]
+                if between:
+                    findings += 1
+                    logging.warning(f"Found {len(between)} bytes between EOI markers")
+                    analyze_appended_data(between)
+            
+            # Check after last marker
+            appended = data[positions[-1]+2:]
+            if appended:
+                findings += 1
+                logging.warning(f"Found {len(appended)} bytes after last EOI marker")
+                analyze_appended_data(appended)
+    
+    if findings:
+        logging.info(f"Found {findings} instances of appended data")
+    else:
+        logging.info("No appended data found")
+
+def analyze_appended_data(data: bytes) -> None:
+    """
+    Analyze appended data for signatures, entropy, and encoding.
+    
+    Args:
+        data: Bytes to analyze
+    """
+    with log_operation("Analyzing appended data", level=logging.DEBUG):
+        # Check file signatures
+        check_file_signatures(data)
+        
+        # Try text decoding
+        try:
+            text = data.decode('utf-8', errors='ignore')
+            suspects = find_suspicious_strings(text)
+            for s in suspects:
+                logging.warning(f"Suspicious string in appended data: {s}")
+        except UnicodeDecodeError:
+            pass
+        
+        # Check entropy
+        entropy = calculate_entropy(data)
+        if entropy > 7.5:
+            logging.warning(f"High entropy ({entropy:.2f}) in appended data")
+        
+        # Check for base64
+        if looks_like_base64(data.decode('latin-1', errors='ignore')):
+            logging.warning("Appended data appears to be base64-encoded")
+
+###############################################################################
+# 9) Histogram Analysis
+###############################################################################
+
+def check_histogram(file_path: Path) -> None:
+    """
+    Analyze image histograms for anomalies that might indicate steganography.
+    Checks for:
+    - Unusual color distribution
+    - Low variance in color channels
+    - Suspicious patterns in color frequencies
+    - LSB anomalies
+    
+    Args:
+        file_path: Path to the image file
+    """
+    print("[*] Checking histogram for anomalies...")
+    try:
+        img = Image.open(file_path).convert('RGB')
+        pixels = list(img.getdata())
+        width, height = img.size
+        total_pixels = width * height
+        
+        # Initialize histogram data
+        histograms = {
+            'R': [0] * 256,
+            'G': [0] * 256,
+            'B': [0] * 256
+        }
+        
+        # Build histograms
+        for r, g, b in pixels:
+            histograms['R'][r] += 1
+            histograms['G'][g] += 1
+            histograms['B'][b] += 1
+            
+        # Analyze each channel
+        for channel, hist in histograms.items():
+            # Calculate basic statistics
+            total = sum(hist)
+            mean = sum(i * count for i, count in enumerate(hist)) / total
+            variance = sum((i - mean) ** 2 * count for i, count in enumerate(hist)) / total
+            stddev = math.sqrt(variance)
+            
+            print(f"    {channel} channel statistics:")
+            print(f"      Mean: {mean:.2f}")
+            print(f"      StdDev: {stddev:.2f}")
+            
+            # Check for anomalies
+            
+            # 1. Very low variance might indicate manipulation
+            if stddev < 10:
+                print(f"    [!] {channel} channel has unusually low variance!")
+                
+            # 2. Check for unusual peaks in the histogram
+            max_count = max(hist)
+            max_index = hist.index(max_count)
+            if max_count > total_pixels * 0.5:  # More than 50% of pixels have the same value
+                print(f"    [!] {channel} channel has suspicious peak at value {max_index} ({max_count/total_pixels*100:.1f}% of pixels)")
+                
+            # 3. Check LSB distribution
+            lsb_zeros = sum(hist[i] for i in range(0, 256, 2))
+            lsb_ones = sum(hist[i] for i in range(1, 256, 2))
+            lsb_ratio = lsb_ones / lsb_zeros if lsb_zeros > 0 else float('inf')
+            
+            if not (0.8 < lsb_ratio < 1.2):  # LSB ratio should be close to 1 in normal images
+                print(f"    [!] {channel} channel has suspicious LSB distribution (ratio: {lsb_ratio:.2f})")
+                
+            # 4. Check for stepwise patterns (common in LSB steganography)
+            steps = []
+            for i in range(0, 256, 2):
+                if abs(hist[i] - hist[i+1]) < total_pixels * 0.001:  # Very similar adjacent values
+                    steps.append(i)
+            if len(steps) > 50:  # Many stepwise patterns found
+                print(f"    [!] {channel} channel shows stepwise patterns typical of LSB steganography")
+                
+            # 5. Check for empty ranges (unusual in natural images)
+            zero_ranges = []
+            start = None
+            for i in range(256):
+                if hist[i] == 0 and start is None:
+                    start = i
+                elif hist[i] != 0 and start is not None:
+                    if i - start > 10:  # Range of more than 10 empty values
+                        zero_ranges.append((start, i-1))
+                    start = None
+            if start is not None and 255 - start > 10:
+                zero_ranges.append((start, 255))
+                
+            if zero_ranges:
+                print(f"    [!] {channel} channel has suspicious empty ranges:")
+                for start, end in zero_ranges:
+                    print(f"      Values {start}-{end} never used")
+                    
+    except Exception as e:
+        print(f"    Error during histogram analysis: {e}")
+
+###############################################################################
+# 10) JPEG-specific checks
+###############################################################################
+
+def check_jpeg_comments(file_path: Path) -> None:
+    """
+    Check JPEG comment segments (COM markers) for hidden data.
+    
+    Args:
+        file_path: Path to the JPEG file
+    """
+    logging.info("Checking JPEG comment segments...")
+    
+    with log_operation("Reading JPEG file", level=logging.DEBUG):
+        with open(file_path, 'rb') as f:
+            data = f.read()
+        
+        if not data.startswith(b'\xFF\xD8'):
+            logging.info("Not a JPEG file - skipping comment analysis")
+            return
+    
+    findings = 0
+    with log_operation("Analyzing comment segments", level=logging.DEBUG):
+        i = 0
+        while i < len(data) - 1:
+            if data[i] == 0xFF and data[i+1] == 0xFE:  # COM marker
+                length = int.from_bytes(data[i+2:i+4], 'big')
+                comment_data = data[i+4:i+2+length]
+                
+                logging.debug(f"Found comment segment at offset {i}, length {length}")
+                
+                # Try to decode as text
+                try:
+                    comment_text = comment_data.decode('utf-8', errors='ignore')
+                    if any(tstr.lower() in comment_text.lower() for tstr in TARGET_STRINGS):
+                        findings += 1
+                        logging.warning(f"Found target string in comment at offset {i}")
+                    
+                    suspects = find_suspicious_strings(comment_text)
+                    for s in suspects:
+                        findings += 1
+                        logging.warning(f"Suspicious string in comment at offset {i}: {s}")
+                except UnicodeDecodeError:
+                    pass
+                
+                # Check for ZIP signatures
+                if comment_data.startswith(b'PK\x03\x04'):
+                    findings += 1
+                    logging.warning(f"Found ZIP signature in comment at offset {i}")
+                
+                # Check entropy
+                entropy = calculate_entropy(comment_data)
+                if entropy > 7.5:
+                    findings += 1
+                    logging.warning(f"High entropy ({entropy:.2f}) in comment at offset {i}")
+                
+                i += length + 2
+            else:
+                i += 1
+    
+    if findings:
+        logging.info(f"Found {findings} suspicious patterns in JPEG comments")
+    else:
+        logging.info("No suspicious patterns found in JPEG comments")
+
+def check_large_metadata(file_path: Path) -> None:
+    """
+    Check for large binary blobs in EXIF/IPTC metadata that could contain hidden data.
+    
+    Args:
+        file_path: Path to the image file
+    """
+    logging.info("Checking for large metadata fields...")
+    
+    with log_operation("Reading metadata", level=logging.DEBUG):
+        with open(file_path, 'rb') as f:
+            tags = exifread.process_file(f)
+        
+        if not tags:
+            logging.info("No metadata found")
+            return
+        
+        logging.debug(f"Found {len(tags)} metadata tags")
+    
+    findings = 0
+    with log_operation("Analyzing metadata fields", level=logging.DEBUG):
+        for tag in tags:
+            val = str(tags[tag])
+            
+            # Check for large binary values
+            if len(val) > 1000:  # Arbitrary threshold
+                logging.debug(f"Large metadata field found: {tag} ({len(val)} bytes)")
+                
+                # Check for base64
+                if looks_like_base64(val):
+                    findings += 1
+                    logging.warning(f"Large base64-like content in {tag}")
+                    
+                    try:
+                        decoded = base64.b64decode(val)
+                        if decoded.startswith(b'PK\x03\x04'):
+                            findings += 1
+                            logging.warning(f"Base64-encoded ZIP found in {tag}")
+                    except:
+                        pass
+                
+                # Check entropy
+                entropy = calculate_entropy(val.encode())
+                if entropy > 7.5:
+                    findings += 1
+                    logging.warning(f"High entropy ({entropy:.2f}) in {tag}")
+    
+    if findings:
+        logging.info(f"Found {findings} suspicious large metadata fields")
+    else:
+        logging.info("No suspicious large metadata fields found")
+
+###############################################################################
 # File handling and analysis
 ###############################################################################
 
@@ -709,30 +1313,59 @@ def setup_output_directory(base_path: Optional[Path] = None) -> Path:
     return output_dir
 
 def analyze_file(file_path: Path) -> StegResults:
-    """Analyze a single file and return results."""
+    """
+    Analyze a single file and return results.
+    
+    Args:
+        file_path: Path to the image file
+        
+    Returns:
+        StegResults object containing the analysis results
+    """
     results = StegResults(file_path)
     
-    # Capture output from each analysis function
-    analysis_functions = [
-        (check_metadata, "metadata"),
-        (check_raw_bytes, "raw_bytes"),
-        (check_binary_patterns, "binary_patterns"),
-        (check_multibit_lsb, "lsb"),
-        (check_channels, "channels"),
-        (check_binwalk, "binwalk"),
-        (check_icc_profile, "icc_profile"),
-        (check_zip_signatures, "zip_signatures")
-    ]
-    
-    for func, category in analysis_functions:
-        with OutputCapture() as output:
-            try:
-                func(file_path)
-                for line in output.captured_output:
-                    if line.strip() and not line.startswith("[*]"):
-                        results.add_finding(category, line.strip())
-            except Exception as e:
-                results.add_finding(category, f"Error during analysis: {str(e)}")
+    with log_operation(f"Analyzing {file_path.name}"):
+        logging.info(f"File size: {file_path.stat().st_size:,} bytes")
+        
+        # Capture output from each analysis function
+        analysis_functions = [
+            (check_metadata, "metadata"),
+            (check_raw_bytes, "raw_bytes"),
+            (check_binary_patterns, "binary_patterns"),
+            (check_multibit_lsb, "lsb"),
+            (check_channels, "channels"),
+            (check_binwalk, "binwalk"),
+            (check_icc_profile, "icc_profile"),
+            (check_zip_signatures, "zip_signatures"),
+            (check_appended_data, "appended_data"),
+            (check_histogram, "histogram"),
+            (check_jpeg_comments, "jpeg_comments"),
+            (check_large_metadata, "large_metadata")
+        ]
+        
+        total_functions = len(analysis_functions)
+        for i, (func, category) in enumerate(analysis_functions, 1):
+            with log_operation(f"{category} analysis", level=logging.DEBUG):
+                try:
+                    with OutputCapture() as output:
+                        func(file_path)
+                        for line in output.captured_output:
+                            if line.strip() and not line.startswith("[*]"):
+                                results.add_finding(category, line.strip())
+                                logging.debug(line.strip())
+                except Exception as e:
+                    error_msg = f"Error during {category} analysis: {str(e)}"
+                    results.add_finding(category, error_msg)
+                    logging.error(error_msg)
+            
+            log_progress(i, total_functions, "analysis steps completed")
+        
+        # Log summary of findings
+        total_findings = sum(len(findings) for findings in results.findings.values())
+        logging.info(f"Analysis complete - {total_findings} total findings")
+        for category, findings in results.findings.items():
+            if findings:
+                logging.info(f"  {category}: {len(findings)} finding(s)")
     
     return results
 
@@ -741,38 +1374,69 @@ def analyze_file(file_path: Path) -> StegResults:
 ###############################################################################
 
 def main() -> None:
-    if len(sys.argv) < 2:
-        print("Usage: python stego_check.py <image_file_or_directory>")
+    """
+    Main entry point for the stego_check script.
+    Analyzes image files for potential steganographic content.
+    """
+    # Create output directory
+    output_dir = Path("stego_check_results")
+    output_dir.mkdir(exist_ok=True)
+    
+    # Set up logging
+    setup_logging(output_dir)
+    
+    # Parse arguments
+    if len(sys.argv) != 2:
+        logging.error("Usage: python stego_check.py <image_file_or_directory>")
         sys.exit(1)
     
     target_path = Path(sys.argv[1])
+    
+    # Validate path
     if not target_path.exists():
-        print(f"Error: Path does not exist: {target_path}")
+        logging.error(f"Path does not exist: {target_path}")
         sys.exit(1)
     
-    # Setup output directory
-    output_dir = setup_output_directory()
-    result_writer = ResultWriter(output_dir)
+    logging.info(f"Results will be saved to {output_dir}")
     
-    # Get files to analyze
-    files_to_analyze = get_image_files(target_path)
-    if not files_to_analyze:
-        print(f"No image files found in: {target_path}")
+    # Find image files
+    image_files = []
+    if target_path.is_file():
+        if target_path.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif', '.bmp']:
+            image_files = [target_path]
+        else:
+            logging.error(f"Not a supported image file: {target_path}")
+            sys.exit(1)
+    else:
+        image_files = [
+            f for f in target_path.rglob('*')
+            if f.is_file() and f.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif', '.bmp']
+        ]
+    
+    if not image_files:
+        logging.error("No image files found")
         sys.exit(1)
     
-    print(f"Found {len(files_to_analyze)} image file(s) to analyze")
-    print(f"Results will be saved to: {output_dir}\n")
+    logging.info(f"Found {len(image_files)} image files to analyze")
     
-    # Analyze each file
-    for i, file_path in enumerate(files_to_analyze, 1):
-        print(f"[{i}/{len(files_to_analyze)}] Analyzing: {file_path.name}")
-        results = analyze_file(file_path)
-        result_dir = result_writer.write_file_results(results)
-        print(f"Results saved to: {result_dir}\n")
+    # Process each file
+    summary_file = output_dir / "analysis_summary.txt"
+    with open(summary_file, 'w') as summary:
+        for i, image_file in enumerate(image_files, 1):
+            logging.info(f"\nAnalyzing file {i}/{len(image_files)}: {image_file}")
+            
+            try:
+                with log_operation(f"Analyzing {image_file.name}"):
+                    analyze_file(image_file)
+            except Exception as e:
+                logging.error(f"Error analyzing {image_file}: {e}")
+                traceback.print_exc()
+                continue
+            
+            # Add separator line
+            summary.write("-" * 80 + "\n")
     
-    # Write final summary
-    result_writer.write_final_summary()
-    print(f"\nAnalysis complete! Final summary saved to: {output_dir / 'final_summary.txt'}")
+    logging.info(f"\nAnalysis complete. Summary written to {summary_file}")
 
 if __name__ == "__main__":
     main()
