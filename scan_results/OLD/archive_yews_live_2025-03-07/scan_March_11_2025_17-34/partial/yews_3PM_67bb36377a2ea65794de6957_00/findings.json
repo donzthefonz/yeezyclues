@@ -1,0 +1,51 @@
+{
+    "contract_words": [
+        "ETXR",
+        "OXJD",
+        "XFFC"
+    ],
+    "contract_word_counts": {
+        "ETXR": 1,
+        "OXJD": 1,
+        "XFFC": 1
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ANSE",
+        "ARG",
+        "BEAR",
+        "CRYP",
+        "DEST",
+        "JEWM",
+        "MMM",
+        "NORT",
+        "TINA",
+        "TOWN",
+        "WIZ",
+        "Y0WL",
+        "Y3S"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 3,
+        "total": 11
+    },
+    "original_image_name": "yews_3PM_67bb36377a2ea65794de6957_00.jpg",
+    "character_count": 254751
+}

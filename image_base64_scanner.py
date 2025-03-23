@@ -49,20 +49,29 @@ def setup_output_directory(base_dir: Path, target_path: Path) -> Path:
 def get_image_files(path: Path) -> Iterator[Path]:
     """
     Yield all image files from a directory or a single image file.
+    Skip files larger than 2.7MB.
     
     Args:
         path: Path to an image file or directory containing images
         
     Yields:
-        Path objects for each image file found
+        Path objects for each image file found that are under size limit
     """
+    MAX_SIZE_BYTES = 2.7 * 1024 * 1024  # 2.7MB in bytes
+    
     if path.is_file():
         if path.suffix.lower() in {'.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp'}:
-            yield path
+            if path.stat().st_size <= MAX_SIZE_BYTES:
+                yield path
+            else:
+                print(f"Skipping {path.name}: File size {path.stat().st_size / (1024*1024):.1f}MB exceeds limit of 2.7MB")
     else:
         for item in path.glob('**/*'):
             if item.is_file() and item.suffix.lower() in {'.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp'}:
-                yield item
+                if item.stat().st_size <= MAX_SIZE_BYTES:
+                    yield item
+                else:
+                    print(f"Skipping {item.name}: File size {item.stat().st_size / (1024*1024):.1f}MB exceeds limit of 2.7MB")
 
 def image_to_base64(image_path: Path) -> str:
     """
@@ -91,7 +100,7 @@ def image_to_base64(image_path: Path) -> str:
     # Return with data URI prefix
     return f"data:{mime_type};base64,{base64_string}"
 
-def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: int = 4, max_length: int = 10) -> Dict[str, Set[str]]:
+def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: int = 4, max_length: int = 10) -> Dict[str, Set[str] | Dict[str, int]]:
     """
     Find word sequences and special patterns in text.
     
@@ -102,7 +111,7 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
         max_length: Maximum word length to search for (default: 10)
         
     Returns:
-        Dictionary containing found words and special patterns, with words sorted by length
+        Dictionary containing found words, special patterns, contract word counts, and character count
     """
     start_time = time.time()
     print(f"Starting pattern search in text of length: {len(text)}")
@@ -144,12 +153,14 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
     
     results = {
         'contract_words': set(),
+        'contract_word_counts': {},  # New field to track counts
         'missing_contract_words': set(),
         'high_significance_patterns': set(),
         'other_significance_patterns': set(),
         'words': set(),
         'has_complete_contract': False,  # Track if all contract words are found
-        'contract_words_ratio': {'found': 0, 'total': total_contract_words}  # Track ratio of found words
+        'contract_words_ratio': {'found': 0, 'total': total_contract_words},  # Track ratio of found words
+        'character_count': len(text)  # Add character count to results
     }
     
     text = text.upper()  # Normalize to uppercase
@@ -158,11 +169,13 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
     pattern_start = time.time()
     print("Checking contract words...")
     
-    # Check each contract word and track missing ones
+    # Check each contract word and track missing ones and counts
     for pattern in contract_words:
         pattern_upper = pattern.upper()
-        if pattern_upper in text:
+        count = text.count(pattern_upper)
+        if count > 0:
             results['contract_words'].add(pattern_upper)
+            results['contract_word_counts'][pattern_upper] = count
         else:
             results['missing_contract_words'].add(pattern_upper)
     
@@ -172,8 +185,14 @@ def find_word_sequences(text: str, dictionary: enchant.Dict | None, min_length: 
     
     if results['has_complete_contract']:
         print(f"!!! COMPLETE CONTRACT FOUND !!! ({results['contract_words_ratio']['found']}/{total_contract_words} words)")
+        for word, count in sorted(results['contract_word_counts'].items()):
+            print(f"  - {word}: {count} occurrences")
     else:
         print(f"Partial contract match ({results['contract_words_ratio']['found']}/{total_contract_words} words)")
+        if results['contract_word_counts']:
+            print("Found contract words:")
+            for word, count in sorted(results['contract_word_counts'].items()):
+                print(f"  - {word}: {count} occurrences")
         print(f"Missing contract words: {', '.join(sorted(results['missing_contract_words']))}")
     
     # Check for high significance patterns
@@ -233,7 +252,7 @@ def save_scan_results(
     output_dir: Path,
     image_path: Path,
     base64_string: str,
-    findings: Dict[str, Set[str]]
+    findings: Dict[str, Set[str] | Dict[str, int]]
 ) -> None:
     """
     Save scan results in an organized directory structure.
@@ -246,7 +265,12 @@ def save_scan_results(
     """
     # Create directory for this image using its name
     image_dir = output_dir / image_path.stem
-    image_dir.mkdir(exist_ok=True)
+    
+    # If all contract words are found, place in matched subfolder
+    if findings['has_complete_contract']:
+        image_dir = output_dir / "matched" / image_path.stem
+        
+    image_dir.mkdir(parents=True, exist_ok=True)
     
     # Save original image copy
     shutil.copy2(image_path, image_dir / f"original{image_path.suffix}")
@@ -261,6 +285,7 @@ def save_scan_results(
     # Save findings as JSON
     findings_dict = {
         'contract_words': list(sorted(findings['contract_words'])),
+        'contract_word_counts': dict(sorted(findings['contract_word_counts'].items())),
         'missing_contract_words': list(sorted(findings['missing_contract_words'])),
         'high_significance_patterns': list(sorted(findings['high_significance_patterns'])),
         'other_significance_patterns': list(sorted(findings['other_significance_patterns'])),
@@ -268,7 +293,8 @@ def save_scan_results(
         'has_complete_contract': findings['has_complete_contract'],
         'contract_words_ratio': findings['contract_words_ratio'],
         'original_image_name': image_path.name,
-        'scan_timestamp': datetime.now().isoformat()
+        'scan_timestamp': datetime.now().isoformat(),
+        'character_count': findings['character_count']  # Add character count to JSON
     }
     
     with open(image_dir / "findings.json", "w") as f:
@@ -277,9 +303,10 @@ def save_scan_results(
     # Create a human-readable summary
     with open(image_dir / "summary.txt", "w") as f:
         f.write(f"Scan Results for: {image_path.name}\n")
-        f.write(f"Scan Time: {datetime.now().isoformat()}\n\n")
+        f.write(f"Scan Time: {datetime.now().isoformat()}\n")
+        f.write(f"Base64 Character Count: {findings['character_count']}\n\n")  # Add character count to summary
         
-        ratio = findings['contract_words_ratio']
+        ratio = findings.get('contract_words_ratio', {'found': len(findings['contract_words']), 'total': 11})
         if findings['has_complete_contract']:
             f.write(f"!!! COMPLETE CONTRACT FOUND !!! ({ratio['found']}/{ratio['total']} words)\n\n")
         
@@ -288,7 +315,8 @@ def save_scan_results(
             if findings['contract_words']:
                 f.write(f"  - Contract Words Found ({ratio['found']}/{ratio['total']}):\n")
                 for word in sorted(findings['contract_words']):
-                    f.write(f"    - {word}\n")
+                    count = findings['contract_word_counts'].get(word, 0)
+                    f.write(f"    - {word} ({count} occurrences)\n")
                 if not findings['has_complete_contract']:
                     f.write("\n  - Missing Contract Words:\n")
                     for word in sorted(findings['missing_contract_words']):
@@ -330,10 +358,58 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
         f.write("BASE64 SCAN ANALYSIS SUMMARY\n")
         f.write("===========================\n\n")
         f.write(f"Analysis completed at: {datetime.now().isoformat()}\n")
-        f.write(f"Total images analyzed: {len(all_findings)}\n\n")
+        f.write(f"Total images analyzed: {len(all_findings)}\n")
+        
+        # Separate complete and incomplete contract images
+        complete_contract_images = [f for f in all_findings if f.get('has_complete_contract', False)]
+        incomplete_contract_images = [f for f in all_findings if not f.get('has_complete_contract', False)]
+        
+        # Calculate character count statistics
+        total_chars = sum(finding.get('character_count', 0) for finding in all_findings)
+        avg_chars = total_chars / len(all_findings) if all_findings else 0
+        min_chars = min((finding.get('character_count', 0) for finding in all_findings), default=0)
+        max_chars = max((finding.get('character_count', 0) for finding in all_findings), default=0)
+        
+        # Calculate character count statistics for complete contract images
+        complete_total_chars = sum(finding.get('character_count', 0) for finding in complete_contract_images)
+        complete_avg_chars = complete_total_chars / len(complete_contract_images) if complete_contract_images else 0
+        
+        # Calculate character count statistics for incomplete contract images
+        incomplete_total_chars = sum(finding.get('character_count', 0) for finding in incomplete_contract_images)
+        incomplete_avg_chars = incomplete_total_chars / len(incomplete_contract_images) if incomplete_contract_images else 0
+        
+        # Write character count statistics
+        f.write("\nCHARACTER COUNT STATISTICS\n")
+        f.write("========================\n")
+        f.write(f"Total characters across all images: {total_chars:,}\n")
+        f.write(f"Average characters per image: {avg_chars:,.2f}\n")
+        f.write(f"Minimum characters in an image: {min_chars:,}\n")
+        f.write(f"Maximum characters in an image: {max_chars:,}\n")
+        
+        # Write character count comparison if we have both types of images
+        f.write("\nCharacter count by contract status:\n")
+        if complete_contract_images:
+            f.write(f"  Complete contracts ({len(complete_contract_images)} images): {complete_avg_chars:,.2f} chars avg\n")
+            f.write(f"  Total characters: {complete_total_chars:,}\n")
+        else:
+            f.write("  No images with complete contracts found\n")
+            
+        if incomplete_contract_images:
+            f.write(f"  Incomplete contracts ({len(incomplete_contract_images)} images): {incomplete_avg_chars:,.2f} chars avg\n")
+            f.write(f"  Total characters: {incomplete_total_chars:,}\n")
+        else:
+            f.write("  No images with incomplete contracts found\n")
+            
+        # Only write comparison if we have both complete and incomplete contracts
+        if complete_contract_images and incomplete_contract_images and incomplete_avg_chars > 0:
+            char_diff = complete_avg_chars - incomplete_avg_chars
+            f.write(f"\nComparison:\n")
+            f.write(f"  Complete contracts have {abs(char_diff):,.2f} {'more' if char_diff > 0 else 'fewer'} characters on average\n")
+            f.write(f"  Ratio of complete to incomplete average length: {(complete_avg_chars / incomplete_avg_chars):,.2f}x\n")
+        f.write("\n")
         
         # Track patterns across all files
-        contract_words_occurrences: Dict[str, Set[str]] = {}
+        contract_words_occurrences: Dict[str, Dict[str, int]] = {}  # Changed to track counts per file
         high_significance_occurrences: Dict[str, Set[str]] = {}
         low_significance_occurrences: Dict[str, Set[str]] = {}
         images_with_contract_words = 0
@@ -349,8 +425,10 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                     images_with_complete_contract += 1
                 for pattern in finding['contract_words']:
                     if pattern not in contract_words_occurrences:
-                        contract_words_occurrences[pattern] = set()
-                    contract_words_occurrences[pattern].add(finding['original_image_name'])
+                        contract_words_occurrences[pattern] = {}
+                    # Store count for this file
+                    if 'contract_word_counts' in finding:
+                        contract_words_occurrences[pattern][finding['original_image_name']] = finding['contract_word_counts'].get(pattern, 1)
             
             if finding['high_significance_patterns']:
                 images_with_high_significance += 1
@@ -374,7 +452,14 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
             for finding in all_findings:
                 if finding.get('has_complete_contract', False):
                     ratio = finding.get('contract_words_ratio', {'found': 0, 'total': 0})
-                    f.write(f"  - {finding['original_image_name']} ({ratio['found']}/{ratio['total']} words)\n")
+                    chars = finding.get('character_count', 0)
+                    f.write(f"  - {finding['original_image_name']} ({ratio['found']}/{ratio['total']} words, {chars:,} chars)\n")
+                    # Add counts for each contract word
+                    if 'contract_word_counts' in finding:
+                        for word in contract_words_order:  # Use contract_words_order to maintain consistent order
+                            if word in finding['contract_word_counts']:
+                                count = finding['contract_word_counts'][word]
+                                f.write(f"    - {word} ({count} occurrences)\n")
             f.write("\n")
         
         # Write per-file summary
@@ -382,22 +467,24 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
         f.write("================\n\n")
         
         for finding in all_findings:
-            f.write(f"Image: {finding['original_image_name']}\n")
-            ratio = finding.get('contract_words_ratio', {'found': len(finding['contract_words']), 'total': 11})  # Default to 11 total contract words if ratio not found
+            f.write(f"Image: {finding['original_image_name']} ({finding.get('character_count', 0):,} chars)\n")
+            ratio = finding.get('contract_words_ratio', {'found': len(finding['contract_words']), 'total': 11})
             if finding.get('has_complete_contract', False):
                 f.write(f"  !!! COMPLETE CONTRACT FOUND !!! ({ratio['found']}/{ratio['total']} words)\n")
             if finding['contract_words']:
                 f.write(f"  CONTRACT WORDS ({ratio['found']}/{ratio['total']}):\n")
-                # Write contract words in original order
+                # Write contract words in original order with counts
                 for word in contract_words_order:
                     if word in finding['contract_words']:
-                        f.write(f"    - {word}\n")
+                        count = finding['contract_word_counts'][word]  # Get count directly from contract_word_counts
+                        f.write(f"    - {word} ({count} occurrences)\n")
+                f.write("\n")  # Add spacing between sections
             if finding['high_significance_patterns']:
                 f.write("  HIGH SIGNIFICANCE PATTERNS:\n")
                 for pattern in sorted(finding['high_significance_patterns']):
                     f.write(f"    - {pattern}\n")
             if finding['other_significance_patterns']:
-                f.write("  other significance Patterns:\n")
+                f.write("  OTHER SIGNIFICANCE PATTERNS:\n")
                 for pattern in sorted(finding['other_significance_patterns']):
                     f.write(f"    - {pattern}\n")
             if not (finding['contract_words'] or finding['high_significance_patterns'] or finding['other_significance_patterns']):
@@ -411,12 +498,16 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
         if contract_words_occurrences:
             f.write("CONTRACT WORDS\n")
             f.write("=============\n")
-            # Write contract words in original order
+            # Write contract words in original order with counts
             for pattern in contract_words_order:
                 if pattern in contract_words_occurrences:
-                    images = contract_words_occurrences[pattern]
+                    occurrences = contract_words_occurrences[pattern]
+                    total_occurrences = sum(occurrences.values())
                     f.write(f"Pattern: {pattern}\n")
-                    f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
+                    f.write(f"Found {total_occurrences} times across {len(occurrences)} images:\n")
+                    for image_name, count in sorted(occurrences.items()):
+                        f.write(f"  - {image_name}: {count} occurrences\n")
+                    f.write("\n")
         
         if high_significance_occurrences:
             f.write("\nHIGH SIGNIFICANCE PATTERNS\n")
@@ -433,7 +524,7 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write(f"Found in {len(images)} images: {', '.join(sorted(images))}\n\n")
         
         if low_significance_occurrences:
-            f.write("\Other Significant Patterns\n")
+            f.write("\nOTHER SIGNIFICANCE PATTERNS\n")
             f.write("=======================\n")
             # Sort other significance patterns by frequency
             sorted_patterns = sorted(
@@ -485,7 +576,7 @@ def write_final_summary(output_dir: Path, all_findings: List[Dict[str, Any]]) ->
                 f.write(f"  {count} image(s): {pattern_counts[count]} pattern(s)\n")
         
         if low_significance_occurrences:
-            f.write("\Other Significance Pattern Frequency:\n")
+            f.write("\nOther Significance Pattern Frequency:\n")
             pattern_counts = {}
             for pattern, images in low_significance_occurrences.items():
                 count = len(images)
@@ -551,11 +642,12 @@ def main() -> None:
             # Store findings for final summary
             findings_dict = {
                 'contract_words': findings['contract_words'],
+                'contract_word_counts': findings['contract_word_counts'],  # Add the counts
                 'high_significance_patterns': findings['high_significance_patterns'],
                 'other_significance_patterns': findings['other_significance_patterns'],
                 'original_image_name': image_path.name,
                 'has_complete_contract': findings['has_complete_contract'],
-                'contract_words_ratio': findings['contract_words_ratio']  # Add the ratio information
+                'contract_words_ratio': findings['contract_words_ratio']
             }
             all_findings.append(findings_dict)
             

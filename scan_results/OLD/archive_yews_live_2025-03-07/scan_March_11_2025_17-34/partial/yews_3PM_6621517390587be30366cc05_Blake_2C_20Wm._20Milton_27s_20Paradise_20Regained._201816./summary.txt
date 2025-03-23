@@ -1,0 +1,42 @@
+Scan Results for: yews_3PM_6621517390587be30366cc05_Blake_2C_20Wm._20Milton_27s_20Paradise_20Regained._201816..jpeg
+Scan Time: 2025-03-11T17:34:02.317616
+Base64 Character Count: 468,043
+
+Contract Words Found:
+  - F8PF (1 occurrences)
+  - LFNW (2 occurrences)
+  - LH4O (1 occurrences)
+  - XFFC (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - ETXR
+  - F3KN
+  - OXJD
+  - PUMP
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - OLAF
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAR
+  - DEST
+  - FINE
+  - FISH
+  - H34L
+  - JEWM
+  - MEME
+  - MMM
+  - MOON
+  - TINA
+  - WIZ
+  - Y0K3
+  - Y0UR
+  - Y3S
+  - ZANY

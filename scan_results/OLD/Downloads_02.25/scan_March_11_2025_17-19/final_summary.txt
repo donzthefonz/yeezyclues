@@ -1,0 +1,24 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T17:19:41.385109
+Total images analyzed: 5
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 1,134,393
+Average characters per image: 226,878.60
+
+Incomplete matches (5 images):
+  Average characters: 226,878.60
+  - 659b760bb53dc2c262e65b4b_Blake, Wm. The Vision of Christ. 1821.-p-500.png: 231,926 chars
+    Found 2 of 11 contract words
+  - 65a5758ff775aa5dc56c5d7e_Blake, Wm. God Writing Upon the Tables of the Covenant. 1780.-p-500.png: 372,790 chars
+    Found 0 of 11 contract words
+  - 6621517390587be30366cc05_Blake, Wm. Milton's Paradise Regained. 1816.-p-500.jpeg: 121,727 chars
+    Found 0 of 11 contract words
+  - 65ab43f3f10282517a699374_Blake, Wm. Night VI, page 26, object 247. 1795.-p-500.jpeg: 112,975 chars
+    Found 0 of 11 contract words
+  - william-blake-st-peter-and-st-james-with-dante-and-beatrice-watercolour-painting-over-pen-and-ink-1824-1827-2A5R2BR.jpg: 294,975 chars
+    Found 0 of 11 contract words
+

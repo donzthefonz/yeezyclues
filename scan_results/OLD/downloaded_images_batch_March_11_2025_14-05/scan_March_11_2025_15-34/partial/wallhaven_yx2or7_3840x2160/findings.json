@@ -1,0 +1,73 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "XFFC",
+        "Y9I5"
+    ],
+    "contract_word_counts": {
+        "ETXR": 1,
+        "F8PF": 1,
+        "LFNW": 1,
+        "LH4O": 2,
+        "OXJD": 3,
+        "XFFC": 1,
+        "Y9I5": 1
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "PUMP",
+        "V46F"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "BIANC",
+        "COIN",
+        "CRYP",
+        "DEST",
+        "ETHA",
+        "FADE",
+        "FISH",
+        "GOLD",
+        "HODL",
+        "HOLD",
+        "JEWM",
+        "JEWS",
+        "KIMK",
+        "MMM",
+        "NERO",
+        "TOWN",
+        "WIZ",
+        "WIZK",
+        "Y0LK",
+        "Y0UR",
+        "Y0WL",
+        "Y3S",
+        "Y3WS",
+        "YURT",
+        "Z00M",
+        "Z1NC",
+        "Z1TS",
+        "Z3ST",
+        "ZAPS"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 7,
+        "total": 11
+    },
+    "original_image_name": "wallhaven_yx2or7_3840x2160.jpg",
+    "character_count": 1052491
+}

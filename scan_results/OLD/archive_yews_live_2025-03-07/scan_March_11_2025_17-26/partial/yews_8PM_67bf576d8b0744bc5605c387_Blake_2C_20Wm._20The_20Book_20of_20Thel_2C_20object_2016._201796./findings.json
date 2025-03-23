@@ -1,0 +1,76 @@
+{
+    "contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "OXJD",
+        "PUMP",
+        "XFFC"
+    ],
+    "contract_word_counts": {
+        "4NBT": 1,
+        "ETXR": 3,
+        "F3KN": 1,
+        "F8PF": 7,
+        "LFNW": 1,
+        "OXJD": 1,
+        "PUMP": 1,
+        "XFFC": 1
+    },
+    "missing_contract_words": [
+        "LH4O",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ARG",
+        "BEAR",
+        "C01N",
+        "DEST",
+        "FADE",
+        "FINE",
+        "H34L",
+        "JEWM",
+        "LORE",
+        "M3M3",
+        "MMM",
+        "MOON",
+        "REAP",
+        "TATE",
+        "TENA",
+        "TOWN",
+        "W1LL",
+        "WEST",
+        "WIZ",
+        "Y0G1",
+        "Y0K3",
+        "Y0R3",
+        "Y0UR",
+        "Y1P3",
+        "Y1PS",
+        "Y34R",
+        "Y3S",
+        "Y3WS",
+        "Z34L",
+        "Z3NS",
+        "Z3ST",
+        "ZANY"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 8,
+        "total": 11
+    },
+    "original_image_name": "yews_8PM_67bf576d8b0744bc5605c387_Blake_2C_20Wm._20The_20Book_20of_20Thel_2C_20object_2016._201796..jpeg",
+    "character_count": 1678407
+}

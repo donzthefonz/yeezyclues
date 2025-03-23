@@ -1,0 +1,26 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T15:56:54.018188
+Total images analyzed: 1
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 261,071
+Average characters per image: 261,071.00
+
+Complete contract matches (1 images):
+  Average characters: 261,071.00
+  - encoded_william-blake-st-peter-and-st-james-with-dante-and-beatrice-watercolour-painting-over-pen-and-ink-1824-1827-2A5R2BR.jpg: 261,071 chars
+    4NBT: 1 occurrences
+    ETXR: 1 occurrences
+    F3KN: 1 occurrences
+    F8PF: 1 occurrences
+    LFNW: 1 occurrences
+    LH4O: 1 occurrences
+    OXJD: 1 occurrences
+    PUMP: 1 occurrences
+    V46F: 1 occurrences
+    XFFC: 1 occurrences
+    Y9I5: 1 occurrences
+

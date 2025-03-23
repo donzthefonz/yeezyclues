@@ -1,0 +1,44 @@
+Scan Results for: wallhaven_39q9xv_3840x2160.png
+Scan Time: 2025-03-11T15:34:25.836332
+Base64 Character Count: 427,974
+
+Contract Words Found:
+  - ETXR (2 occurrences)
+  - LH4O (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - F8PF
+  - LFNW
+  - OXJD
+  - PUMP
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ARG
+  - CRYP
+  - LORE
+  - M3M3
+  - MEME
+  - MMM
+  - MOON
+  - NERO
+  - PLUT
+  - TENA
+  - W1LL
+  - WIZ
+  - Y0WL
+  - Y3S
+  - YURT
+  - Z1TS
+  - ZANY

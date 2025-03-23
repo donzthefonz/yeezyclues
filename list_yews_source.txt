@@ -1,0 +1,20 @@
+
+python yews_image_scraper.py --sources \
+"https://web.archive.org/web/20250309183844/yews.news" \
+"https://web.archive.org/web/20250303233155/yews.news" \
+"https://web.archive.org/web/20250222224537/yews.news" \
+"https://web.archive.org/web/20250202052209/yews.news" \
+"https://web.archive.org/web/20250113111017/yews.news" \
+"https://web.archive.org/web/20250308134125/yews.live" \
+"https://web.archive.org/web/20250307174829/yews.live" \
+"https://web.archive.org/web/20250307072955/yews.live" \
+"https://web.archive.org/web/20250225051219/yews.live" \
+"https://web.archive.org/web/20250224050431/yews.live" \
+"https://web.archive.org/web/20250223190037/yews.live" \
+"https://web.archive.org/web/20250223115922/yews.live"
+
+
+python yews_image_scraper.py --sources \
+    "https://web.archive.org/web/20250309183844/yews.news" \
+    "https://web.archive.org/web/20250303233155/yews.news" \
+    "https://web.archive.org/web/20250307072955/yews.live"

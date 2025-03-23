@@ -1,0 +1,64 @@
+{
+    "contract_words": [
+        "ETXR",
+        "LH4O",
+        "OXJD",
+        "PUMP"
+    ],
+    "contract_word_counts": {
+        "ETXR": 2,
+        "LH4O": 1,
+        "OXJD": 1,
+        "PUMP": 2
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAM",
+        "BEAR",
+        "COIN",
+        "GOLD",
+        "JEWM",
+        "JEWS",
+        "MEME",
+        "MILO",
+        "MMM",
+        "WEST",
+        "WIZ",
+        "Y0BS",
+        "Y0G1",
+        "Y0GA",
+        "Y0UR",
+        "Y1PS",
+        "Y3S",
+        "Y3T1",
+        "Y3WS",
+        "YURT",
+        "Z34L",
+        "Z3DS",
+        "Z3TA",
+        "ZANY"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 4,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_6623f788c5466ad39c0c2c3b_Blake_2C_20Wm._20Canto_20I._201803..jpeg",
+    "character_count": 514351
+}

@@ -1,0 +1,81 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "OXJD",
+        "XFFC"
+    ],
+    "contract_word_counts": {
+        "ETXR": 1,
+        "F3KN": 1,
+        "F8PF": 1,
+        "LFNW": 2,
+        "OXJD": 2,
+        "XFFC": 4
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "LH4O",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "OLAF",
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "AERI",
+        "ARG",
+        "BEAM",
+        "BEAR",
+        "BIANC",
+        "C01N",
+        "CRYP",
+        "DEST",
+        "ELON",
+        "FADE",
+        "FINE",
+        "GOLD",
+        "HODL",
+        "HOLD",
+        "JEWM",
+        "JEWS",
+        "MMM",
+        "MOON",
+        "NORT",
+        "PLUT",
+        "TATE",
+        "TENA",
+        "W1LL",
+        "WIZ",
+        "WIZK",
+        "Y0BS",
+        "Y0K3",
+        "Y0L0",
+        "Y0LK",
+        "Y0UR",
+        "Y1PS",
+        "Y3S",
+        "YURT",
+        "Z00S",
+        "Z1NG",
+        "Z3DS",
+        "Z3R0",
+        "Z3TA",
+        "ZAPS"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 6,
+        "total": 11
+    },
+    "original_image_name": "wallhaven_8xlvmo_3840x2160.jpg",
+    "character_count": 1438603
+}

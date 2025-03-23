@@ -1,0 +1,43 @@
+Scan Results for: wallhaven_83zvdy_3840x2160.png
+Scan Time: 2025-03-11T15:34:32.812832
+Base64 Character Count: 313,146
+
+Contract Words Found:
+  - LH4O (1 occurrences)
+  - V46F (1 occurrences)
+  - Y9I5 (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - ETXR
+  - F3KN
+  - F8PF
+  - LFNW
+  - OXJD
+  - PUMP
+  - XFFC
+
+High Significance Patterns:
+  - FLAG
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAM
+  - C01N
+  - ELON
+  - ETHA
+  - JEWM
+  - KIMK
+  - M3M3
+  - MMM
+  - WIZ
+  - Y0WL
+  - Y34R
+  - Y3S
+  - Y3T1
+  - Z3DS
+  - ZANY
+  - ZAPS

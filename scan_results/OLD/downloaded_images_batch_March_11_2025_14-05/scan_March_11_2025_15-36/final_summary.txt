@@ -1,0 +1,1299 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T15:37:20.839125
+Total images analyzed: 239
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 1,548,505,999
+Average characters per image: 6,479,104.60
+
+Complete contract matches (80 images):
+  Average characters: 12,544,960.46
+  - wallhaven_r2q7j7_3840x2160.png: 25,447,198 chars
+    4NBT: 14 occurrences
+    ETXR: 25 occurrences
+    F3KN: 10 occurrences
+    F8PF: 13 occurrences
+    LFNW: 28 occurrences
+    LH4O: 3 occurrences
+    OXJD: 24 occurrences
+    PUMP: 17 occurrences
+    V46F: 9 occurrences
+    XFFC: 31 occurrences
+    Y9I5: 10 occurrences
+  - wallhaven_m9olpy_3840x2160.png: 8,662,254 chars
+    4NBT: 1 occurrences
+    ETXR: 5 occurrences
+    F3KN: 3 occurrences
+    F8PF: 4 occurrences
+    LFNW: 10 occurrences
+    LH4O: 5 occurrences
+    OXJD: 13 occurrences
+    PUMP: 5 occurrences
+    V46F: 2 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_dg8q2j_3840x2160.png: 10,760,918 chars
+    4NBT: 4 occurrences
+    ETXR: 14 occurrences
+    F3KN: 4 occurrences
+    F8PF: 6 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 10 occurrences
+    PUMP: 10 occurrences
+    V46F: 1 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_96pky8_3840x2160.png: 10,973,514 chars
+    4NBT: 3 occurrences
+    ETXR: 6 occurrences
+    F3KN: 9 occurrences
+    F8PF: 5 occurrences
+    LFNW: 9 occurrences
+    LH4O: 5 occurrences
+    OXJD: 13 occurrences
+    PUMP: 11 occurrences
+    V46F: 3 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_gpoj27_3840x2160.png: 7,904,442 chars
+    4NBT: 5 occurrences
+    ETXR: 7 occurrences
+    F3KN: 4 occurrences
+    F8PF: 3 occurrences
+    LFNW: 4 occurrences
+    LH4O: 2 occurrences
+    OXJD: 8 occurrences
+    PUMP: 7 occurrences
+    V46F: 4 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_z8p51g_3840x2160.png: 11,747,518 chars
+    4NBT: 1 occurrences
+    ETXR: 18 occurrences
+    F3KN: 5 occurrences
+    F8PF: 5 occurrences
+    LFNW: 13 occurrences
+    LH4O: 8 occurrences
+    OXJD: 12 occurrences
+    PUMP: 10 occurrences
+    V46F: 5 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_1plgjw_3840x2160.jpg: 11,831,667 chars
+    4NBT: 4 occurrences
+    ETXR: 27 occurrences
+    F3KN: 5 occurrences
+    F8PF: 26 occurrences
+    LFNW: 11 occurrences
+    LH4O: 16 occurrences
+    OXJD: 11 occurrences
+    PUMP: 20 occurrences
+    V46F: 5 occurrences
+    XFFC: 18 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_2eym5x_3840x2160.png: 15,890,306 chars
+    4NBT: 10 occurrences
+    ETXR: 30 occurrences
+    F3KN: 4 occurrences
+    F8PF: 5 occurrences
+    LFNW: 9 occurrences
+    LH4O: 5 occurrences
+    OXJD: 14 occurrences
+    PUMP: 21 occurrences
+    V46F: 8 occurrences
+    XFFC: 17 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_vqx155_3840x2160.jpg: 6,929,163 chars
+    4NBT: 3 occurrences
+    ETXR: 5 occurrences
+    F3KN: 1 occurrences
+    F8PF: 15 occurrences
+    LFNW: 6 occurrences
+    LH4O: 1 occurrences
+    OXJD: 3 occurrences
+    PUMP: 13 occurrences
+    V46F: 1 occurrences
+    XFFC: 2 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_d6gr5l_3840x2160.jpg: 7,367,915 chars
+    4NBT: 3 occurrences
+    ETXR: 6 occurrences
+    F3KN: 3 occurrences
+    F8PF: 20 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 2 occurrences
+    PUMP: 10 occurrences
+    V46F: 3 occurrences
+    XFFC: 2 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_85qjpo_3840x2160.png: 17,178,610 chars
+    4NBT: 9 occurrences
+    ETXR: 22 occurrences
+    F3KN: 14 occurrences
+    F8PF: 8 occurrences
+    LFNW: 14 occurrences
+    LH4O: 4 occurrences
+    OXJD: 22 occurrences
+    PUMP: 10 occurrences
+    V46F: 6 occurrences
+    XFFC: 21 occurrences
+    Y9I5: 6 occurrences
+  - wallhaven_1kgyz9_3840x2160.png: 19,906,786 chars
+    4NBT: 9 occurrences
+    ETXR: 16 occurrences
+    F3KN: 9 occurrences
+    F8PF: 7 occurrences
+    LFNW: 18 occurrences
+    LH4O: 11 occurrences
+    OXJD: 12 occurrences
+    PUMP: 18 occurrences
+    V46F: 3 occurrences
+    XFFC: 30 occurrences
+    Y9I5: 5 occurrences
+  - wallhaven_dg9vdo_3840x2160.png: 17,831,470 chars
+    4NBT: 6 occurrences
+    ETXR: 14 occurrences
+    F3KN: 7 occurrences
+    F8PF: 7 occurrences
+    LFNW: 12 occurrences
+    LH4O: 3 occurrences
+    OXJD: 14 occurrences
+    PUMP: 10 occurrences
+    V46F: 2 occurrences
+    XFFC: 18 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_83292y_3840x2160.png: 14,583,770 chars
+    4NBT: 6 occurrences
+    ETXR: 12 occurrences
+    F3KN: 7 occurrences
+    F8PF: 23 occurrences
+    LFNW: 12 occurrences
+    LH4O: 5 occurrences
+    OXJD: 6 occurrences
+    PUMP: 12 occurrences
+    V46F: 10 occurrences
+    XFFC: 16 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_wewppq_3840x2160.png: 13,281,146 chars
+    4NBT: 6 occurrences
+    ETXR: 11 occurrences
+    F3KN: 6 occurrences
+    F8PF: 5 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 15 occurrences
+    PUMP: 15 occurrences
+    V46F: 4 occurrences
+    XFFC: 17 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_exjxgr_3840x2160.jpg: 3,296,291 chars
+    4NBT: 4 occurrences
+    ETXR: 4 occurrences
+    F3KN: 1 occurrences
+    F8PF: 2 occurrences
+    LFNW: 3 occurrences
+    LH4O: 1 occurrences
+    OXJD: 3 occurrences
+    PUMP: 1 occurrences
+    V46F: 1 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_eymk78_3840x2160.png: 13,886,942 chars
+    4NBT: 4 occurrences
+    ETXR: 16 occurrences
+    F3KN: 3 occurrences
+    F8PF: 3 occurrences
+    LFNW: 9 occurrences
+    LH4O: 3 occurrences
+    OXJD: 15 occurrences
+    PUMP: 11 occurrences
+    V46F: 2 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_we68mq_3840x2160.png: 24,087,418 chars
+    4NBT: 12 occurrences
+    ETXR: 20 occurrences
+    F3KN: 10 occurrences
+    F8PF: 9 occurrences
+    LFNW: 15 occurrences
+    LH4O: 3 occurrences
+    OXJD: 25 occurrences
+    PUMP: 23 occurrences
+    V46F: 9 occurrences
+    XFFC: 50 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_wqx6qp_3840x2160.png: 9,718,862 chars
+    4NBT: 7 occurrences
+    ETXR: 11 occurrences
+    F3KN: 4 occurrences
+    F8PF: 4 occurrences
+    LFNW: 13 occurrences
+    LH4O: 6 occurrences
+    OXJD: 9 occurrences
+    PUMP: 9 occurrences
+    V46F: 2 occurrences
+    XFFC: 14 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_p8oo29_3840x2160.png: 13,637,566 chars
+    4NBT: 3 occurrences
+    ETXR: 15 occurrences
+    F3KN: 3 occurrences
+    F8PF: 5 occurrences
+    LFNW: 14 occurrences
+    LH4O: 7 occurrences
+    OXJD: 14 occurrences
+    PUMP: 10 occurrences
+    V46F: 3 occurrences
+    XFFC: 15 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_lmdyrp_3840x2160.png: 20,511,586 chars
+    4NBT: 4 occurrences
+    ETXR: 10 occurrences
+    F3KN: 1 occurrences
+    F8PF: 3 occurrences
+    LFNW: 9 occurrences
+    LH4O: 8 occurrences
+    OXJD: 14 occurrences
+    PUMP: 11 occurrences
+    V46F: 3 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_282ddg_3840x2160.png: 10,002,482 chars
+    4NBT: 3 occurrences
+    ETXR: 12 occurrences
+    F3KN: 7 occurrences
+    F8PF: 7 occurrences
+    LFNW: 8 occurrences
+    LH4O: 6 occurrences
+    OXJD: 16 occurrences
+    PUMP: 7 occurrences
+    V46F: 3 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_733yjo_3840x2160.png: 11,912,630 chars
+    4NBT: 8 occurrences
+    ETXR: 8 occurrences
+    F3KN: 4 occurrences
+    F8PF: 4 occurrences
+    LFNW: 4 occurrences
+    LH4O: 4 occurrences
+    OXJD: 12 occurrences
+    PUMP: 12 occurrences
+    V46F: 2 occurrences
+    XFFC: 15 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_42eqey_3840x2160.png: 8,667,666 chars
+    4NBT: 11 occurrences
+    ETXR: 5 occurrences
+    F3KN: 4 occurrences
+    F8PF: 7 occurrences
+    LFNW: 16 occurrences
+    LH4O: 6 occurrences
+    OXJD: 7 occurrences
+    PUMP: 9 occurrences
+    V46F: 1 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_136el3_3840x2160.png: 6,594,838 chars
+    4NBT: 4 occurrences
+    ETXR: 7 occurrences
+    F3KN: 3 occurrences
+    F8PF: 3 occurrences
+    LFNW: 11 occurrences
+    LH4O: 3 occurrences
+    OXJD: 9 occurrences
+    PUMP: 9 occurrences
+    V46F: 1 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_kwx6oq_3840x2160.png: 11,870,778 chars
+    4NBT: 4 occurrences
+    ETXR: 9 occurrences
+    F3KN: 4 occurrences
+    F8PF: 5 occurrences
+    LFNW: 8 occurrences
+    LH4O: 10 occurrences
+    OXJD: 12 occurrences
+    PUMP: 14 occurrences
+    V46F: 2 occurrences
+    XFFC: 11 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_96zm9x_3840x2160.jpg: 9,775,963 chars
+    4NBT: 1 occurrences
+    ETXR: 17 occurrences
+    F3KN: 5 occurrences
+    F8PF: 19 occurrences
+    LFNW: 8 occurrences
+    LH4O: 9 occurrences
+    OXJD: 7 occurrences
+    PUMP: 24 occurrences
+    V46F: 8 occurrences
+    XFFC: 12 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_2ypyry_3840x2160.png: 15,612,970 chars
+    4NBT: 8 occurrences
+    ETXR: 16 occurrences
+    F3KN: 6 occurrences
+    F8PF: 5 occurrences
+    LFNW: 10 occurrences
+    LH4O: 10 occurrences
+    OXJD: 21 occurrences
+    PUMP: 10 occurrences
+    V46F: 7 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 6 occurrences
+  - wallhaven_391vov_3840x2160.png: 16,834,510 chars
+    4NBT: 15 occurrences
+    ETXR: 23 occurrences
+    F3KN: 5 occurrences
+    F8PF: 8 occurrences
+    LFNW: 14 occurrences
+    LH4O: 5 occurrences
+    OXJD: 12 occurrences
+    PUMP: 16 occurrences
+    V46F: 4 occurrences
+    XFFC: 12 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_42qy2m_3840x2160.png: 8,525,370 chars
+    4NBT: 1 occurrences
+    ETXR: 7 occurrences
+    F3KN: 3 occurrences
+    F8PF: 6 occurrences
+    LFNW: 6 occurrences
+    LH4O: 7 occurrences
+    OXJD: 4 occurrences
+    PUMP: 6 occurrences
+    V46F: 3 occurrences
+    XFFC: 13 occurrences
+    Y9I5: 5 occurrences
+  - wallhaven_g729dd_3840x2160.jpg: 5,669,135 chars
+    4NBT: 4 occurrences
+    ETXR: 7 occurrences
+    F3KN: 2 occurrences
+    F8PF: 27 occurrences
+    LFNW: 3 occurrences
+    LH4O: 1 occurrences
+    OXJD: 5 occurrences
+    PUMP: 10 occurrences
+    V46F: 2 occurrences
+    XFFC: 2 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_3kle5v_3840x2160.png: 8,998,022 chars
+    4NBT: 7 occurrences
+    ETXR: 3 occurrences
+    F3KN: 1 occurrences
+    F8PF: 6 occurrences
+    LFNW: 9 occurrences
+    LH4O: 2 occurrences
+    OXJD: 7 occurrences
+    PUMP: 11 occurrences
+    V46F: 3 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_vg7olm_3840x2160.png: 7,716,718 chars
+    4NBT: 5 occurrences
+    ETXR: 13 occurrences
+    F3KN: 4 occurrences
+    F8PF: 2 occurrences
+    LFNW: 4 occurrences
+    LH4O: 3 occurrences
+    OXJD: 10 occurrences
+    PUMP: 10 occurrences
+    V46F: 2 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_p8vjx3_3840x2160.png: 9,457,094 chars
+    4NBT: 3 occurrences
+    ETXR: 11 occurrences
+    F3KN: 4 occurrences
+    F8PF: 6 occurrences
+    LFNW: 6 occurrences
+    LH4O: 1 occurrences
+    OXJD: 10 occurrences
+    PUMP: 9 occurrences
+    V46F: 5 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_jx7mjw_3840x2160.png: 8,696,998 chars
+    4NBT: 2 occurrences
+    ETXR: 10 occurrences
+    F3KN: 6 occurrences
+    F8PF: 2 occurrences
+    LFNW: 9 occurrences
+    LH4O: 4 occurrences
+    OXJD: 11 occurrences
+    PUMP: 5 occurrences
+    V46F: 5 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_6d2r97_3840x2160.png: 21,309,798 chars
+    4NBT: 15 occurrences
+    ETXR: 10 occurrences
+    F3KN: 5 occurrences
+    F8PF: 20 occurrences
+    LFNW: 8 occurrences
+    LH4O: 14 occurrences
+    OXJD: 5 occurrences
+    PUMP: 13 occurrences
+    V46F: 2 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_z893wg_3840x2160.png: 18,892,426 chars
+    4NBT: 10 occurrences
+    ETXR: 17 occurrences
+    F3KN: 6 occurrences
+    F8PF: 8 occurrences
+    LFNW: 14 occurrences
+    LH4O: 6 occurrences
+    OXJD: 15 occurrences
+    PUMP: 22 occurrences
+    V46F: 4 occurrences
+    XFFC: 21 occurrences
+    Y9I5: 6 occurrences
+  - wallhaven_vgqoo8_3840x2160.png: 10,504,734 chars
+    4NBT: 4 occurrences
+    ETXR: 11 occurrences
+    F3KN: 2 occurrences
+    F8PF: 6 occurrences
+    LFNW: 9 occurrences
+    LH4O: 4 occurrences
+    OXJD: 11 occurrences
+    PUMP: 7 occurrences
+    V46F: 3 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_md2ez9_3840x2160.jpg: 5,665,567 chars
+    4NBT: 2 occurrences
+    ETXR: 5 occurrences
+    F3KN: 3 occurrences
+    F8PF: 18 occurrences
+    LFNW: 1 occurrences
+    LH4O: 3 occurrences
+    OXJD: 5 occurrences
+    PUMP: 6 occurrences
+    V46F: 1 occurrences
+    XFFC: 1 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_wylxdp_3840x2160.jpg: 3,895,431 chars
+    4NBT: 3 occurrences
+    ETXR: 4 occurrences
+    F3KN: 1 occurrences
+    F8PF: 1 occurrences
+    LFNW: 3 occurrences
+    LH4O: 4 occurrences
+    OXJD: 4 occurrences
+    PUMP: 3 occurrences
+    V46F: 2 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_eyggjo_3840x2160.jpg: 11,164,231 chars
+    4NBT: 2 occurrences
+    ETXR: 5 occurrences
+    F3KN: 4 occurrences
+    F8PF: 7 occurrences
+    LFNW: 9 occurrences
+    LH4O: 6 occurrences
+    OXJD: 7 occurrences
+    PUMP: 10 occurrences
+    V46F: 5 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_vg7evl_3840x2160.jpg: 9,583,323 chars
+    4NBT: 4 occurrences
+    ETXR: 11 occurrences
+    F3KN: 7 occurrences
+    F8PF: 5 occurrences
+    LFNW: 6 occurrences
+    LH4O: 7 occurrences
+    OXJD: 5 occurrences
+    PUMP: 13 occurrences
+    V46F: 4 occurrences
+    XFFC: 8 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_39r573_3840x2160.png: 26,427,510 chars
+    4NBT: 12 occurrences
+    ETXR: 20 occurrences
+    F3KN: 5 occurrences
+    F8PF: 7 occurrences
+    LFNW: 15 occurrences
+    LH4O: 8 occurrences
+    OXJD: 13 occurrences
+    PUMP: 20 occurrences
+    V46F: 3 occurrences
+    XFFC: 18 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_2yevxx_3840x2160.png: 13,723,414 chars
+    4NBT: 9 occurrences
+    ETXR: 10 occurrences
+    F3KN: 8 occurrences
+    F8PF: 13 occurrences
+    LFNW: 9 occurrences
+    LH4O: 5 occurrences
+    OXJD: 11 occurrences
+    PUMP: 7 occurrences
+    V46F: 3 occurrences
+    XFFC: 14 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_8o6191_3840x2160.jpg: 4,175,911 chars
+    4NBT: 3 occurrences
+    ETXR: 2 occurrences
+    F3KN: 6 occurrences
+    F8PF: 3 occurrences
+    LFNW: 6 occurrences
+    LH4O: 1 occurrences
+    OXJD: 2 occurrences
+    PUMP: 3 occurrences
+    V46F: 2 occurrences
+    XFFC: 8 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_xlqvd3_3840x2160.png: 10,977,318 chars
+    4NBT: 3 occurrences
+    ETXR: 8 occurrences
+    F3KN: 3 occurrences
+    F8PF: 2 occurrences
+    LFNW: 12 occurrences
+    LH4O: 7 occurrences
+    OXJD: 10 occurrences
+    PUMP: 11 occurrences
+    V46F: 1 occurrences
+    XFFC: 8 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_7p8klv_3840x2160.png: 12,473,798 chars
+    4NBT: 5 occurrences
+    ETXR: 8 occurrences
+    F3KN: 5 occurrences
+    F8PF: 12 occurrences
+    LFNW: 9 occurrences
+    LH4O: 7 occurrences
+    OXJD: 8 occurrences
+    PUMP: 13 occurrences
+    V46F: 7 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_vg66dm_3840x2160.png: 11,943,114 chars
+    4NBT: 12 occurrences
+    ETXR: 7 occurrences
+    F3KN: 8 occurrences
+    F8PF: 6 occurrences
+    LFNW: 10 occurrences
+    LH4O: 3 occurrences
+    OXJD: 11 occurrences
+    PUMP: 12 occurrences
+    V46F: 2 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_l8pkkr_3840x2160.png: 10,231,058 chars
+    4NBT: 5 occurrences
+    ETXR: 12 occurrences
+    F3KN: 4 occurrences
+    F8PF: 2 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 9 occurrences
+    PUMP: 11 occurrences
+    V46F: 1 occurrences
+    XFFC: 15 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_o3538m_3840x2160.png: 7,754,586 chars
+    4NBT: 3 occurrences
+    ETXR: 7 occurrences
+    F3KN: 2 occurrences
+    F8PF: 4 occurrences
+    LFNW: 10 occurrences
+    LH4O: 2 occurrences
+    OXJD: 7 occurrences
+    PUMP: 5 occurrences
+    V46F: 3 occurrences
+    XFFC: 3 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_9m362w_3840x2160.jpg: 15,052,151 chars
+    4NBT: 6 occurrences
+    ETXR: 13 occurrences
+    F3KN: 5 occurrences
+    F8PF: 6 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 6 occurrences
+    PUMP: 13 occurrences
+    V46F: 4 occurrences
+    XFFC: 27 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_1podkv_3840x2160.png: 19,629,314 chars
+    4NBT: 6 occurrences
+    ETXR: 20 occurrences
+    F3KN: 7 occurrences
+    F8PF: 4 occurrences
+    LFNW: 17 occurrences
+    LH4O: 5 occurrences
+    OXJD: 12 occurrences
+    PUMP: 17 occurrences
+    V46F: 2 occurrences
+    XFFC: 11 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_5g8e13_3840x2160.png: 3,420,658 chars
+    4NBT: 1 occurrences
+    ETXR: 6 occurrences
+    F3KN: 1 occurrences
+    F8PF: 1 occurrences
+    LFNW: 2 occurrences
+    LH4O: 2 occurrences
+    OXJD: 5 occurrences
+    PUMP: 3 occurrences
+    V46F: 1 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_7pk19o_3840x2160.png: 20,787,966 chars
+    4NBT: 3 occurrences
+    ETXR: 29 occurrences
+    F3KN: 11 occurrences
+    F8PF: 6 occurrences
+    LFNW: 10 occurrences
+    LH4O: 11 occurrences
+    OXJD: 18 occurrences
+    PUMP: 25 occurrences
+    V46F: 1 occurrences
+    XFFC: 22 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_g8qqmd_3840x2160.png: 9,528,162 chars
+    4NBT: 4 occurrences
+    ETXR: 7 occurrences
+    F3KN: 1 occurrences
+    F8PF: 8 occurrences
+    LFNW: 5 occurrences
+    LH4O: 5 occurrences
+    OXJD: 8 occurrences
+    PUMP: 13 occurrences
+    V46F: 7 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 5 occurrences
+  - wallhaven_39rjd3_3840x2160.png: 19,132,530 chars
+    4NBT: 3 occurrences
+    ETXR: 7 occurrences
+    F3KN: 3 occurrences
+    F8PF: 4 occurrences
+    LFNW: 8 occurrences
+    LH4O: 8 occurrences
+    OXJD: 10 occurrences
+    PUMP: 8 occurrences
+    V46F: 1 occurrences
+    XFFC: 8 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_2yeqdy_3840x2160.jpg: 7,172,435 chars
+    4NBT: 1 occurrences
+    ETXR: 9 occurrences
+    F3KN: 2 occurrences
+    F8PF: 4 occurrences
+    LFNW: 4 occurrences
+    LH4O: 2 occurrences
+    OXJD: 3 occurrences
+    PUMP: 4 occurrences
+    V46F: 1 occurrences
+    XFFC: 3 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_4owmqm_3840x2160.png: 11,682,894 chars
+    4NBT: 5 occurrences
+    ETXR: 14 occurrences
+    F3KN: 6 occurrences
+    F8PF: 4 occurrences
+    LFNW: 10 occurrences
+    LH4O: 4 occurrences
+    OXJD: 13 occurrences
+    PUMP: 19 occurrences
+    V46F: 11 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_x6zw1v_3840x2160.png: 5,860,642 chars
+    4NBT: 8 occurrences
+    ETXR: 6 occurrences
+    F3KN: 1 occurrences
+    F8PF: 1 occurrences
+    LFNW: 7 occurrences
+    LH4O: 3 occurrences
+    OXJD: 2 occurrences
+    PUMP: 6 occurrences
+    V46F: 2 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_r2q1oj_3840x2160.png: 12,331,262 chars
+    4NBT: 2 occurrences
+    ETXR: 10 occurrences
+    F3KN: 3 occurrences
+    F8PF: 5 occurrences
+    LFNW: 7 occurrences
+    LH4O: 4 occurrences
+    OXJD: 12 occurrences
+    PUMP: 8 occurrences
+    V46F: 2 occurrences
+    XFFC: 12 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_83jlly_3840x2160.png: 21,631,886 chars
+    4NBT: 4 occurrences
+    ETXR: 11 occurrences
+    F3KN: 5 occurrences
+    F8PF: 5 occurrences
+    LFNW: 10 occurrences
+    LH4O: 1 occurrences
+    OXJD: 13 occurrences
+    PUMP: 5 occurrences
+    V46F: 2 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_13lj9v_3840x2160.png: 17,672,414 chars
+    4NBT: 20 occurrences
+    ETXR: 9 occurrences
+    F3KN: 17 occurrences
+    F8PF: 11 occurrences
+    LFNW: 10 occurrences
+    LH4O: 10 occurrences
+    OXJD: 23 occurrences
+    PUMP: 18 occurrences
+    V46F: 7 occurrences
+    XFFC: 16 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_3lwg3v_3840x2160.jpg: 6,204,051 chars
+    4NBT: 4 occurrences
+    ETXR: 6 occurrences
+    F3KN: 4 occurrences
+    F8PF: 2 occurrences
+    LFNW: 1 occurrences
+    LH4O: 1 occurrences
+    OXJD: 5 occurrences
+    PUMP: 5 occurrences
+    V46F: 3 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_ym16m7_3840x2160.png: 17,431,942 chars
+    4NBT: 7 occurrences
+    ETXR: 12 occurrences
+    F3KN: 14 occurrences
+    F8PF: 8 occurrences
+    LFNW: 7 occurrences
+    LH4O: 4 occurrences
+    OXJD: 15 occurrences
+    PUMP: 14 occurrences
+    V46F: 11 occurrences
+    XFFC: 20 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_1kjr11_3840x2160.png: 19,574,382 chars
+    4NBT: 9 occurrences
+    ETXR: 19 occurrences
+    F3KN: 6 occurrences
+    F8PF: 16 occurrences
+    LFNW: 21 occurrences
+    LH4O: 7 occurrences
+    OXJD: 19 occurrences
+    PUMP: 24 occurrences
+    V46F: 12 occurrences
+    XFFC: 21 occurrences
+    Y9I5: 5 occurrences
+  - wallhaven_g7vy7e_3840x2160.png: 6,808,462 chars
+    4NBT: 5 occurrences
+    ETXR: 11 occurrences
+    F3KN: 4 occurrences
+    F8PF: 5 occurrences
+    LFNW: 2 occurrences
+    LH4O: 1 occurrences
+    OXJD: 5 occurrences
+    PUMP: 6 occurrences
+    V46F: 1 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 5 occurrences
+  - wallhaven_j55xe5_3840x2160.png: 12,334,522 chars
+    4NBT: 6 occurrences
+    ETXR: 12 occurrences
+    F3KN: 5 occurrences
+    F8PF: 4 occurrences
+    LFNW: 7 occurrences
+    LH4O: 2 occurrences
+    OXJD: 9 occurrences
+    PUMP: 9 occurrences
+    V46F: 4 occurrences
+    XFFC: 6 occurrences
+    Y9I5: 4 occurrences
+  - wallhaven_md2o2y_3840x2160.jpg: 9,597,419 chars
+    4NBT: 4 occurrences
+    ETXR: 7 occurrences
+    F3KN: 7 occurrences
+    F8PF: 9 occurrences
+    LFNW: 11 occurrences
+    LH4O: 8 occurrences
+    OXJD: 9 occurrences
+    PUMP: 17 occurrences
+    V46F: 6 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_7p3ex9_3840x2160.png: 7,803,074 chars
+    4NBT: 4 occurrences
+    ETXR: 6 occurrences
+    F3KN: 6 occurrences
+    F8PF: 3 occurrences
+    LFNW: 4 occurrences
+    LH4O: 5 occurrences
+    OXJD: 14 occurrences
+    PUMP: 8 occurrences
+    V46F: 3 occurrences
+    XFFC: 12 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_pkd2gj_3840x2160.png: 5,738,702 chars
+    4NBT: 4 occurrences
+    ETXR: 3 occurrences
+    F3KN: 4 occurrences
+    F8PF: 4 occurrences
+    LFNW: 3 occurrences
+    LH4O: 2 occurrences
+    OXJD: 6 occurrences
+    PUMP: 6 occurrences
+    V46F: 1 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_qz525r_3840x2160.png: 13,885,294 chars
+    4NBT: 10 occurrences
+    ETXR: 12 occurrences
+    F3KN: 7 occurrences
+    F8PF: 9 occurrences
+    LFNW: 8 occurrences
+    LH4O: 10 occurrences
+    OXJD: 11 occurrences
+    PUMP: 9 occurrences
+    V46F: 3 occurrences
+    XFFC: 22 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_we3k6r_3840x2160.png: 19,160,130 chars
+    4NBT: 3 occurrences
+    ETXR: 8 occurrences
+    F3KN: 2 occurrences
+    F8PF: 4 occurrences
+    LFNW: 8 occurrences
+    LH4O: 7 occurrences
+    OXJD: 6 occurrences
+    PUMP: 6 occurrences
+    V46F: 4 occurrences
+    XFFC: 11 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_76y223_3840x2160.jpg: 11,566,379 chars
+    4NBT: 1 occurrences
+    ETXR: 10 occurrences
+    F3KN: 5 occurrences
+    F8PF: 6 occurrences
+    LFNW: 18 occurrences
+    LH4O: 9 occurrences
+    OXJD: 14 occurrences
+    PUMP: 16 occurrences
+    V46F: 5 occurrences
+    XFFC: 8 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_p2jjwm_3840x2160.png: 4,590,350 chars
+    4NBT: 5 occurrences
+    ETXR: 4 occurrences
+    F3KN: 1 occurrences
+    F8PF: 4 occurrences
+    LFNW: 8 occurrences
+    LH4O: 1 occurrences
+    OXJD: 1 occurrences
+    PUMP: 7 occurrences
+    V46F: 1 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_2eov2m_3840x2160.jpg: 5,838,191 chars
+    4NBT: 1 occurrences
+    ETXR: 8 occurrences
+    F3KN: 3 occurrences
+    F8PF: 1 occurrences
+    LFNW: 6 occurrences
+    LH4O: 1 occurrences
+    OXJD: 5 occurrences
+    PUMP: 3 occurrences
+    V46F: 2 occurrences
+    XFFC: 3 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_oxm7gl_3840x2160.png: 16,326,598 chars
+    4NBT: 6 occurrences
+    ETXR: 9 occurrences
+    F3KN: 11 occurrences
+    F8PF: 18 occurrences
+    LFNW: 18 occurrences
+    LH4O: 8 occurrences
+    OXJD: 12 occurrences
+    PUMP: 12 occurrences
+    V46F: 9 occurrences
+    XFFC: 13 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_7pxqe9_3840x2160.png: 16,448,530 chars
+    4NBT: 5 occurrences
+    ETXR: 17 occurrences
+    F3KN: 1 occurrences
+    F8PF: 8 occurrences
+    LFNW: 10 occurrences
+    LH4O: 10 occurrences
+    OXJD: 10 occurrences
+    PUMP: 16 occurrences
+    V46F: 2 occurrences
+    XFFC: 11 occurrences
+    Y9I5: 3 occurrences
+  - wallhaven_2e2xly_3840x2160.png: 22,956,442 chars
+    4NBT: 4 occurrences
+    ETXR: 11 occurrences
+    F3KN: 3 occurrences
+    F8PF: 4 occurrences
+    LFNW: 8 occurrences
+    LH4O: 4 occurrences
+    OXJD: 7 occurrences
+    PUMP: 19 occurrences
+    V46F: 4 occurrences
+    XFFC: 4 occurrences
+    Y9I5: 2 occurrences
+  - wallhaven_39w5ov_3840x2160.png: 22,782,694 chars
+    4NBT: 7 occurrences
+    ETXR: 26 occurrences
+    F3KN: 8 occurrences
+    F8PF: 12 occurrences
+    LFNW: 16 occurrences
+    LH4O: 12 occurrences
+    OXJD: 23 occurrences
+    PUMP: 19 occurrences
+    V46F: 8 occurrences
+    XFFC: 27 occurrences
+    Y9I5: 6 occurrences
+  - wallhaven_kxyg1m_3840x2160.png: 16,154,626 chars
+    4NBT: 5 occurrences
+    ETXR: 11 occurrences
+    F3KN: 5 occurrences
+    F8PF: 12 occurrences
+    LFNW: 14 occurrences
+    LH4O: 3 occurrences
+    OXJD: 22 occurrences
+    PUMP: 13 occurrences
+    V46F: 7 occurrences
+    XFFC: 10 occurrences
+    Y9I5: 3 occurrences
+
+Incomplete matches (159 images):
+  Average characters: 3,427,101.65
+  - wallhaven_z8r21o_3840x2160.jpg: 3,917,687 chars
+    Found 10 of 11 contract words
+  - wallhaven_vq38z3_3840x2160.png: 481,054 chars
+    Found 5 of 11 contract words
+  - wallhaven_o31w75_3840x2160.jpg: 1,424,363 chars
+    Found 5 of 11 contract words
+  - wallhaven_gj2kgd_3840x2160.jpg: 1,407,559 chars
+    Found 8 of 11 contract words
+  - wallhaven_831g6k_3840x2160.jpg: 1,744,443 chars
+    Found 8 of 11 contract words
+  - wallhaven_47qgr3_3840x2160.jpg: 885,735 chars
+    Found 5 of 11 contract words
+  - wallhaven_kwmgwq_3840x2160.jpg: 2,852,327 chars
+    Found 8 of 11 contract words
+  - wallhaven_qz8x3l_3840x2160.png: 12,575,102 chars
+    Found 10 of 11 contract words
+  - wallhaven_l31k32_3840x2160.jpg: 10,155,639 chars
+    Found 10 of 11 contract words
+  - wallhaven_4lgz6q_3840x2160.jpg: 1,614,487 chars
+    Found 7 of 11 contract words
+  - wallhaven_9521kk_3840x2160.jpg: 1,105,363 chars
+    Found 3 of 11 contract words
+  - wallhaven_lqlo1l_3840x2160.jpg: 4,394,999 chars
+    Found 10 of 11 contract words
+  - wallhaven_qz1p3d_3840x2160.jpg: 1,568,347 chars
+    Found 9 of 11 contract words
+  - wallhaven_42d6r6_3840x2160.jpg: 1,304,987 chars
+    Found 6 of 11 contract words
+  - wallhaven_ym9dmk_3840x2160.jpg: 11,676,471 chars
+    Found 10 of 11 contract words
+  - wallhaven_l3wrgq_3840x2160.jpg: 1,028,979 chars
+    Found 6 of 11 contract words
+  - wallhaven_d6q2j3_3840x2160.jpg: 1,908,415 chars
+    Found 4 of 11 contract words
+  - wallhaven_yx7y1l_3840x2160.jpg: 8,120,811 chars
+    Found 10 of 11 contract words
+  - wallhaven_42oz39_3840x2160.jpg: 2,999,087 chars
+    Found 8 of 11 contract words
+  - wallhaven_g77wq7_3840x2160.jpg: 2,592,139 chars
+    Found 10 of 11 contract words
+  - wallhaven_gp2og7_3840x2160.png: 810,062 chars
+    Found 2 of 11 contract words
+  - wallhaven_p98yxm_3840x2160.jpg: 10,506,555 chars
+    Found 10 of 11 contract words
+  - wallhaven_6kge1x_3840x2160.jpg: 11,636,663 chars
+    Found 10 of 11 contract words
+  - wallhaven_1kdzlg_3840x2160.jpg: 2,714,075 chars
+    Found 10 of 11 contract words
+  - wallhaven_xlgw1d_3840x2160.jpg: 1,547,619 chars
+    Found 5 of 11 contract words
+  - wallhaven_2ky6om_3840x2160.jpg: 1,162,355 chars
+    Found 6 of 11 contract words
+  - wallhaven_0qyv9q_3840x2160.jpg: 501,419 chars
+    Found 4 of 11 contract words
+  - wallhaven_73r129_3840x2160.jpg: 2,743,091 chars
+    Found 6 of 11 contract words
+  - wallhaven_dpjrdl_3840x2160.jpg: 837,107 chars
+    Found 3 of 11 contract words
+  - wallhaven_wy8xlr_3840x2160.jpg: 6,168,395 chars
+    Found 9 of 11 contract words
+  - wallhaven_8o6wwy_3840x2160.jpg: 2,458,159 chars
+    Found 7 of 11 contract words
+  - wallhaven_85m5l1_3840x2160.jpg: 9,181,139 chars
+    Found 10 of 11 contract words
+  - wallhaven_o5v3zl_3840x2160.jpg: 10,114,971 chars
+    Found 10 of 11 contract words
+  - wallhaven_rdlojj_3840x2160.jpg: 1,721,975 chars
+    Found 6 of 11 contract words
+  - wallhaven_k7x7md_3840x2160.jpg: 2,525,247 chars
+    Found 8 of 11 contract words
+  - wallhaven_qdreyq_3840x2160.jpg: 2,321,195 chars
+    Found 7 of 11 contract words
+  - wallhaven_761zk9_3840x2160.jpg: 4,427,595 chars
+    Found 10 of 11 contract words
+  - wallhaven_nz273w_3840x2160.jpg: 1,419,663 chars
+    Found 7 of 11 contract words
+  - wallhaven_pk6g6j_3840x2160.jpg: 8,362,127 chars
+    Found 10 of 11 contract words
+  - wallhaven_6ox16x_3840x2160.png: 5,557,002 chars
+    Found 10 of 11 contract words
+  - wallhaven_28ddwy_3840x2160.jpg: 594,199 chars
+    Found 3 of 11 contract words
+  - wallhaven_l823pp_3840x2160.png: 4,869,822 chars
+    Found 9 of 11 contract words
+  - wallhaven_2y7zqg_3840x2160.png: 5,557,322 chars
+    Found 10 of 11 contract words
+  - wallhaven_5wppv3_3840x2160.jpg: 2,351,575 chars
+    Found 6 of 11 contract words
+  - wallhaven_g8gyp3_3840x2160.jpg: 3,333,099 chars
+    Found 9 of 11 contract words
+  - wallhaven_wqlpkr_3840x2160.jpg: 4,016,143 chars
+    Found 10 of 11 contract words
+  - wallhaven_83lzry_3840x2160.jpg: 6,973,599 chars
+    Found 10 of 11 contract words
+  - wallhaven_2e6g5m_3840x2160.jpg: 2,621,503 chars
+    Found 8 of 11 contract words
+  - wallhaven_wq5qk6_3840x2160.jpg: 2,287,371 chars
+    Found 7 of 11 contract words
+  - wallhaven_dpxmk3_3840x2160.jpg: 2,097,403 chars
+    Found 7 of 11 contract words
+  - wallhaven_d6g63j_3840x2160.png: 1,869,246 chars
+    Found 5 of 11 contract words
+  - wallhaven_k7qkwm_3840x2160.jpg: 10,922,175 chars
+    Found 10 of 11 contract words
+  - wallhaven_eorwk8_3840x2160.jpg: 1,418,407 chars
+    Found 5 of 11 contract words
+  - wallhaven_l8v29q_3840x2160.png: 2,397,510 chars
+    Found 6 of 11 contract words
+  - wallhaven_l3j6yp_3840x2160.jpg: 458,667 chars
+    Found 3 of 11 contract words
+  - wallhaven_1ko5gg_3840x2160.jpg: 1,445,947 chars
+    Found 6 of 11 contract words
+  - wallhaven_1p6y51_3840x2160.jpg: 1,152,955 chars
+    Found 6 of 11 contract words
+  - wallhaven_39q9xv_3840x2160.png: 427,974 chars
+    Found 2 of 11 contract words
+  - wallhaven_6oe62l_3840x2160.jpg: 4,651,543 chars
+    Found 8 of 11 contract words
+  - wallhaven_39d93v_3840x2160.jpg: 1,973,179 chars
+    Found 6 of 11 contract words
+  - wallhaven_yxw31k_3840x2160.jpg: 5,391,079 chars
+    Found 7 of 11 contract words
+  - wallhaven_73qkoo_3840x2160.jpg: 2,355,463 chars
+    Found 8 of 11 contract words
+  - wallhaven_43mzg9_3840x2160.jpg: 1,832,595 chars
+    Found 8 of 11 contract words
+  - wallhaven_x6j71z_3840x2160.jpg: 369,699 chars
+    Found 1 of 11 contract words
+  - wallhaven_57y815_3840x2160.jpg: 5,575,267 chars
+    Found 9 of 11 contract words
+  - wallhaven_3l6k7y_3840x2160.jpg: 3,340,147 chars
+    Found 6 of 11 contract words
+  - wallhaven_x8x79z_3840x2160.jpg: 961,271 chars
+    Found 5 of 11 contract words
+  - wallhaven_yj9grl_3840x2160.jpg: 2,616,191 chars
+    Found 7 of 11 contract words
+  - wallhaven_vqyjp5_3840x2160.png: 2,411,178 chars
+    Found 7 of 11 contract words
+  - wallhaven_vqjg95_3840x2160.jpg: 420,043 chars
+    Found 0 of 11 contract words
+  - wallhaven_13o2w3_3840x2160.jpg: 735,087 chars
+    Found 1 of 11 contract words
+  - wallhaven_md8kyk_3840x2160.jpg: 6,416,287 chars
+    Found 10 of 11 contract words
+  - wallhaven_p26qxe_3840x2160.png: 9,690,130 chars
+    Found 10 of 11 contract words
+  - wallhaven_7p55g3_3840x2160.jpg: 2,243,375 chars
+    Found 9 of 11 contract words
+  - wallhaven_r2xllq_3840x2160.jpg: 2,873,527 chars
+    Found 8 of 11 contract words
+  - wallhaven_3zpdv6_3840x2160.png: 1,761,366 chars
+    Found 6 of 11 contract words
+  - wallhaven_wymy1q_3840x2160.jpg: 4,941,927 chars
+    Found 10 of 11 contract words
+  - wallhaven_qzk26d_3840x2160.jpg: 403,859 chars
+    Found 3 of 11 contract words
+  - wallhaven_q2lx17_3840x2160.jpg: 5,677,387 chars
+    Found 9 of 11 contract words
+  - wallhaven_o5omyl_3840x2160.jpg: 4,965,299 chars
+    Found 8 of 11 contract words
+  - wallhaven_y88dwl_3840x2160.jpg: 2,352,819 chars
+    Found 8 of 11 contract words
+  - wallhaven_9m6vzx_3840x2160.jpg: 768,251 chars
+    Found 3 of 11 contract words
+  - wallhaven_6k3gp6_3840x2160.jpg: 4,308,347 chars
+    Found 7 of 11 contract words
+  - wallhaven_v9erlp_3840x2160.jpg: 4,420,067 chars
+    Found 7 of 11 contract words
+  - wallhaven_pkvyx3_3840x2160.jpg: 7,488,459 chars
+    Found 10 of 11 contract words
+  - wallhaven_dpkloo_3840x2160.jpg: 4,621,879 chars
+    Found 7 of 11 contract words
+  - wallhaven_6ql63w_3840x2160.jpg: 3,594,751 chars
+    Found 7 of 11 contract words
+  - wallhaven_z8m7pw_3840x2160.jpg: 410,187 chars
+    Found 3 of 11 contract words
+  - wallhaven_1p2m2w_3840x2160.jpg: 4,681,155 chars
+    Found 8 of 11 contract words
+  - wallhaven_0pqe3j_3840x2160.jpg: 1,236,979 chars
+    Found 4 of 11 contract words
+  - wallhaven_eo53mr_3840x2160.png: 369,758 chars
+    Found 3 of 11 contract words
+  - wallhaven_6kq3rl_3840x2160.jpg: 4,407,999 chars
+    Found 9 of 11 contract words
+  - wallhaven_l31r22_3840x2160.png: 2,281,022 chars
+    Found 9 of 11 contract words
+  - wallhaven_ymk37d_3840x2160.jpg: 3,254,919 chars
+    Found 10 of 11 contract words
+  - wallhaven_x1rr6d_3840x2160.png: 15,506,726 chars
+    Found 10 of 11 contract words
+  - wallhaven_p9yqzj_3840x2160.png: 1,458,018 chars
+    Found 4 of 11 contract words
+  - wallhaven_yx2or7_3840x2160.jpg: 1,052,491 chars
+    Found 7 of 11 contract words
+  - wallhaven_72jqve_3840x2160.jpg: 1,197,719 chars
+    Found 7 of 11 contract words
+  - wallhaven_j38rwp_3840x2160.jpg: 4,228,567 chars
+    Found 8 of 11 contract words
+  - wallhaven_3z63jy_3840x2160.jpg: 1,424,975 chars
+    Found 8 of 11 contract words
+  - wallhaven_0p52pj_3840x2160.png: 2,075,882 chars
+    Found 9 of 11 contract words
+  - wallhaven_39v886_3840x2160.jpg: 2,583,527 chars
+    Found 8 of 11 contract words
+  - wallhaven_x81lyv_3840x2160.jpg: 4,572,983 chars
+    Found 10 of 11 contract words
+  - wallhaven_dpv23j_3840x2160.jpg: 4,846,203 chars
+    Found 10 of 11 contract words
+  - wallhaven_yxwj2l_3840x2160.png: 3,438,526 chars
+    Found 9 of 11 contract words
+  - wallhaven_57q1y8_3840x2160.jpg: 6,974,903 chars
+    Found 9 of 11 contract words
+  - wallhaven_73e85e_3840x2160.jpg: 1,961,679 chars
+    Found 8 of 11 contract words
+  - wallhaven_729roo_3840x2160.jpg: 1,041,763 chars
+    Found 4 of 11 contract words
+  - wallhaven_yxz85d_3840x2160.jpg: 1,277,543 chars
+    Found 6 of 11 contract words
+  - wallhaven_3lp666_3840x2160.jpg: 1,576,259 chars
+    Found 8 of 11 contract words
+  - wallhaven_6k98vq_3840x2160.jpg: 132,171 chars
+    Found 0 of 11 contract words
+  - wallhaven_45zy83_3840x2160.jpg: 1,752,247 chars
+    Found 5 of 11 contract words
+  - wallhaven_8xlvmo_3840x2160.jpg: 1,438,603 chars
+    Found 6 of 11 contract words
+  - wallhaven_0qpy1d_3840x2160.jpg: 1,880,243 chars
+    Found 7 of 11 contract words
+  - wallhaven_p2866j_3840x2160.jpg: 1,657,871 chars
+    Found 4 of 11 contract words
+  - wallhaven_q2p7x7_3840x2160.jpg: 4,505,799 chars
+    Found 10 of 11 contract words
+  - wallhaven_q27l97_3840x2160.png: 3,415,606 chars
+    Found 8 of 11 contract words
+  - wallhaven_72rgxy_3840x2160.jpg: 3,861,351 chars
+    Found 10 of 11 contract words
+  - wallhaven_j5gw1p_3840x2160.jpg: 7,292,479 chars
+    Found 10 of 11 contract words
+  - wallhaven_v98kw3_3840x2160.jpg: 2,421,507 chars
+    Found 9 of 11 contract words
+  - wallhaven_39pv63_3840x2160.jpg: 668,319 chars
+    Found 4 of 11 contract words
+  - wallhaven_kw9o7q_3840x2160.jpg: 838,483 chars
+    Found 5 of 11 contract words
+  - wallhaven_l3gpkq_3840x2160.jpg: 2,807,795 chars
+    Found 6 of 11 contract words
+  - wallhaven_dpxp13_3840x2160.jpg: 2,153,755 chars
+    Found 6 of 11 contract words
+  - wallhaven_43wyj3_3840x2160.jpg: 1,668,031 chars
+    Found 4 of 11 contract words
+  - wallhaven_nelokk_3840x2160.jpg: 1,790,255 chars
+    Found 8 of 11 contract words
+  - wallhaven_1p2w53_3840x2160.jpg: 820,075 chars
+    Found 4 of 11 contract words
+  - wallhaven_z8y6ro_3840x2160.jpg: 915,711 chars
+    Found 4 of 11 contract words
+  - wallhaven_dgoz3m_3840x2160.png: 8,651,986 chars
+    Found 7 of 11 contract words
+  - wallhaven_738jr3_3840x2160.jpg: 8,451,471 chars
+    Found 9 of 11 contract words
+  - wallhaven_13p6l1_3840x2160.jpg: 10,318,651 chars
+    Found 10 of 11 contract words
+  - wallhaven_481g32_3840x2160.jpg: 2,665,875 chars
+    Found 6 of 11 contract words
+  - wallhaven_0pqyep_3840x2160.jpg: 1,726,355 chars
+    Found 8 of 11 contract words
+  - wallhaven_mpg7my_3840x2160.jpg: 238,143 chars
+    Found 0 of 11 contract words
+  - wallhaven_x8go2o_3840x2160.jpg: 3,018,791 chars
+    Found 9 of 11 contract words
+  - wallhaven_8x66g1_3840x2160.jpg: 2,536,171 chars
+    Found 7 of 11 contract words
+  - wallhaven_8513jo_3840x2160.png: 1,314,786 chars
+    Found 10 of 11 contract words
+  - wallhaven_x8p29d_3840x2160.jpg: 2,381,159 chars
+    Found 7 of 11 contract words
+  - wallhaven_1k9eq9_3840x2160.jpg: 2,640,631 chars
+    Found 7 of 11 contract words
+  - wallhaven_7356me_3840x2160.jpg: 817,503 chars
+    Found 4 of 11 contract words
+  - wallhaven_7p39r9_3840x2160.jpg: 5,504,291 chars
+    Found 10 of 11 contract words
+  - wallhaven_gjq6yd_3840x2160.jpg: 2,378,807 chars
+    Found 8 of 11 contract words
+  - wallhaven_l8l5ry_3840x2160.png: 5,102,958 chars
+    Found 10 of 11 contract words
+  - wallhaven_3zlqwd_3840x2160.jpg: 3,023,427 chars
+    Found 10 of 11 contract words
+  - wallhaven_8328vj_3840x2160.jpg: 4,709,887 chars
+    Found 9 of 11 contract words
+  - wallhaven_83vg32_3840x2160.png: 1,278,078 chars
+    Found 5 of 11 contract words
+  - wallhaven_g8d52d_3840x2160.jpg: 2,558,379 chars
+    Found 10 of 11 contract words
+  - wallhaven_kwdpoq_3840x2160.png: 2,131,938 chars
+    Found 4 of 11 contract words
+  - wallhaven_83zvdy_3840x2160.png: 313,146 chars
+    Found 3 of 11 contract words
+  - wallhaven_odqpzp_3840x2160.jpg: 3,696,175 chars
+    Found 8 of 11 contract words
+  - wallhaven_m9oo5k_3840x2160.png: 10,108,266 chars
+    Found 10 of 11 contract words
+  - wallhaven_47lgv0_3840x2160.jpg: 1,721,319 chars
+    Found 7 of 11 contract words
+  - wallhaven_we5rpq_3840x2160.jpg: 4,923,239 chars
+    Found 10 of 11 contract words
+  - wallhaven_961w8x_3840x2160.jpg: 3,736,143 chars
+    Found 9 of 11 contract words
+  - wallhaven_zyw3vg_3840x2160.jpg: 7,369,407 chars
+    Found 9 of 11 contract words
+  - wallhaven_yx1g1x_3840x2160.jpg: 1,611,227 chars
+    Found 5 of 11 contract words
+  - wallhaven_o5k5y9_3840x2160.jpg: 1,221,631 chars
+    Found 7 of 11 contract words
+  - wallhaven_l825xq_3840x2160.png: 6,186,382 chars
+    Found 10 of 11 contract words
+  - wallhaven_x68moz_3840x2160.jpg: 6,263,059 chars
+    Found 10 of 11 contract words
+
+Character Count Comparison:
+  Complete contracts have 9,117,858.81 more characters on average
+  Ratio of complete to incomplete length: 3.66x
+

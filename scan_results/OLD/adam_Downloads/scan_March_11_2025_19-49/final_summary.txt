@@ -1,0 +1,16 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T19:49:12.573756
+Total images analyzed: 1
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 99,583
+Average characters per image: 99,583.00
+
+Incomplete matches (1 images):
+  Average characters: 99,583.00
+  - GlyK770bgAAFfoE.jpeg: 99,583 chars
+    Found 0 of 11 contract words
+

@@ -1,0 +1,46 @@
+Scan Results for: yews_8PM_67bd43f9be90dff23fd03279_Blake_2C_20Wm._20Oberon_2C_20Titania_20and_20Puck_20with_20Fairies_20Dancing._201779..jpeg
+Scan Time: 2025-03-11T17:37:11.482684
+Base64 Character Count: 420,275
+
+Contract Words Found:
+  - 4NBT (1 occurrences)
+  - ETXR (1 occurrences)
+  - LFNW (1 occurrences)
+  - OXJD (1 occurrences)
+
+Missing Contract Words:
+  - F3KN
+  - F8PF
+  - LH4O
+  - PUMP
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - OLAF
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAR
+  - BLAK
+  - C01N
+  - ETHA
+  - FINE
+  - GOLD
+  - H34L
+  - JEWM
+  - JEWS
+  - LORE
+  - MMM
+  - MOON
+  - REAP
+  - WIZ
+  - Y0BS
+  - Y0LK
+  - Y3S
+  - Y3WS
+  - ZANY

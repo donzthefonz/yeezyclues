@@ -1,0 +1,55 @@
+{
+    "contract_words": [
+        "F3KN",
+        "LH4O"
+    ],
+    "contract_word_counts": {
+        "F3KN": 2,
+        "LH4O": 1
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F8PF",
+        "LFNW",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "FADE",
+        "FINE",
+        "FISH",
+        "GOLD",
+        "JEWS",
+        "MMM",
+        "MOON",
+        "PLUT",
+        "TATE",
+        "TENA",
+        "TINA",
+        "Y0G1",
+        "Y1P3",
+        "Y3S",
+        "Y3T1",
+        "Z3NS",
+        "ZANY"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 2,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_66282d8b8ada31fdbc74ce5b_Blake_2C_20Wm._20Christian_20Reading_20in_20His_20Book._201824..jpeg",
+    "character_count": 869143
+}

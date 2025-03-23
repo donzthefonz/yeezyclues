@@ -1,0 +1,58 @@
+Scan Results for: wallhaven_yx2or7_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:28.488036
+Base64 Character Count: 1,052,491
+
+Contract Words Found:
+  - ETXR (1 occurrences)
+  - F8PF (1 occurrences)
+  - LFNW (1 occurrences)
+  - LH4O (2 occurrences)
+  - OXJD (3 occurrences)
+  - XFFC (1 occurrences)
+  - Y9I5 (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - PUMP
+  - V46F
+
+High Significance Patterns:
+  - FLAG
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAR
+  - BIANC
+  - COIN
+  - CRYP
+  - DEST
+  - ETHA
+  - FADE
+  - FISH
+  - GOLD
+  - HODL
+  - HOLD
+  - JEWM
+  - JEWS
+  - KIMK
+  - MMM
+  - NERO
+  - TOWN
+  - WIZ
+  - WIZK
+  - Y0LK
+  - Y0UR
+  - Y0WL
+  - Y3S
+  - Y3WS
+  - YURT
+  - Z00M
+  - Z1NC
+  - Z1TS
+  - Z3ST
+  - ZAPS

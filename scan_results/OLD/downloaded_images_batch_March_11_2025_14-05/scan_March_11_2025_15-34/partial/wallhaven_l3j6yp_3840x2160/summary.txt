@@ -1,0 +1,42 @@
+Scan Results for: wallhaven_l3j6yp_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:25.636437
+Base64 Character Count: 458,667
+
+Contract Words Found:
+  - F3KN (1 occurrences)
+  - F8PF (1 occurrences)
+  - PUMP (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - ETXR
+  - LFNW
+  - LH4O
+  - OXJD
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - OLAF
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - DEST
+  - ELON
+  - FINE
+  - GOLD
+  - JEWS
+  - MMM
+  - REAP
+  - WEST
+  - WIZ
+  - WIZK
+  - Y0G1
+  - Y3S
+  - Y3WS
+  - Z3DS
+  - ZAPS

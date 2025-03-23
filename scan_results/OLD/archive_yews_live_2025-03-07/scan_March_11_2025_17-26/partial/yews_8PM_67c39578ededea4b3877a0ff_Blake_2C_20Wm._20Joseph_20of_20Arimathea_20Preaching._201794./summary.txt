@@ -1,0 +1,88 @@
+Scan Results for: yews_8PM_67c39578ededea4b3877a0ff_Blake_2C_20Wm._20Joseph_20of_20Arimathea_20Preaching._201794..jpg
+Scan Time: 2025-03-11T17:26:31.016559
+Base64 Character Count: 4,435,127
+
+Contract Words Found:
+  - ETXR (5 occurrences)
+  - F3KN (2 occurrences)
+  - F8PF (17 occurrences)
+  - LFNW (2 occurrences)
+  - LH4O (9 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (4 occurrences)
+  - V46F (6 occurrences)
+  - XFFC (8 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - Y9I5
+
+High Significance Patterns:
+  - FLAG
+  - OLAF
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ANSE
+  - ARG
+  - BEAM
+  - BEAR
+  - BLAK
+  - C01N
+  - COIN
+  - CRYP
+  - DEST
+  - ELON
+  - FADE
+  - FINE
+  - FISH
+  - GOLD
+  - H34L
+  - HODL
+  - JEWM
+  - JEWS
+  - KIMK
+  - LORE
+  - M3M3
+  - MEME
+  - MILO
+  - MMM
+  - MOON
+  - NERO
+  - NORT
+  - PLUT
+  - REAP
+  - TATE
+  - TENA
+  - TINA
+  - TOWN
+  - W1LL
+  - WEST
+  - WIZ
+  - WIZK
+  - Y0BS
+  - Y0G1
+  - Y0GA
+  - Y0LK
+  - Y0R3
+  - Y0WL
+  - Y1PS
+  - Y34R
+  - Y3S
+  - Y3T1
+  - Y3WS
+  - YURT
+  - Z00M
+  - Z1NC
+  - Z1TS
+  - Z34L
+  - Z3DS
+  - Z3NS
+  - Z3R0
+  - Z3ST
+  - ZANY
+  - ZAPS

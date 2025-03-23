@@ -1,0 +1,42 @@
+{
+    "contract_words": [],
+    "contract_word_counts": {},
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "PASS",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAM",
+        "H34L",
+        "JEWS",
+        "KIMK",
+        "MMM",
+        "WIZ",
+        "Y0GA",
+        "Y3S",
+        "Z1NC"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 0,
+        "total": 11
+    },
+    "original_image_name": "6621517390587be30366cc05_Blake, Wm. Milton's Paradise Regained. 1816.-p-500.jpeg",
+    "character_count": 121727
+}

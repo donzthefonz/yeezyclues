@@ -1,0 +1,37 @@
+Scan Results for: 659b760bb53dc2c262e65b4b_Blake, Wm. The Vision of Christ. 1821.-p-500.png
+Scan Time: 2025-03-11T17:17:59.441803
+Base64 Character Count: 231,926
+
+Contract Words Found:
+  - 4NBT (1 occurrences)
+  - ETXR (1 occurrences)
+
+Missing Contract Words:
+  - F3KN
+  - F8PF
+  - LFNW
+  - LH4O
+  - OXJD
+  - PUMP
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - COIN
+  - FAITH
+  - FISH
+  - KIMK
+  - MMM
+  - MOON
+  - PLUT
+  - TENA
+  - WIZ
+  - Y3S
+  - YURT

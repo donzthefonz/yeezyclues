@@ -1,0 +1,77 @@
+Scan Results for: wallhaven_nelokk_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:30.980828
+Base64 Character Count: 1,790,255
+
+Contract Words Found:
+  - 4NBT (3 occurrences)
+  - ETXR (2 occurrences)
+  - F3KN (1 occurrences)
+  - LFNW (1 occurrences)
+  - LH4O (2 occurrences)
+  - OXJD (2 occurrences)
+  - PUMP (3 occurrences)
+  - XFFC (1 occurrences)
+
+Missing Contract Words:
+  - F8PF
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - KANYE
+  - OLAF
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ANSE
+  - ARG
+  - BEAR
+  - BLAK
+  - COIN
+  - CRYP
+  - DEST
+  - ELON
+  - ETHA
+  - FADE
+  - FAITH
+  - FINE
+  - GOLD
+  - HODL
+  - HOLD
+  - JEWS
+  - LORE
+  - MEME
+  - MILO
+  - MMM
+  - MOON
+  - NERO
+  - NORT
+  - PLUT
+  - REAP
+  - TENA
+  - TINA
+  - TOWN
+  - W1LL
+  - WEST
+  - WIZ
+  - Y0BS
+  - Y0K3
+  - Y0L0
+  - Y0R3
+  - Y0UR
+  - Y1PS
+  - Y34R
+  - Y3S
+  - Y3T1
+  - Y3WS
+  - YURT
+  - Z00S
+  - Z3NS
+  - Z3R0
+  - Z3ST
+  - ZANY
+  - ZAPS

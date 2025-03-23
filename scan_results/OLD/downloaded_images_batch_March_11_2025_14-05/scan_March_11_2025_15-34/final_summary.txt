@@ -1,0 +1,259 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T15:34:33.523320
+Total images analyzed: 109
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 195,876,461
+Average characters per image: 1,797,031.75
+
+Complete contract matches (2 images):
+  Average characters: 3,358,474.50
+  - wallhaven_exjxgr_3840x2160.jpg: 3,296,291 chars
+    4NBT: 4 occurrences
+    ETXR: 4 occurrences
+    F3KN: 1 occurrences
+    F8PF: 2 occurrences
+    LFNW: 3 occurrences
+    LH4O: 1 occurrences
+    OXJD: 3 occurrences
+    PUMP: 1 occurrences
+    V46F: 1 occurrences
+    XFFC: 7 occurrences
+    Y9I5: 1 occurrences
+  - wallhaven_5g8e13_3840x2160.png: 3,420,658 chars
+    4NBT: 1 occurrences
+    ETXR: 6 occurrences
+    F3KN: 1 occurrences
+    F8PF: 1 occurrences
+    LFNW: 2 occurrences
+    LH4O: 2 occurrences
+    OXJD: 5 occurrences
+    PUMP: 3 occurrences
+    V46F: 1 occurrences
+    XFFC: 9 occurrences
+    Y9I5: 3 occurrences
+
+Incomplete matches (107 images):
+  Average characters: 1,767,845.91
+  - wallhaven_vq38z3_3840x2160.png: 481,054 chars
+    Found 5 of 11 contract words
+  - wallhaven_o31w75_3840x2160.jpg: 1,424,363 chars
+    Found 5 of 11 contract words
+  - wallhaven_gj2kgd_3840x2160.jpg: 1,407,559 chars
+    Found 8 of 11 contract words
+  - wallhaven_831g6k_3840x2160.jpg: 1,744,443 chars
+    Found 8 of 11 contract words
+  - wallhaven_47qgr3_3840x2160.jpg: 885,735 chars
+    Found 5 of 11 contract words
+  - wallhaven_kwmgwq_3840x2160.jpg: 2,852,327 chars
+    Found 8 of 11 contract words
+  - wallhaven_4lgz6q_3840x2160.jpg: 1,614,487 chars
+    Found 7 of 11 contract words
+  - wallhaven_9521kk_3840x2160.jpg: 1,105,363 chars
+    Found 3 of 11 contract words
+  - wallhaven_qz1p3d_3840x2160.jpg: 1,568,347 chars
+    Found 9 of 11 contract words
+  - wallhaven_42d6r6_3840x2160.jpg: 1,304,987 chars
+    Found 6 of 11 contract words
+  - wallhaven_l3wrgq_3840x2160.jpg: 1,028,979 chars
+    Found 6 of 11 contract words
+  - wallhaven_d6q2j3_3840x2160.jpg: 1,908,415 chars
+    Found 4 of 11 contract words
+  - wallhaven_42oz39_3840x2160.jpg: 2,999,087 chars
+    Found 8 of 11 contract words
+  - wallhaven_g77wq7_3840x2160.jpg: 2,592,139 chars
+    Found 10 of 11 contract words
+  - wallhaven_gp2og7_3840x2160.png: 810,062 chars
+    Found 2 of 11 contract words
+  - wallhaven_1kdzlg_3840x2160.jpg: 2,714,075 chars
+    Found 10 of 11 contract words
+  - wallhaven_xlgw1d_3840x2160.jpg: 1,547,619 chars
+    Found 5 of 11 contract words
+  - wallhaven_2ky6om_3840x2160.jpg: 1,162,355 chars
+    Found 6 of 11 contract words
+  - wallhaven_0qyv9q_3840x2160.jpg: 501,419 chars
+    Found 4 of 11 contract words
+  - wallhaven_73r129_3840x2160.jpg: 2,743,091 chars
+    Found 6 of 11 contract words
+  - wallhaven_dpjrdl_3840x2160.jpg: 837,107 chars
+    Found 3 of 11 contract words
+  - wallhaven_8o6wwy_3840x2160.jpg: 2,458,159 chars
+    Found 7 of 11 contract words
+  - wallhaven_rdlojj_3840x2160.jpg: 1,721,975 chars
+    Found 6 of 11 contract words
+  - wallhaven_k7x7md_3840x2160.jpg: 2,525,247 chars
+    Found 8 of 11 contract words
+  - wallhaven_qdreyq_3840x2160.jpg: 2,321,195 chars
+    Found 7 of 11 contract words
+  - wallhaven_nz273w_3840x2160.jpg: 1,419,663 chars
+    Found 7 of 11 contract words
+  - wallhaven_28ddwy_3840x2160.jpg: 594,199 chars
+    Found 3 of 11 contract words
+  - wallhaven_5wppv3_3840x2160.jpg: 2,351,575 chars
+    Found 6 of 11 contract words
+  - wallhaven_g8gyp3_3840x2160.jpg: 3,333,099 chars
+    Found 9 of 11 contract words
+  - wallhaven_2e6g5m_3840x2160.jpg: 2,621,503 chars
+    Found 8 of 11 contract words
+  - wallhaven_wq5qk6_3840x2160.jpg: 2,287,371 chars
+    Found 7 of 11 contract words
+  - wallhaven_dpxmk3_3840x2160.jpg: 2,097,403 chars
+    Found 7 of 11 contract words
+  - wallhaven_d6g63j_3840x2160.png: 1,869,246 chars
+    Found 5 of 11 contract words
+  - wallhaven_eorwk8_3840x2160.jpg: 1,418,407 chars
+    Found 5 of 11 contract words
+  - wallhaven_l8v29q_3840x2160.png: 2,397,510 chars
+    Found 6 of 11 contract words
+  - wallhaven_l3j6yp_3840x2160.jpg: 458,667 chars
+    Found 3 of 11 contract words
+  - wallhaven_1ko5gg_3840x2160.jpg: 1,445,947 chars
+    Found 6 of 11 contract words
+  - wallhaven_1p6y51_3840x2160.jpg: 1,152,955 chars
+    Found 6 of 11 contract words
+  - wallhaven_39q9xv_3840x2160.png: 427,974 chars
+    Found 2 of 11 contract words
+  - wallhaven_39d93v_3840x2160.jpg: 1,973,179 chars
+    Found 6 of 11 contract words
+  - wallhaven_73qkoo_3840x2160.jpg: 2,355,463 chars
+    Found 8 of 11 contract words
+  - wallhaven_43mzg9_3840x2160.jpg: 1,832,595 chars
+    Found 8 of 11 contract words
+  - wallhaven_x6j71z_3840x2160.jpg: 369,699 chars
+    Found 1 of 11 contract words
+  - wallhaven_3l6k7y_3840x2160.jpg: 3,340,147 chars
+    Found 6 of 11 contract words
+  - wallhaven_x8x79z_3840x2160.jpg: 961,271 chars
+    Found 5 of 11 contract words
+  - wallhaven_yj9grl_3840x2160.jpg: 2,616,191 chars
+    Found 7 of 11 contract words
+  - wallhaven_vqyjp5_3840x2160.png: 2,411,178 chars
+    Found 7 of 11 contract words
+  - wallhaven_vqjg95_3840x2160.jpg: 420,043 chars
+    Found 0 of 11 contract words
+  - wallhaven_13o2w3_3840x2160.jpg: 735,087 chars
+    Found 1 of 11 contract words
+  - wallhaven_7p55g3_3840x2160.jpg: 2,243,375 chars
+    Found 9 of 11 contract words
+  - wallhaven_r2xllq_3840x2160.jpg: 2,873,527 chars
+    Found 8 of 11 contract words
+  - wallhaven_3zpdv6_3840x2160.png: 1,761,366 chars
+    Found 6 of 11 contract words
+  - wallhaven_qzk26d_3840x2160.jpg: 403,859 chars
+    Found 3 of 11 contract words
+  - wallhaven_y88dwl_3840x2160.jpg: 2,352,819 chars
+    Found 8 of 11 contract words
+  - wallhaven_9m6vzx_3840x2160.jpg: 768,251 chars
+    Found 3 of 11 contract words
+  - wallhaven_6ql63w_3840x2160.jpg: 3,594,751 chars
+    Found 7 of 11 contract words
+  - wallhaven_z8m7pw_3840x2160.jpg: 410,187 chars
+    Found 3 of 11 contract words
+  - wallhaven_0pqe3j_3840x2160.jpg: 1,236,979 chars
+    Found 4 of 11 contract words
+  - wallhaven_eo53mr_3840x2160.png: 369,758 chars
+    Found 3 of 11 contract words
+  - wallhaven_l31r22_3840x2160.png: 2,281,022 chars
+    Found 9 of 11 contract words
+  - wallhaven_ymk37d_3840x2160.jpg: 3,254,919 chars
+    Found 10 of 11 contract words
+  - wallhaven_p9yqzj_3840x2160.png: 1,458,018 chars
+    Found 4 of 11 contract words
+  - wallhaven_yx2or7_3840x2160.jpg: 1,052,491 chars
+    Found 7 of 11 contract words
+  - wallhaven_72jqve_3840x2160.jpg: 1,197,719 chars
+    Found 7 of 11 contract words
+  - wallhaven_3z63jy_3840x2160.jpg: 1,424,975 chars
+    Found 8 of 11 contract words
+  - wallhaven_0p52pj_3840x2160.png: 2,075,882 chars
+    Found 9 of 11 contract words
+  - wallhaven_39v886_3840x2160.jpg: 2,583,527 chars
+    Found 8 of 11 contract words
+  - wallhaven_yxwj2l_3840x2160.png: 3,438,526 chars
+    Found 9 of 11 contract words
+  - wallhaven_73e85e_3840x2160.jpg: 1,961,679 chars
+    Found 8 of 11 contract words
+  - wallhaven_729roo_3840x2160.jpg: 1,041,763 chars
+    Found 4 of 11 contract words
+  - wallhaven_yxz85d_3840x2160.jpg: 1,277,543 chars
+    Found 6 of 11 contract words
+  - wallhaven_3lp666_3840x2160.jpg: 1,576,259 chars
+    Found 8 of 11 contract words
+  - wallhaven_6k98vq_3840x2160.jpg: 132,171 chars
+    Found 0 of 11 contract words
+  - wallhaven_45zy83_3840x2160.jpg: 1,752,247 chars
+    Found 5 of 11 contract words
+  - wallhaven_8xlvmo_3840x2160.jpg: 1,438,603 chars
+    Found 6 of 11 contract words
+  - wallhaven_0qpy1d_3840x2160.jpg: 1,880,243 chars
+    Found 7 of 11 contract words
+  - wallhaven_p2866j_3840x2160.jpg: 1,657,871 chars
+    Found 4 of 11 contract words
+  - wallhaven_q27l97_3840x2160.png: 3,415,606 chars
+    Found 8 of 11 contract words
+  - wallhaven_v98kw3_3840x2160.jpg: 2,421,507 chars
+    Found 9 of 11 contract words
+  - wallhaven_39pv63_3840x2160.jpg: 668,319 chars
+    Found 4 of 11 contract words
+  - wallhaven_kw9o7q_3840x2160.jpg: 838,483 chars
+    Found 5 of 11 contract words
+  - wallhaven_l3gpkq_3840x2160.jpg: 2,807,795 chars
+    Found 6 of 11 contract words
+  - wallhaven_dpxp13_3840x2160.jpg: 2,153,755 chars
+    Found 6 of 11 contract words
+  - wallhaven_43wyj3_3840x2160.jpg: 1,668,031 chars
+    Found 4 of 11 contract words
+  - wallhaven_nelokk_3840x2160.jpg: 1,790,255 chars
+    Found 8 of 11 contract words
+  - wallhaven_1p2w53_3840x2160.jpg: 820,075 chars
+    Found 4 of 11 contract words
+  - wallhaven_z8y6ro_3840x2160.jpg: 915,711 chars
+    Found 4 of 11 contract words
+  - wallhaven_481g32_3840x2160.jpg: 2,665,875 chars
+    Found 6 of 11 contract words
+  - wallhaven_0pqyep_3840x2160.jpg: 1,726,355 chars
+    Found 8 of 11 contract words
+  - wallhaven_mpg7my_3840x2160.jpg: 238,143 chars
+    Found 0 of 11 contract words
+  - wallhaven_x8go2o_3840x2160.jpg: 3,018,791 chars
+    Found 9 of 11 contract words
+  - wallhaven_8x66g1_3840x2160.jpg: 2,536,171 chars
+    Found 7 of 11 contract words
+  - wallhaven_8513jo_3840x2160.png: 1,314,786 chars
+    Found 10 of 11 contract words
+  - wallhaven_x8p29d_3840x2160.jpg: 2,381,159 chars
+    Found 7 of 11 contract words
+  - wallhaven_1k9eq9_3840x2160.jpg: 2,640,631 chars
+    Found 7 of 11 contract words
+  - wallhaven_7356me_3840x2160.jpg: 817,503 chars
+    Found 4 of 11 contract words
+  - wallhaven_gjq6yd_3840x2160.jpg: 2,378,807 chars
+    Found 8 of 11 contract words
+  - wallhaven_3zlqwd_3840x2160.jpg: 3,023,427 chars
+    Found 10 of 11 contract words
+  - wallhaven_83vg32_3840x2160.png: 1,278,078 chars
+    Found 5 of 11 contract words
+  - wallhaven_g8d52d_3840x2160.jpg: 2,558,379 chars
+    Found 10 of 11 contract words
+  - wallhaven_kwdpoq_3840x2160.png: 2,131,938 chars
+    Found 4 of 11 contract words
+  - wallhaven_83zvdy_3840x2160.png: 313,146 chars
+    Found 3 of 11 contract words
+  - wallhaven_odqpzp_3840x2160.jpg: 3,696,175 chars
+    Found 8 of 11 contract words
+  - wallhaven_47lgv0_3840x2160.jpg: 1,721,319 chars
+    Found 7 of 11 contract words
+  - wallhaven_961w8x_3840x2160.jpg: 3,736,143 chars
+    Found 9 of 11 contract words
+  - wallhaven_yx1g1x_3840x2160.jpg: 1,611,227 chars
+    Found 5 of 11 contract words
+  - wallhaven_o5k5y9_3840x2160.jpg: 1,221,631 chars
+    Found 7 of 11 contract words
+
+Character Count Comparison:
+  Complete contracts have 1,590,628.59 more characters on average
+  Ratio of complete to incomplete length: 1.90x
+

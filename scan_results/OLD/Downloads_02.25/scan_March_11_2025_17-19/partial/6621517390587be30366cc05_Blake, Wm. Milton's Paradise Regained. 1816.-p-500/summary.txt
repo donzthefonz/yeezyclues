@@ -1,0 +1,22 @@
+Scan Results for: 6621517390587be30366cc05_Blake, Wm. Milton's Paradise Regained. 1816.-p-500.jpeg
+Scan Time: 2025-03-11T17:19:41.351468
+Base64 Character Count: 121,727
+
+
+High Significance Patterns:
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAM
+  - H34L
+  - JEWS
+  - KIMK
+  - MMM
+  - WIZ
+  - Y0GA
+  - Y3S
+  - Z1NC

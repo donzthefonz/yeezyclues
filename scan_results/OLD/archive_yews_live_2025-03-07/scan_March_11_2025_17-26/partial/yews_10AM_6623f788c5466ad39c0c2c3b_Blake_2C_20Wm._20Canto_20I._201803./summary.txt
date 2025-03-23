@@ -1,0 +1,52 @@
+Scan Results for: yews_10AM_6623f788c5466ad39c0c2c3b_Blake_2C_20Wm._20Canto_20I._201803..jpeg
+Scan Time: 2025-03-11T17:26:31.206196
+Base64 Character Count: 514,351
+
+Contract Words Found:
+  - ETXR (2 occurrences)
+  - LH4O (1 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (2 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - F8PF
+  - LFNW
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - OLAF
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAM
+  - BEAR
+  - COIN
+  - GOLD
+  - JEWM
+  - JEWS
+  - MEME
+  - MILO
+  - MMM
+  - WEST
+  - WIZ
+  - Y0BS
+  - Y0G1
+  - Y0GA
+  - Y0UR
+  - Y1PS
+  - Y3S
+  - Y3T1
+  - Y3WS
+  - YURT
+  - Z34L
+  - Z3DS
+  - Z3TA
+  - ZANY

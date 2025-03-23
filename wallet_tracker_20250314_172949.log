@@ -1,0 +1,23 @@
+2025-03-14 17:29:50,025 [INFO] 
+📊 Analyzing wallet: CCreeLG968TrCxJWLZj3FoZpYzZ9HUviCZJMZkkZ4FWW
+2025-03-14 17:29:50,025 [INFO] ═══════════════════════════
+2025-03-14 17:29:50,303 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:50,305 [INFO] Found 1 token accounts
+2025-03-14 17:29:50,387 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:50,388 [INFO] 
+🔍 Checking transactions for token account: D74X5QWP2kENui4PLXHr2ZKzsWvWfoTYofevfP94rDE6
+2025-03-14 17:29:50,937 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:50,944 [INFO] Processing 136 transactions...
+2025-03-14 17:29:51,001 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:52,069 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:53,127 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:54,899 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:55,962 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:57,027 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:58,095 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:29:59,158 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:30:00,237 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:30:01,301 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:30:02,379 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:30:03,435 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:30:04,509 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"

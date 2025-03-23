@@ -1,0 +1,16 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-12T10:11:52.752375
+Total images analyzed: 1
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 29,351
+Average characters per image: 29,351.00
+
+Incomplete matches (1 images):
+  Average characters: 29,351.00
+  - GlzmpadW8AAnXNm.jpeg: 29,351 chars
+    Found 1 of 11 contract words
+

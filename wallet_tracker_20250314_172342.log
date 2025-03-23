@@ -1,0 +1,15 @@
+2025-03-14 17:23:43,022 [INFO] 
+📊 Analyzing wallet: CCreeLG968TrCxJWLZj3FoZpYzZ9HUviCZJMZkkZ4FWW
+2025-03-14 17:23:43,022 [INFO] ═══════════════════════════
+2025-03-14 17:23:43,321 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:43,334 [INFO] Found 1 token accounts
+2025-03-14 17:23:43,422 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:43,424 [INFO] 
+🔍 Checking transactions for token account: D74X5QWP2kENui4PLXHr2ZKzsWvWfoTYofevfP94rDE6
+2025-03-14 17:23:43,920 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:43,932 [INFO] Processing 136 transactions...
+2025-03-14 17:23:43,987 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:45,050 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:46,108 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:47,182 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"
+2025-03-14 17:23:48,259 [INFO] HTTP Request: POST https://rpc.helius.xyz/?api-key=708fa1db-5bba-4eaf-90c3-58750eb7090f "HTTP/1.1 200 OK"

@@ -1,0 +1,56 @@
+Scan Results for: wallhaven_47qgr3_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:22.020757
+Base64 Character Count: 885,735
+
+Contract Words Found:
+  - ETXR (2 occurrences)
+  - F3KN (2 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (2 occurrences)
+  - XFFC (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F8PF
+  - LFNW
+  - LH4O
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - FLAG
+  - OLAF
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ARG
+  - BEAR
+  - BLAK
+  - COIN
+  - FINE
+  - H34L
+  - JEWM
+  - LORE
+  - MEME
+  - MMM
+  - NORT
+  - WEST
+  - WIZ
+  - WIZK
+  - Y0LK
+  - Y0R3
+  - Y0UR
+  - Y3S
+  - Y3T1
+  - Y3WS
+  - YURT
+  - Z00S
+  - Z1TS
+  - Z3DS
+  - Z3R0
+  - Z3ST
+  - ZANY

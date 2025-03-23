@@ -1,0 +1,38 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T17:26:31.228620
+Total images analyzed: 12
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 15,498,784
+Average characters per image: 1,291,565.33
+
+Incomplete matches (12 images):
+  Average characters: 1,291,565.33
+  - yews_3PM_6621517390587be30366cc05_Blake_2C_20Wm._20Milton_27s_20Paradise_20Regained._201816..jpeg: 468,043 chars
+    Found 4 of 11 contract words
+  - yews_10AM_657a0eb383af02b09092a233_Blake_2C_20Wm._20Age_20Teaching_20Youth._201785..jpg: 179,559 chars
+    Found 4 of 11 contract words
+  - yews_10AM_67c679bbb2807dfb8524c00e_Blake_2C_20Wm._20A_20Crouching_20Woman._201775..jpg: 1,346,487 chars
+    Found 5 of 11 contract words
+  - yews_10AM_67c39578ededea4b3877a0ff_Blake_2C_20Wm._20Joseph_20of_20Arimathea_20Preaching._201794..jpg: 4,435,127 chars
+    Found 9 of 11 contract words
+  - yews_3PM_67bb36377a2ea65794de6957_00.jpg: 254,751 chars
+    Found 3 of 11 contract words
+  - yews_8PM_67bf576d8b0744bc5605c387_Blake_2C_20Wm._20The_20Book_20of_20Thel_2C_20object_2016._201796..jpeg: 1,678,407 chars
+    Found 8 of 11 contract words
+  - yews_8PM_67c39578ededea4b3877a0ff_Blake_2C_20Wm._20Joseph_20of_20Arimathea_20Preaching._201794..jpg: 4,435,127 chars
+    Found 9 of 11 contract words
+  - yews_8PM_67bba8524467a313eecddf29_Blake_2C_20Wm._20St._20Paul_20Preaching_20in_20Athens._201780..jpg: 635,915 chars
+    Found 4 of 11 contract words
+  - yews_10AM_6587a53ce0c14e285bd9fb36_Blake_2C_20Wm._20Illustrations_20to_20Shakespeare._201779..jpg.jpg: 447,263 chars
+    Found 1 of 11 contract words
+  - yews_10AM_66282d8b8ada31fdbc74ce5b_Blake_2C_20Wm._20Christian_20Reading_20in_20His_20Book._201824..jpeg: 869,143 chars
+    Found 2 of 11 contract words
+  - yews_10AM_6623f788c5466ad39c0c2c3b_Blake_2C_20Wm._20Canto_20I._201803..jpeg: 514,351 chars
+    Found 4 of 11 contract words
+  - yews_10AM_67c9e4e6305d496a2dcbb16e_Blake_2C_20Wm._20Christian_20Fears_20the_20Fire_20from_20the_20Mountain._201824.jpg: 234,611 chars
+    Found 1 of 11 contract words
+

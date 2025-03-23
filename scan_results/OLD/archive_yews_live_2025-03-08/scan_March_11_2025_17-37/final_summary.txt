@@ -1,0 +1,22 @@
+BASE64 PATTERN SCAN SUMMARY
+==========================
+
+Analysis completed at: 2025-03-11T17:37:11.684736
+Total images analyzed: 4
+
+CHARACTER COUNT ANALYSIS
+=======================
+Total characters across all images: 5,061,328
+Average characters per image: 1,265,332.00
+
+Incomplete matches (4 images):
+  Average characters: 1,265,332.00
+  - yews_8PM_659f6bf558a1e53046f66810_Blake_2C_20Wm._20The_20Wrath_20of_20Elihu._201805..jpeg: 1,388,375 chars
+    Found 8 of 11 contract words
+  - yews_8PM_67bd43f9be90dff23fd03279_Blake_2C_20Wm._20Oberon_2C_20Titania_20and_20Puck_20with_20Fairies_20Dancing._201779..jpeg: 420,275 chars
+    Found 4 of 11 contract words
+  - yews_3PM_67bf576d8b0744bc5605c387_Blake_2C_20Wm._20The_20Book_20of_20Thel_2C_20object_2016._201796..jpeg: 1,678,407 chars
+    Found 8 of 11 contract words
+  - yews_10AM_65c05a593915fa7faaab63d1_Blake_2C_20Wm._20The_20Progress_20of_20Poesy-_20Page_208._201797..jpg: 1,574,271 chars
+    Found 10 of 11 contract words
+

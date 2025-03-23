@@ -1,0 +1,50 @@
+{
+    "contract_words": [
+        "ETXR",
+        "F8PF",
+        "LH4O",
+        "XFFC"
+    ],
+    "contract_word_counts": {
+        "ETXR": 1,
+        "F8PF": 1,
+        "LH4O": 1,
+        "XFFC": 1
+    },
+    "missing_contract_words": [
+        "4NBT",
+        "F3KN",
+        "LFNW",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "BEAR",
+        "DEST",
+        "MMM",
+        "PLUT",
+        "TATE",
+        "W1LL",
+        "WIZ",
+        "Y0R3",
+        "Y3S",
+        "Y3WS",
+        "ZAPS"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 4,
+        "total": 11
+    },
+    "original_image_name": "yews_10AM_657a0eb383af02b09092a233_Blake_2C_20Wm._20Age_20Teaching_20Youth._201785..jpg",
+    "character_count": 179559
+}

@@ -1,0 +1,62 @@
+Scan Results for: wallhaven_gj2kgd_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:21.842939
+Base64 Character Count: 1,407,559
+
+Contract Words Found:
+  - ETXR (4 occurrences)
+  - F8PF (2 occurrences)
+  - LH4O (2 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (4 occurrences)
+  - V46F (1 occurrences)
+  - XFFC (3 occurrences)
+  - Y9I5 (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - LFNW
+
+High Significance Patterns:
+  - FLAG
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ANSE
+  - ARG
+  - BEAM
+  - BEAR
+  - C01N
+  - COIN
+  - CRYP
+  - DEST
+  - ELON
+  - FADE
+  - H34L
+  - HODL
+  - HOLD
+  - JEWM
+  - LORE
+  - M3M3
+  - MEME
+  - MILO
+  - MMM
+  - NORT
+  - REAP
+  - TATE
+  - TINA
+  - WEST
+  - WIZ
+  - Y0LK
+  - Y0UR
+  - Y1P3
+  - Y3S
+  - YURT
+  - Z1TS
+  - Z3DS
+  - Z3NS
+  - ZANY
+  - ZAPS

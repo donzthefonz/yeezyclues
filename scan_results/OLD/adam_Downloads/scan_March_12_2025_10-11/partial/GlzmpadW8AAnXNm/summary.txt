@@ -1,0 +1,28 @@
+Scan Results for: GlzmpadW8AAnXNm.jpeg
+Scan Time: 2025-03-12T10:11:52.752273
+Base64 Character Count: 29,351
+
+Contract Words Found:
+  - Y9I5 (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - ETXR
+  - F3KN
+  - F8PF
+  - LFNW
+  - LH4O
+  - OXJD
+  - PUMP
+  - V46F
+  - XFFC
+
+High Significance Patterns:
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - DEST
+  - FINE

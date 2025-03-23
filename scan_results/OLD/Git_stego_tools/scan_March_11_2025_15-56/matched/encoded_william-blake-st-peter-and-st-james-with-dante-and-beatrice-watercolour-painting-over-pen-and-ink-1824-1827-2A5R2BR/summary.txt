@@ -1,0 +1,38 @@
+Scan Results for: encoded_william-blake-st-peter-and-st-james-with-dante-and-beatrice-watercolour-painting-over-pen-and-ink-1824-1827-2A5R2BR.jpg
+Scan Time: 2025-03-11T15:56:54.018042
+Base64 Character Count: 261,071
+
+!!! COMPLETE CONTRACT FOUND !!! (11/11 words)
+
+Contract Words Found:
+  - 4NBT (1 occurrences)
+  - ETXR (1 occurrences)
+  - F3KN (1 occurrences)
+  - F8PF (1 occurrences)
+  - LFNW (1 occurrences)
+  - LH4O (1 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (1 occurrences)
+  - V46F (1 occurrences)
+  - XFFC (1 occurrences)
+  - Y9I5 (1 occurrences)
+
+High Significance Patterns:
+  - FLAG
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - CRYP
+  - JEWM
+  - MEME
+  - MMM
+  - NORT
+  - TOWN
+  - WIZ
+  - Y3S
+  - YURT
+  - Z00S
+  - ZANY

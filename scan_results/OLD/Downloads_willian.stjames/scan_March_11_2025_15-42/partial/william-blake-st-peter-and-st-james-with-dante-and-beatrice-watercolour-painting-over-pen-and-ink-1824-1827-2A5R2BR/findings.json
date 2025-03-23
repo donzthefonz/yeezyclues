@@ -1,0 +1,47 @@
+{
+    "contract_words": [],
+    "contract_word_counts": {},
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ANSE",
+        "ARG",
+        "BEAM",
+        "DEST",
+        "ELON",
+        "GOLD",
+        "MMM",
+        "MOON",
+        "TATE",
+        "W1LL",
+        "WIZ",
+        "Y0GA",
+        "Y3S",
+        "Y3WS",
+        "Z1NC"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 0,
+        "total": 11
+    },
+    "original_image_name": "william-blake-st-peter-and-st-james-with-dante-and-beatrice-watercolour-painting-over-pen-and-ink-1824-1827-2A5R2BR.jpg",
+    "character_count": 294975
+}

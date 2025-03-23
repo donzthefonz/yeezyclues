@@ -1,0 +1,40 @@
+{
+    "contract_words": [],
+    "contract_word_counts": {},
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "CRYP",
+        "FINE",
+        "GOLD",
+        "JEWM",
+        "KIMK",
+        "MMM",
+        "WIZ",
+        "Y3S"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 0,
+        "total": 11
+    },
+    "original_image_name": "65ab43f3f10282517a699374_Blake, Wm. Night VI, page 26, object 247. 1795.-p-500.jpeg",
+    "character_count": 112975
+}

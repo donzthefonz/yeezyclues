@@ -1,0 +1,40 @@
+Scan Results for: yews_3PM_67bb36377a2ea65794de6957_00.jpg
+Scan Time: 2025-03-11T17:26:30.682556
+Base64 Character Count: 254,751
+
+Contract Words Found:
+  - ETXR (1 occurrences)
+  - OXJD (1 occurrences)
+  - XFFC (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - F8PF
+  - LFNW
+  - LH4O
+  - PUMP
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - OLAF
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ANSE
+  - ARG
+  - BEAR
+  - CRYP
+  - DEST
+  - JEWM
+  - MMM
+  - NORT
+  - TINA
+  - TOWN
+  - WIZ
+  - Y0WL
+  - Y3S

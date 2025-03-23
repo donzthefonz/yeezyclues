@@ -1,0 +1,45 @@
+Scan Results for: yews_10AM_66282d8b8ada31fdbc74ce5b_Blake_2C_20Wm._20Christian_20Reading_20in_20His_20Book._201824..jpeg
+Scan Time: 2025-03-11T17:34:03.245834
+Base64 Character Count: 869,143
+
+Contract Words Found:
+  - F3KN (2 occurrences)
+  - LH4O (1 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - ETXR
+  - F8PF
+  - LFNW
+  - OXJD
+  - PUMP
+  - V46F
+  - XFFC
+  - Y9I5
+
+High Significance Patterns:
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ARG
+  - BEAR
+  - FADE
+  - FINE
+  - FISH
+  - GOLD
+  - JEWS
+  - MMM
+  - MOON
+  - PLUT
+  - TATE
+  - TENA
+  - TINA
+  - Y0G1
+  - Y1P3
+  - Y3S
+  - Y3T1
+  - Z3NS
+  - ZANY

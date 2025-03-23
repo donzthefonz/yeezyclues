@@ -1,0 +1,55 @@
+{
+    "contract_words": [],
+    "contract_word_counts": {},
+    "missing_contract_words": [
+        "4NBT",
+        "ETXR",
+        "F3KN",
+        "F8PF",
+        "LFNW",
+        "LH4O",
+        "OXJD",
+        "PUMP",
+        "V46F",
+        "XFFC",
+        "Y9I5"
+    ],
+    "high_significance_patterns": [
+        "FLAG",
+        "OLAF",
+        "YE",
+        "YZY"
+    ],
+    "other_significance_patterns": [
+        "ACE",
+        "ARG",
+        "C01N",
+        "COIN",
+        "FADE",
+        "FISH",
+        "HOLD",
+        "KIMK",
+        "LORE",
+        "MMM",
+        "NERO",
+        "NORT",
+        "TATE",
+        "WIZ",
+        "Y0GA",
+        "Y0UR",
+        "Y3S",
+        "Z00M",
+        "Z0N3",
+        "Z1NG",
+        "Z3ST",
+        "Z3TA",
+        "ZAPS"
+    ],
+    "has_complete_contract": false,
+    "contract_words_ratio": {
+        "found": 0,
+        "total": 11
+    },
+    "original_image_name": "65a5758ff775aa5dc56c5d7e_Blake, Wm. God Writing Upon the Tables of the Covenant. 1780.-p-500.png",
+    "character_count": 372790
+}

@@ -1,0 +1,60 @@
+Scan Results for: yews_8PM_67bf576d8b0744bc5605c387_Blake_2C_20Wm._20The_20Book_20of_20Thel_2C_20object_2016._201796..jpeg
+Scan Time: 2025-03-11T17:34:02.873372
+Base64 Character Count: 1,678,407
+
+Contract Words Found:
+  - 4NBT (1 occurrences)
+  - ETXR (3 occurrences)
+  - F3KN (1 occurrences)
+  - F8PF (7 occurrences)
+  - LFNW (1 occurrences)
+  - OXJD (1 occurrences)
+  - PUMP (1 occurrences)
+  - XFFC (1 occurrences)
+
+Missing Contract Words:
+  - LH4O
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - FLAG
+  - OLAF
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ARG
+  - BEAR
+  - C01N
+  - DEST
+  - FADE
+  - FINE
+  - H34L
+  - JEWM
+  - LORE
+  - M3M3
+  - MMM
+  - MOON
+  - REAP
+  - TATE
+  - TENA
+  - TOWN
+  - W1LL
+  - WEST
+  - WIZ
+  - Y0G1
+  - Y0K3
+  - Y0R3
+  - Y0UR
+  - Y1P3
+  - Y1PS
+  - Y34R
+  - Y3S
+  - Y3WS
+  - Z34L
+  - Z3NS
+  - Z3ST
+  - ZANY

@@ -1,0 +1,46 @@
+Scan Results for: wallhaven_gp2og7_3840x2160.png
+Scan Time: 2025-03-11T15:34:23.287492
+Base64 Character Count: 810,062
+
+Contract Words Found:
+  - ETXR (2 occurrences)
+  - XFFC (5 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - F3KN
+  - F8PF
+  - LFNW
+  - LH4O
+  - OXJD
+  - PUMP
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - FLAG
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - ANSE
+  - ARG
+  - BEAM
+  - COIN
+  - ETHA
+  - FINE
+  - JEWM
+  - LORE
+  - MILO
+  - MMM
+  - REAP
+  - TENA
+  - WIZ
+  - Y0K3
+  - Y3S
+  - YURT
+  - Z1NG
+  - Z34L
+  - Z3TA

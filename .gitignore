@@ -58,3 +58,6 @@ scan_results/**/*.webp
 # OS specific
 .DS_Store
 Thumbs.db 
+
+
+scan_results/

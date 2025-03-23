@@ -1,0 +1,81 @@
+Scan Results for: wallhaven_42oz39_3840x2160.jpg
+Scan Time: 2025-03-11T15:34:23.074893
+Base64 Character Count: 2,999,087
+
+Contract Words Found:
+  - ETXR (10 occurrences)
+  - F3KN (1 occurrences)
+  - F8PF (4 occurrences)
+  - LFNW (4 occurrences)
+  - LH4O (3 occurrences)
+  - OXJD (6 occurrences)
+  - PUMP (7 occurrences)
+  - XFFC (4 occurrences)
+
+Missing Contract Words:
+  - 4NBT
+  - V46F
+  - Y9I5
+
+High Significance Patterns:
+  - FLAG
+  - OLAF
+  - PASS
+  - YE
+  - YZY
+
+Other Significance Patterns:
+  - ACE
+  - AERI
+  - ANSE
+  - ARG
+  - BEAM
+  - BEAR
+  - BLAK
+  - COIN
+  - CRYP
+  - ELON
+  - ETHA
+  - FADE
+  - FINE
+  - GOLD
+  - H34L
+  - HODL
+  - JEWM
+  - JEWS
+  - KIMK
+  - LORE
+  - MEME
+  - MILO
+  - MMM
+  - MOON
+  - NERO
+  - NORT
+  - PLUT
+  - REAP
+  - SAINT
+  - TATE
+  - TENA
+  - TINA
+  - TOWN
+  - WEST
+  - WIZ
+  - WIZK
+  - Y0G1
+  - Y0K3
+  - Y0LK
+  - Y0R3
+  - Y0UR
+  - Y1P3
+  - Y1PS
+  - Y34R
+  - Y3S
+  - Y3T1
+  - Y3WS
+  - Z1N3
+  - Z1NC
+  - Z3DS
+  - Z3NS
+  - Z3R0
+  - ZANY
+  - ZAPS
